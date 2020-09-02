@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'informacion',
     'asesora',
     'colorfield',
+    'gunicorn',
 ]
 
 MIDDLEWARE = [
