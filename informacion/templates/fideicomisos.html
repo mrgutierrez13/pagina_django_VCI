@@ -1,0 +1,35 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block estilos_propios %}
+<link rel="stylesheet" href="{% static 'css/estilos_fideicomisos.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<div class="contenido">
+    <h1 class="titulo-principal-contenido">FIDEICOMISOS</h1>
+    <text>
+        El Fideicomiso Público es el instrumento legal por el cual las entidades públicas, en su carácter de
+        fideicomitentes, transmiten a una entidad financiera autorizada, la titularidad de ciertos bienes
+        y/o
+        derechos públicos, para la administración y cumplimiento de un fin lícito de interés público.
+        Es así que a través del Viceministerio de Comercio Interno, se viene efectuando el seguimiento al
+        "Fideicomiso Venezuela", y al "Fideicomiso Insumos Bolivia".
+    </text>
+    {% for fideicomiso in fideicomisos %}
+    <div class="fideicomiso-descripcion">
+        <h1>{{ fideicomiso.nombre }}</h1>
+        <text class="fid1">
+            <bold>{{ fideicomiso.decreto }}</bold>, {{ fideicomiso.decreto_descripcion }}<br><br>
+            <bold>Finalidad:</bold> {{ fideicomiso.finalidad }}
+        </text>
+        <h2>Caracteristicas</h2>
+        <text class="fid2">
+            <bold>Beneficiarios:</bold>
+            {{ fideicomiso.beneficiario }}<br><br>
+            <bold>Plazo de vigencia:</bold> {{ fideicomiso.vigencia }}
+        </text>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

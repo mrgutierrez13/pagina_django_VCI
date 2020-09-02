@@ -1,0 +1,125 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block estilos_propios %}
+<link rel="stylesheet" href="{% static 'css/estilos_index.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<div class="modal" id="modal">
+    <div class="modal-backdrop" id="close-ext"></div>
+    <div class="modal-body">
+        <button class="modal-close" id="close">
+            <span class="sr-only">cerrar</span>
+        </button>
+        <a class="modal-noticia" href="{{ noticia.enlace }}" target="_blank"
+            rel="noopener noreferrer"><img src="{{ MEDIA_URL }}{{ noticia.banner }}"></a>
+    </div>
+</div>
+<div class="index-servicios" id="index-servicios">
+    <h1>SERVICIOS DE AYUDA AL EXPORTADOR</h1>
+    <div class="index-servicios-contenedor">
+        {% for servicio in servicios %}
+
+        <a class="index-servicios-celda" href="{{ servicio.get_absolute_url }}">
+            <h1>{{ servicio.nombre }}</h1>
+            <div>
+                <img src="{{ MEDIA_URL }}{{ servicio.icono }}" alt="{{ servicio.nombre }}">
+                <p>{{ servicio.descripcion }}</p>
+            </div>
+            <span class="arrow"><span></span></span>
+            <h2>INGRESAR</h2>
+        </a>
+
+        {% endfor %}
+    </div>
+</div>
+<div class="index-libros" id="index-libros">
+    {% for libro in libros %}
+    <div class="index-libros-seccion" style="background-color: {{ libro.color }};">
+        <a href="{{ libro.get_absolute_url }}">
+            <img src="{{ MEDIA_URL }}{{ libro.portada }}">
+        </a>
+        <div class="index-libros-explicacion">
+            <h1>{{ libro.titulo }}</h1>
+            <h2>{{ libro.subtitulo}}</h2>
+            <p>{{ libro.descripcion }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<div class="index-enlaces" id="index-enlaces">
+    <h1>ENLACES</h1>
+    <div class="index-enlaces-contenedor">
+        {% for grupo in grupo_de_enlaces %}
+        <div class="index-enlaces-item">
+            <h2>{{ grupo.grupo }}</h2>
+            <div class="index-enlaces-lista">
+                {% for enlace in grupo.enlace_set.all %}
+                <a href="{{ enlace.enlace_externo }}" target="_blank" rel="noopener noreferrer">{{ enlace.nombre }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="index-entidades" id="index-entidades">
+    <h1>ENTIDADES DEL MINISTERIO DE DESARROLLO PRODUCTIVO Y ECONOMÍA PLURAL</h1>
+    <div class="contenedor-entidades">
+        {% for entidad in entidades %}
+        <a href="{{ entidad.enlace_externo }}">
+            <img src="{{ MEDIA_URL }}{{ entidad.logo }}" alt="{{ entidad.nombre }}">
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts_propios %}
+<!--PARA EL CLICK EN EL AREA DE ENLACES-->
+<script>
+
+    function enlacesResponsivos(x) {
+        const items = document.querySelectorAll(".index-enlaces-item");
+        if (x.matches) { // If media query matches                
+            let holderViejo = items[0];
+            holderViejo.classList.toggle('active');
+
+            function toggleAccordion() {
+                let holderNuevo = this;
+                this.classList.toggle('active');
+                holderViejo.classList.toggle('active');
+                holderViejo = holderNuevo;
+            }
+            items.forEach(item => item.addEventListener('mouseover', toggleAccordion));
+        } else {
+            function extAccordion() {
+                this.classList.toggle('extender');
+            }
+            items.forEach(item => item.addEventListener('click', extAccordion));
+        }
+    }
+
+    var x = window.matchMedia("screen and (min-width: 70rem)")
+    enlacesResponsivos(x) // Call listener function at run time
+    x.addListener(enlacesResponsivos) // Attach listener function on state changes 
+
+</script>
+
+<script>
+    const button = document.getElementById('close');
+    const cerrar = document.getElementById('close-ext');
+    const modal = document.getElementById('modal');
+
+    button.addEventListener('click', function (event) {
+        event.preventDefault();
+        modal.style.display = 'none';
+    });
+
+    cerrar.addEventListener('click', function (event) {
+        event.preventDefault();
+        modal.style.display = 'none';
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,235 @@
+/*
+https://webdesign.tutsplus.com/tutorials/building-a-vertical-timeline-with-css-and-a-touch-of-javascript--cms-26528
+*/
+
+
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.contenido {
+    --fondo-poster: hsl(197, 69%, 89%); 
+}
+
+.contenido p {
+    font-size: 2rem;
+    padding: 1em 1em;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline{
+    width: inherit;
+    overflow-x: hidden;
+}
+
+.timeline ul {
+    padding: 3em 0;
+}
+
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: .4em;
+    margin: 0 auto;
+    padding-top: 3em;
+    background: var(--color-dark-letra);
+}
+
+.timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: inherit;
+}
+
+.timeline ul li>div {
+    position: relative;
+    bottom: 0;
+    width: 60em;
+    max-width: 70rem;
+}
+
+.timeline ul li>div::before {
+    content: '';
+    position: absolute;
+    bottom: .4em;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline ul li:nth-child(odd)>div {
+    left: 3em;
+}
+
+.timeline ul li:nth-child(odd)>div::before {
+    left: -.9em;
+    border-width: .5em 1em .5em 0;
+    border-color: transparent var(--fondo-poster) transparent transparent;
+}
+
+.timeline ul li:nth-child(even)>div {
+    left: -63em;
+}
+
+.timeline ul li:nth-child(even)>div::before {
+    right: -.9em;
+    border-width: .5em 0 .5em 1em;
+    border-color: transparent transparent transparent var(--fondo-poster);
+}
+
+time {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+
+/*=======
+  POSTER
+========*/
+
+.timeline-poster{
+    display: grid;
+    grid-template-columns: auto 4fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "p-fecha p-titulo"
+                         "p-organiza p-organiza"
+                         "p-descripcion p-descripcion"
+                         "p-ubicacion p-ubicacion";
+    background-color: transparent;
+}
+
+.timeline-poster a{
+    color: inherit;
+    text-decoration: none;
+}
+.timeline-poster a:hover{
+    text-decoration: underline;
+}
+
+.timeline-poster time{
+    grid-area: p-fecha;
+    background-color: var(--color-dark-letra);
+    padding: .3em;
+    height: 100%;
+    min-width: 4em;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    border-radius: 1em 0 0 0;
+}
+.timeline-poster time p{
+    font-size: 1.3rem;
+}
+.timeline-poster .titulo-feria{
+    grid-area: p-titulo;
+    font-weight: 600;
+    font-size: 2.2rem;
+    padding: .5em 1em 1em 1em;
+    background-color: var(--fondo-poster);
+}
+.timeline-poster .organizador{
+    grid-area: p-organiza;
+    font-size: 1.4rem;
+    padding: .4em 0 .4em 1em;
+    background-color: hsl(0, 0%, 95%);
+}
+.organizador::before{
+    content: "Organiza:";
+}
+.timeline-poster .descripcion{
+    grid-area: p-descripcion;
+    padding: 1em;
+    font-size: 1.8rem; 
+    background-color: white;  
+    text-align: justify; 
+}
+.timeline-poster .ubicacion{
+    grid-area: p-ubicacion;
+    position: relative;
+    font-size: 1.3rem;
+    align-content: top;
+    background-color: var(--fondo-poster);
+    padding: .5em 0 .8em 2.5em;
+}
+.ubicacion::before{
+    position: absolute;
+    display: inline-block;
+    content: url("../images/ubicacion_log.svg");
+    width: 1.5em;
+    height: 1.5em;
+    left: 0.3em;
+}
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+    transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+    background: var(--fondo-poster);
+}
+
+.timeline ul li>div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd)>div {
+    transform: translate3d(12em, 0, 0);
+}
+
+.timeline ul li:nth-child(even)>div {
+    transform: translate3d(-12em, 0, 0);
+}
+
+.timeline ul li.in-view>div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 100rem) {
+    .timeline ul li>div {
+        width: 40vw;
+    }
+    .timeline ul li:nth-child(even)>div {
+        left: -43vw;
+        /*250+45-6*/
+    }
+}
+
+@media screen and (max-width: 70rem) {
+    .timeline-poster .titulo-feria{
+        font-size: 1.5rem;
+    }
+    .timeline ul li {        
+        margin-left: 1.4em;
+    }
+    .timeline ul li>div {
+        width: calc(100vw - 10em);
+        max-width: calc(100vw - 10em);
+    }
+    .timeline ul li:nth-child(even)>div {
+        left: 3em;
+    }
+    .timeline ul li:nth-child(even)>div::before {
+        left: -.9em;
+        border-width: .5em 1em .5em 0;
+        border-color: transparent var(--fondo-poster) transparent transparent;
+    }
+}

@@ -1,0 +1,44 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block estilos_propios %}
+<link rel="stylesheet" href="{% static 'css/estilos_normativa.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<h1 class="titulo-principal-contenido">NORMATIVA</h1>
+
+{% for seccion in secciones_normas %}
+<h2 class="titulo-seccion">{{ seccion.nombre_seccion }}</h2>
+<div class="contenedor-tabla">
+    <table class="tabla">
+        <thead>
+            <tr>
+                <th>Número</th>                
+                <th>Título</th>
+                <th>Fecha</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for norma in seccion.norma_set.all %}
+            <tr>
+                <td>
+                    {% if not norma.archivo %}
+                    {{ norma.numero }} 
+                    {% else %}
+                    <a href="{{ MEDIA_URL }}{{ norma.archivo }}" target="_blank" rel="noopener noreferrer">
+                        {{ norma.numero }}
+                    </a>
+                    {% endif %}
+                </td>
+                <td>{{ norma.titulo }}</td>
+                <td>{{ norma.fecha }}</td>                
+                <td>{{ norma.descripcion }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endfor %}
+{% endblock %}

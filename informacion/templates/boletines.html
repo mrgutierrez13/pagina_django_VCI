@@ -1,0 +1,59 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block estilos_propios %}
+<link rel="stylesheet" href="{% static 'css/estilos_boletines.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<h1 class="titulo-principal-contenido">Boletines Informativos</h1>
+<div class="matriz-boletines">
+    {% for boletin in boletines %}
+    <a href="{{ MEDIA_URL }}{{ boletin.archivo }}" target="_blank" rel="noopener noreferrer">
+        <img class="portada-boletin" src="{{ MEDIA_URL }}{{ boletin.portada }}">
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts_propios %}
+<script>
+    "use strict"
+
+    function mostrarImagenes(img) {
+
+        // define variables
+        let items = document.querySelectorAll(".matriz-boletines>a");
+
+        // check if an element is in viewport
+        // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+        function isElementInViewport(el) {
+            let rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function callbackFunc() {
+            for (let i = 0; i < items.length; i++) {
+                if (isElementInViewport(items[i])) {
+                    items[i].classList.add("in-view");
+                }
+            }
+        }
+
+        // listen for events
+        img.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+    }
+
+    const imagenes = document.querySelectorAll(".portada-boletin");
+    
+    imagenes.forEach(imagen => mostrarImagenes(imagen));
+
+</script>
+{% endblock %}

@@ -1,0 +1,128 @@
+.titulo-organigrama {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.institucion-texto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+    grid-auto-rows: max-content;
+    padding: 1em 2em;
+}
+
+.institucion-texto>div {
+    padding: 1em;
+    font-size: 1.6rem;
+}
+
+.institucion-texto>div h2 {
+    padding-bottom: 1em;
+}
+
+@media screen and (min-width: 100rem) {
+    .institucion-texto>div {
+        padding: 1em 2em;
+    }
+}
+
+.institucion-texto>div p, #objetivos ol {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-left: .5em;
+}
+
+#objetivos ol {
+    padding-left: 2em;
+}
+
+#objetivos ol>li {
+    padding-bottom: 1em;
+}
+
+/*============
+  ORGANIGRAMA
+=============*/
+
+.contenido>h2 {
+    text-align: center;    
+    padding-bottom: 1em;
+}
+
+.contenedor-perfiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+    grid-auto-rows: max-content;
+    grid-auto-flow: dense;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    padding: 4em 4em;
+    gap: 1em;
+}
+
+.seccion3 {
+    padding-bottom: 4em;
+}
+
+.perfil {
+    max-width: 22em;
+    border: .6em double hsl(0, 0%, 80%);    
+    text-align: center;
+    box-shadow: 1px 1px 4px 1px hsla(0, 0%, 0%, 0.5); 
+}
+.perfil img{
+    filter: grayscale(.3);
+    transition: filter .2s ease-in;
+}
+.perfil:hover img{
+    filter: grayscale(0);    
+}
+
+.perfil h3 {
+    padding: .4em;
+    font-weight: 600;
+    font-size: 1.4rem;    
+}
+
+.perfil .nombre{
+    color: hsl(0, 0%, 20%);
+    padding-bottom: .5em;
+    font-size: 1.6rem;
+}
+
+/* SEPARADOR */
+hr{
+    display: none;
+}
+
+@media screen and (min-width: 70rem) {
+    hr { 
+        display: block;
+        border: 0; 
+        height: 10px;
+        width: 100%;
+    }
+    hr:before {
+        top: -0.5em;
+        height: 1em;
+    }
+    hr:after {
+        content:'';
+        height: 0.5em;
+        top: 1px;
+    }
+    
+    hr:before, hr:after {
+        content: '';
+        position: absolute;
+    }
+    
+    hr, hr:before {
+        background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+    }
+    
+    hr:after {
+        background: hsl(0, 0%, 76%);
+    }
+}
+

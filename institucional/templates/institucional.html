@@ -1,0 +1,67 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block estilos_propios %}
+<link rel="stylesheet" href="{% static 'css/estilos_institucional.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<h1 class="titulo-principal-contenido">VICEMINISTERIO DE COMERCIO INTERNO</h1>
+<div class="institucion-texto">
+    <div id="quien">
+        <h2>¿Quienes somos?</h2>
+        <p>{% for texto in textos %}
+            {% if texto.secciones == 0 %}
+            {{ texto.contenido }}
+            {% endif %}
+            {% endfor %}</p>
+    </div>
+    <div id="mision">
+        <h2>Mision</h2>
+        <p>{% for texto in textos %}
+            {% if texto.secciones == 1 %}
+            {{ texto.contenido }}
+            {% endif %}
+            {% endfor %}</p>
+    </div>
+    <div id="objetivos">
+        <h2>Objetivos</h2>
+        <p>{% for texto in textos %}
+            {% if texto.secciones == 2 %}
+            {{ texto.contenido }}
+            {% endif %}
+            {% endfor %}</p>
+    </div>
+</div>
+
+<h2 class="titulo-organigrama">Organización</h2>
+<div class="contenedor-perfiles seccion1">
+    {% for funcionario in funcionarios1 %}
+    <div class="perfil">
+        <img src="{{ MEDIA_URL }}{{ funcionario.foto }}" />
+        <h3>{{ funcionario.cargo }}</h3>
+        <div class="nombre">{{ funcionario.nombre_completo }}</div>
+    </div>
+    {% endfor %}
+</div>
+<hr/>
+<div class="contenedor-perfiles seccion2">
+    {% for funcionario in funcionarios2 %}
+    <div class="perfil">
+        <img src="{{ MEDIA_URL }}{{ funcionario.foto }}" />
+        <h3>{{ funcionario.cargo }}</h3>
+        <div class="nombre">{{ funcionario.nombre_completo }}</div>
+    </div>
+    {% endfor %}
+</div>
+<hr/>
+<div class="contenedor-perfiles seccion3">
+    {% for funcionario in funcionarios3 %}
+    <div class="perfil">
+        <img src="{{ MEDIA_URL }}{{ funcionario.foto }}" />
+        <h3>{{ funcionario.cargo }}</h3>
+        <div class="nombre">{{ funcionario.nombre_completo }}</div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

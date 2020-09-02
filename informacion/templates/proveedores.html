@@ -1,0 +1,32 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block estilos_propios %}
+<link rel="stylesheet" href="{% static 'css/estilos_proveedores.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<h1 class="titulo-contenido-principal">Directorio de proveedores</h1>
+
+<div class="barra-paginas"></div>
+
+<div class="contenedor-tabla-directorio">
+    <div class="grilla">
+        <div class="celda-proveedor">
+            <h2 title="{{ proveedor.nombre }}">{{ proveedor.nombre }}</h2>
+            <div class="proveedor-nit">{{ proveedor.nit }}</div>
+            <div class="proveedor-tipo">{{ proveedor.tipo_empresa }}</div>
+            <div class="proveedor-contacto">{{ proveedor.nombre_contacto }}</div>
+            <div class="proveedor-email">{{ proveedor.email }}</div>
+            <div class="proveedor-celular">{{ proveedor.celular }}</div>
+            <div class="proveedor-departamento">{{ proveedor.departamento }}</div>
+            <div class="proveedor-barrio">{{ proveedor.barrio }}</div>
+            <div class="proveedor-calle">{{ proveedor.calle }}</div>
+            <a class="proveedor-numero-productos" href="">5 productos...</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="barra-paginas"></div>
+{% endblock %}

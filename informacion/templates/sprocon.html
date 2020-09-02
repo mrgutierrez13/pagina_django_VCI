@@ -1,0 +1,45 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block estilos_propios %}
+<link rel="stylesheet" href="{% static 'css/estilos_sprocon.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<div class="contenido">
+    <h1 class="titulo-principal-contenido">Presentación</h1>
+    <text>
+        El Viceministerio de Comercio Interno, dependiente del Ministerio de Desarrollo Productivo y Economía
+        Plural,
+        en el marco de la Ley No. 1203 de 18 de julio de 2019, Decreto Supremo No. 3845, y
+        la Resolución Ministerial MDPyEP/DESPACHO/No.101/2019, presenta:
+    </text>
+    <h2>Sistema de Certificado de Producción Nacional de Cemento con Clinker Nacional "SPROCON"</h2>
+    <div class="sprocon-anuncio">
+        <div class="sprocon-logo">
+            <img src="{% static 'images/sprocon.png' %}">
+            <text>Este sistema ha sido diseñado para operativizar el procedimiento de solicitud y obtención del
+                Certificado
+                de Producción Nacional de Cemento Portland y/o Puzolánico con Clinker 100% de Origen Nacional.
+                <br><br>
+                Certificaión que respalda el origen del clinker nacional para la construcción de obras de
+                infraestructura civil, productiva y
+                social, asi como infraestructura complementaria y su mantenimiento, cuya aplicación está
+                orientada a
+                las
+                personas naturales o jurídicas, de carácter público o privado, nacionales o extranjeras, que
+                requieran el
+                referido Certificado.
+            </text>
+        </div>
+        <div class="sprocon-contacto">
+            <h2>Para iniciar el registro en el SPROCON: </h2>
+            <ul>
+                <li>Av. Camacho Nro 1488, Edificio Ex-Refo</li>
+                <li>(591) 2372054 int. 121</li>
+                <li>(591) 77796069</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

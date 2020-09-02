@@ -1,0 +1,308 @@
+{% load static %}
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/estilos_base.css' %}">
+    {% block estilos_propios %}{% endblock %}
+</head>
+
+<body>
+    <div class="icon-bar">
+        {% for red_enlace in redes_enlaces %}
+        {% if red_enlace.institucion == 'viceministerio' %}
+        <a class="{{ red_enlace.red }}" href="{{ red_enlace.enlace }}" target="_blank" rel="noopener noreferrer">
+            <img src="{{ MEDIA_URL }}{{ red_enlace.red.icono }}"></a>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <div class="contenedor">
+        <div class="menu-navegacion-mobil">
+            <h1 onclick="toggleNav()">MENÚ DE NAVEGACIÓN</h1>
+        </div>
+        <div class="menu-navegacion-backdrop" onclick="toggleNav()"></div>
+        <nav id="menu-navegacion" class="menu-navegacion">
+            <div id="navegador-inicio" class="navegador-seccion">
+                <a class="navegador-label" href="{% url 'index' %}">INICIO</a>
+            </div>
+            <div id="navegador-institucional" class="navegador-seccion">
+                <a href="{% url 'institucional' %}" class="navegador-label">INSTITUCIONAL</a>
+            </div>
+            <div id="navegador-servicios" class="navegador-seccion">
+                <h2 class="navegador-label navegador-flecha">SERVICIOS</h2>
+                <div class="navegador-menu">
+                    <a href="oferta_exportable.html">
+                        <h2>Oferta Exportable</h2>
+                        <h3>Conoce los productos estrella de las exportaciones Bolivianas</h3>
+                    </a>
+                    <a href="mapa_georeferencial.html">
+                        <h2 href=>Mapa Georeferencial</h2>
+                        <h3>Muestra las rutas de exportacion el mapa de Bolivia</h3>
+                    </a>
+                    <a id="nav-siexco"
+                        href="http://vcie.produccion.gob.bo/siexco/comex/consultaPublica/processReport.php">
+                        <h2>Consulta Dinamica</h2>
+                        <h3>Los datos de exportacion Boliviana mas precisos que encontraras</h3>
+                    </a>
+                    <a href="simulador_logistico.html">
+                        <h2>Simulador Logisitico</h2>
+                        <h3>Encuentra las rutas de exportacion más eficientes</h3>
+                    </a>
+                    <a href="estadisticas.html">
+                        <h2>Estadisiticas</h2>
+                        <h3>Datos provistos por INE</h3>
+                    </a>
+                    <a href="mapa_descriptivo.html">
+                        <h2>Mapa Descriptivo</h2>
+                        <h3>Muestra las exportaciones a otros paises de manera descriptiva</h3>
+                    </a>
+                </div>
+            </div>
+            <div id="navegador-informacion" class="navegador-seccion">
+                <h2 class="navegador-label navegador-flecha">INFORMACIÓN</h2>
+                <div class="navegador-menu">
+                    <a href="{% url 'guia' %}">
+                        <h2>Guia del Exportador</h2>
+                        <h3>Si no sabes por donde empezar utiliza esta guia</h3>
+                    </a>
+                    <a href="{% url 'boletines' %}">
+                        <h2>Boletines Informativos</h2>
+                        <h3>Ofrecen informacion especifica sobre productos importantes</h3>
+                    </a>
+                    <a href="{% url 'normativa' %}">
+                        <h2>Normativa</h2>
+                        <h3>Las leyes que afectan el proceso de exportacion</h3>
+                    </a>
+                    <a href="{% url 'sprocon' %}">
+                        <h2>SPROCON</h2>
+                        <h3>Sistema de Certificado de Producción Nacional de Cemento con Clinker Nacional</h3>
+                    </a>
+                    <a href="{% url 'fideicomisos' %}">
+                        <h2>Fideicomisos</h2>
+                        <h3>Es el instrumento legal por el cual las entidades públicas transmiten la titularidad de
+                            ciertos bienes y/o derechos públicos</h3>
+                    </a>
+                    <a href="brokers.html">
+                        <h2>Directorio de Brokers</h2>
+                        <h3>Lista de contactos de Brokers verificados</h3>
+                    </a>
+                    <a href="proveedores.html">
+                        <h2>Directorio de Proveedores</h2>
+                        <h3>Lista de contactos de Proveedores verificados</h3>
+                    </a>
+                    <a href="videos.html">
+                        <h2>Videos Informativos</h2>
+                        <h3>Tutorial didactico para empezar a Exportar</h3>
+                    </a>
+                    <a href="{% url 'eventos' %}">
+                        <h2>Eventos</h2>
+                        <h3>Este al tanto de los proximos eventos, seminarios y convocatorias</h3>
+                    </a>
+                </div>
+            </div>
+            <div id="navegador-logistica" class="navegador-seccion">
+                <h2 class="navegador-label navegador-flecha">LOGÍSTICA</h2>
+                <div class="navegador-menu">
+                    <a href="logistica.html#logistica1">
+                        <h2>Logística 1</h2>
+                        <h3>Descripcion de esta logistica</h3>
+                    </a>
+                    <a href="logistica.html#logistica2">
+                        <h2>Logística 2</h2>
+                        <h3>Descripcion de esta logistica</h3>
+                    </a>
+                    <a href="logistica.html#logistica3">
+                        <h2>Logística 3</h2>
+                        <h3>Descripcion de esta logistica</h3>
+                    </a>
+                </div>
+            </div>
+            <div id="navegador-tramites" class="navegador-seccion">
+                <h2 class="navegador-label navegador-flecha">TRÁMITES</h2>
+                <div class="navegador-menu">
+                    <a href="ritex.html">
+                        <h2>RITEX</h2>
+                        <h3>Emocionate por el RITEX :)</h3>
+                    </a>
+                    <a href="costo-bruto.html">
+                        <h2>Costo Bruto de Producción</h2>
+                        <h3>Informacion importante</h3>
+                    </a>
+                </div>
+            </div>
+            <div id="navegador-vci-asesora" class="navegador-seccion">
+                <a href="{% url 'asesora' %}" class="navegador-label">VCI TE ASESORA</a>
+            </div>
+            <input type="text" placeholder="Buscar..">
+            <button type="submit"><img src="{% static 'images/buscar.svg' %}"></button>
+        </nav>
+
+        <h1 id="banner-pagina">
+            <div>
+                <div class="titulo">Viceministerio de Comercio Interno</div>
+                <div class="subtitulo">El portal del comercio, logística, exportaciones e industria</div>
+            </div>
+            <img id="logo-ministerio" src="{% static 'images/ministerio_logo.png' %}" alt="logo-ministerio">
+            <img id="logo-pais" src="{% static 'images/bolivia_logo.png' %}" alt="logo-pais">
+        </h1>
+
+        {% block contenido %}{% endblock %}
+
+        <footer>
+            <div class="footer-info">
+                <div id="footer-vci" class="footer-contacto">
+                    <h2>Viceministerio de Comercio Interno: </h2>
+                    <ul>
+                        <li>Oficina Central - La Paz</li>
+                        <li>Av. Camacho Nro 1488, Edificio Ex-Refo</li>
+                        <li>
+                            <bold>Teléfono: </bold>77796069
+                        </li>
+                        <li>
+                            <bold>Fax: </bold>2372057
+                        </li>
+                        <li>
+                            <bold>Email: </bold>vci.te.asesora@gmail.com
+                        </li>
+                    </ul>
+                    <div class="footer-contacto-redes">
+                        {% for red_enlace in redes_enlaces %}
+                        {% if red_enlace.institucion == 'viceministerio' %}
+                        <a href="{{ red_enlace.enlace }}" target="_blank" rel="noopener noreferrer">
+                            <img src="{{ MEDIA_URL }}{{ red_enlace.red.icono }}"></a>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div id="footer-mdp" class="footer-contacto">
+                    <h2>Ministerio de Desarrollo Productivo y Economía Plural: </h2>
+                    <ul>
+                        <li>Oficina Central - La Paz</li>
+                        <li>Av. Mariscal Santa Cruz, Edif. Centro de Comunicaciones, piso 20</li>
+                        <li>
+                            <bold>Teléfono: </bold>2124235
+                        </li>
+                        <li>
+                            <bold>Fax: </bold>2124933
+                        </li>
+                        <li>
+                            <bold>Email: </bold>info@produccion.gob.bo
+                        </li>
+                    </ul>
+                    <div class="footer-contacto-redes">
+                        {% for red_enlace in redes_enlaces %}
+                        {% if red_enlace.institucion == 'ministerio' %}
+                        <a href="{{ red_enlace.enlace }}" target="_blank" rel="noopener noreferrer">
+                            <img src="{{ MEDIA_URL }}{{ red_enlace.red.icono }}"></a>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <img src="{% static 'images/Hecho-en-Bolivia.png' %}">
+            </div>
+            <div class="footer-esquema">
+                <div id="footer-esquema-lista-cabeza" class="footer-esquema-lista">
+                    <h2>NOSOTROS:</h2>
+                    <ul>
+                        <a href="">INICIO</a>
+                        <a href="">INSTITUCIONAL</a>
+                        <a href="">VCI TE ASESORA</a>
+                    </ul>
+                </div>
+                <div class="footer-esquema-lista">
+                    <h2>SERVICIOS</h2>
+                    <ul>
+                        <a href="">Oferta Exportable</a>
+                        <a href="">Mapa Georeferencial</a>
+                        <a href="">Consulta Dinamica</a>
+                        <a href="">Simulador Logistico</a>
+                        <a href="">Estadisticas</a>
+                        <a href="">Mapa Descriptivo</a>
+                    </ul>
+                </div>
+                <div class="footer-esquema-lista">
+                    <h2>INFORMACIÓN</h2>
+                    <ul>
+                        <a href="">Guia del Exportador</a>
+                        <a href="">Boletines Informativos</a>
+                        <a href="">Normativa</a>
+                        <a href="">Pubacaciones</a>
+                        <a href="">SPROCON</a>
+                        <a href="">Fideicomisos</a>
+                        <a href="">Directorio de Brokers</a>
+                        <a href="">Directorio de Proveedores</a>
+                        <a href="">Videos Informativos</a>
+                        <a href="">Eventos</a>
+                    </ul>
+                </div>
+                <div class="footer-esquema-lista">
+                    <h2>TRAMITES</h2>
+                    <ul>
+                        <a href="">RITEX</a>
+                        <a href="">Costo Bruto de Producción</a>
+                    </ul>
+                </div>
+                <div class="footer-esquema-lista">
+                    <h2>LOGISTICA</h2>
+                    <ul>
+                        <a href="">Logistica 1</a>
+                        <a href="">Logistica 2</a>
+                        <a href="">Logistica 3</a>
+                    </ul>
+                </div>
+            </div>
+            <div id="copyright">
+                <div>Viceministerio de Comercio Interno&nbsp;&nbsp; VCI 2020</div>
+                <div id="iconos-copyright">Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        //logica para menu de navegacion mobil
+
+        function toggleNav() {
+            const nav = document.querySelector(".menu-navegacion");
+            const navBack = document.querySelector(".menu-navegacion-backdrop");
+            nav.classList.toggle("open");
+            navBack.classList.toggle("open");
+        }
+
+        //para que el menu de navegacion siga la pantalla
+
+        let lastScrollTop = 0;
+
+        function siguePantalla() {
+            if (document.querySelector(".menu-navegacion") != null) {
+                const navbar = document.querySelector(".menu-navegacion");
+
+                // Evalua el primero, si este no es valido usa el segundo (short circuit evaluation)
+                let st = window.pageYOffset || document.documentElement.scrollTop;
+
+                navbar.classList.add("sticky");
+
+                if (st > lastScrollTop) {
+                    // downscroll code
+                    navbar.classList.remove("efecto");
+                } else {
+                    // upscroll code
+                    navbar.classList.add("efecto");
+                }
+
+                lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+            } else {
+                console.log("navbar aun no cargo.");
+            }
+        }
+
+        window.addEventListener("scroll", siguePantalla, false);
+        window.addEventListener("load", siguePantalla, false);
+
+    </script>
+
+    {% block scripts_propios %}{% endblock %}
+
+</body>

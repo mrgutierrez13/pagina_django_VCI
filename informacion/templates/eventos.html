@@ -1,0 +1,85 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block estilos_propios %}
+<link rel="stylesheet" href="{% static 'css/estilos_eventos.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<div class="contenido">
+
+    <h1 class="titulo-principal-contenido">Ferias, Webinars y Exposiciones</h1>
+
+    <p>El Viceministerio de Comercio Interno, perteneciente al Ministerio de Desarrollo Productivo y
+        Economía Plural, a través de la Resolución Administrativa No. DGDCLI
+        001.2018 aprueba el "Calendario de Ferias y Exposiciones Internacionales" realizadas en
+        territorio boliviano para la gestión 2019, en cumplimiento de la Ley No. 3162.</p>
+
+    <section class="timeline">
+        <ul>
+            {% for evento in eventos %}
+            <li>
+                <div class="timeline-poster">
+                    <time>{{ evento.fecha.day }}<p>{{ evento.fecha|date:'F' }}<br>{{ evento.fecha.year }}</p></time>
+                    <a class="titulo-feria" href="{{ evento.enlace }}">{{ evento.nombre }}</a>
+                    {% if not evento.enlace_organizador %}
+                    <div class="organizador">{{ evento.organizador }}</div>
+                    {% else %}
+                    <a class="organizador" href="{{ evento.enlace_organizador }}">{{ evento.organizador }}</a>
+                    {% endif %}
+                    <div class="descripcion">
+                        {{ evento.tipo }}<br>
+                        {{ evento.descripcion }}
+                    </div>
+                    {% if not evento.enlace_google_maps %}
+                    <div class="ubicacion">{{ evento.departamento }} | {{ evento.direccion }}</div>
+                    {% else %}
+                    <a class="ubicacion" href="{{ evento.enlace_google_maps }}">{{ evento.departamento }} | {{ evento.direccion }}</a>
+                    {% endif %}                    
+                </div>
+            </li>
+            {% endfor %}      
+        </ul>
+    </section>
+</div>
+{% endblock %}
+
+
+
+{% block scripts_propios %}
+<script>
+    (function () {
+
+        'use strict';
+
+        // define variables
+        var items = document.querySelectorAll(".timeline li");
+
+        // check if an element is in viewport
+        // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function callbackFunc() {
+            for (var i = 0; i < items.length; i++) {
+                if (isElementInViewport(items[i])) {
+                    items[i].classList.add("in-view");
+                }
+            }
+        }
+
+        // listen for events
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+
+    })();
+</script>
+{% endblock %}

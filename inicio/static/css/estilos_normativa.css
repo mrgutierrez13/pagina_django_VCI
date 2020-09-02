@@ -1,0 +1,46 @@
+.contenedor-tabla{  
+    margin: 0 auto;    
+    width: 80%;
+    overflow-x: auto;
+    margin-bottom: 3em;
+    font-size: 1.4rem;
+}
+
+.titulo-seccion{
+    padding-left: 7em;
+    margin: 1em 0;
+    font-size: 2rem;
+}
+
+.tabla{
+    width: 100%;
+    display: grid;    
+    background-color: var(--color-fondo);
+    font-size: 1.4rem;
+}
+
+.tabla tr:nth-child(even){
+    background-color: var(--color-light-letra);
+}
+
+.tabla tr{
+    display: grid;    
+    grid-template-rows: auto;
+    height: auto;
+    width: 100%;
+    padding-bottom: 1em;
+    padding-top: .9em;
+    border-top: 1px solid hsl(0, 0%, 40%);
+}
+
+.tabla tr{
+    grid-template-columns: 1fr 2fr 2fr 4fr;
+}
+
+.tabla td{
+    padding: 0 1em;
+}
+
+.tabla tr a{
+    color: var(--color-letra);
+}

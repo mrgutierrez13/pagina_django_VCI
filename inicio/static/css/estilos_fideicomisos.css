@@ -1,0 +1,44 @@
+.contenido{
+    padding: 0 5em;
+    text-align: justify;
+    font-size: 1.8rem;  
+}
+
+.contenido>text{      
+    padding: 1em 0;
+}
+.fideicomiso-descripcion{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "titulo-fid caract" "fid-desc fid-cond";
+    width: 90%;
+    justify-self: center;
+    padding: 2em 0;
+}
+
+.fideicomiso-descripcion>h1{
+    grid-area: titulo-fid;
+    font-size: 2rem;
+    background-color: var(--color-dark-letra);
+    padding:0.6em 0 0.5em 1em;
+    color: white;
+    width: 50%;
+    font-weight: 100;
+    margin-bottom: 1em;
+}
+.fideicomiso-descripcion>h2{
+    grid-area: caract;
+}
+
+bold{
+    font-weight: 600;
+}
+
+.fid1{
+    grid-area: fid-desc;
+    padding-right: 2em;
+}
+
+.fid2{
+    grid-area: fid-cond;
+}
