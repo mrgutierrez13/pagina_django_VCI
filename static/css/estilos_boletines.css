@@ -1,0 +1,37 @@
+.matriz-boletines{
+    display: grid;
+    margin: 0 6em 4em 6em;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill,minmax(23em, 1fr));
+    gap: 4em;
+}
+
+.in-view{
+    transform: translateY(0);
+    filter: brightness(1);      
+    transition: transform .2s ease-out, filter .1s ease-out;
+}
+
+.in-view:hover {    
+    transform: translateY(-.2em);
+    filter: brightness(105%);
+}
+
+.matriz-boletines>a::after {
+    transition: background .5s ease-in-out;
+}
+
+.matriz-boletines>a>img {
+    visibility: hidden;
+    opacity: 0;
+    border-radius: .2em;
+    box-shadow: 0 1px 1px 0 hsla(0, 0%, 0%, 0.3); 
+    transition: all .5s ease-in-out;
+    transform: translateX(-3em);
+}
+
+.matriz-boletines>a.in-view>img {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}

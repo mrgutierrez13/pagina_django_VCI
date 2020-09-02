@@ -1,0 +1,92 @@
+.asesora-area1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto) 15em 15em;
+    grid-template-areas: "explicacion forma"
+                         "detalles forma"
+                         "t-ubicacion forma"
+                         "ubicacion forma"
+                         "ubicacion datos";
+    gap: 1em;
+    font-size: 1.8rem;
+}
+
+.asesora-area1 p{
+    grid-area: explicacion;
+    padding: 1em 4em;
+    text-align: justify;
+}
+
+.asesora-area1 .preguntas{
+    grid-area: detalles;
+    padding-left: 20%;
+}
+
+.asesora-area1 form{
+    grid-area: forma;
+}
+
+.asesora-area1 h3{
+    text-align: left;
+    padding: 1em 4em;
+}
+
+.asesora-area1 iframe{
+    grid-area: ubicacion;
+    height: 30em;
+    width: 100%;
+    padding-left: 5em;
+    padding-bottom: 2em;
+
+}
+
+.asesora-forma{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.asesora-forma textarea,
+.asesora-forma input{
+    height: 2.5em;
+    width: 80%;
+    border-radius: 1em;
+    border-color: hsl(214, 80%, 80%);
+    border-width: 1px;
+    padding: 0 1em;
+}
+
+.asesora-forma span{
+    font-weight: 700;
+}
+
+.asesora-forma textarea{
+    height: 10em;
+    font-family: inherit;
+    resize: none;
+    overflow-y: scroll;
+    padding: .5em 1em;
+}
+
+#asesora-enviar input{
+    background-color: var(--color-dark-letra);
+    color: white;
+    border-radius: .3em;
+    width: 30%;
+}
+#asesora-enviar input:hover{
+    background-color: hsl(198, 100%, 27%);
+}
+
+.datos-ubicacion{
+    grid-area: datos;
+    list-style: none;
+    padding-left: 2em;
+}
+.datos-ubicacion li{
+    padding-bottom: 1em;
+}
+.datos-ubicacion bold{
+    font-weight: 700;
+}
