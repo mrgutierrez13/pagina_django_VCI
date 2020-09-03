@@ -96,11 +96,10 @@ class Evento(models.Model):
         """String que representa el boletin"""
         return self.nombre
 
-
 class Departamento(models.Model):
     """Modelo de los departamentos de Bolivia"""
     nombre = models.CharField(max_length=10)
-
+        
     def __str__(self):
         """String que nombra el departamento"""
         return self.nombre
@@ -176,6 +175,7 @@ class Proveedor(models.Model):
     municipio = models.ForeignKey('Municipio', on_delete=models.CASCADE)
     zona = models.CharField(max_length=100)
     domicilio = models.CharField(max_length=100)
+
 
     class Meta:
         verbose_name = 'Proveedor'

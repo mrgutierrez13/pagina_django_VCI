@@ -1,1 +1,0 @@
-web: gunicorn paginaVCI.wsgi --log-file -
