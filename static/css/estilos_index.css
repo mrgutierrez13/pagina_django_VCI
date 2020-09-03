@@ -1,29 +1,91 @@
 /*===========
-  SERVICIOS
+  BANNER
 ===========*/
-
 /*
-@media screen and (min-width: 73rem) {
-    html {
-        scroll-snap-type: y mandatory;
-    }
-    .menu-navegacion-mobil {
-        scroll-snap-align: start;
-    }
-    .contenido>div {
-        scroll-snap-align: center;
-    }
-    #index-libros {
-        scroll-snap-align: none;
-    }
-    .index-libros-seccion {
-        scroll-snap-align: center;
-    }
-    footer {
-        scroll-snap-align: end;
-    }
+.loading {
+    background: transparent url('../images/spinner-icon.gif') center no-repeat;
 }
 */
+#banner-pagina{
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background: unset;
+    height: unset;
+}
+
+#banner-pagina > .contenedor-titulo{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    z-index: 11;
+    transform: translateX(-4em);
+    opacity: 0;
+    transition: opacity .8s ease-in, transform .8s ease-in;
+}
+
+#banner-pagina > .contenedor-titulo.efecto{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#banner-pagina .titulo, #banner-pagina .subtitulo {
+    text-shadow: 0 1px 1px black;
+    color: hsl(234, 57%, 93%);
+}
+
+#banner-pagina .titulo {
+    font-size: 6rem;
+}
+
+#banner-pagina > .contenedor-logos{
+    position: absolute;
+    bottom: 20%;
+    right: 0%;
+    z-index: 11;
+    transform: translateX(4em);
+    opacity: 0;
+    transition: opacity .2s ease-in, transform .2s ease-in;
+}
+#banner-pagina > .contenedor-logos.efecto{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#banner-pagina > div {
+    height: unset;
+    width: unset;
+    padding: 0;
+}
+
+#banner-pagina > .slider-item {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    opacity: 0;
+    transition: 1s left ease, 1s opacity ease
+}
+
+#banner-pagina > .slider-item.close {
+    opacity: 0;
+    left: 100%
+}
+
+#banner-pagina > .slider-item.show {
+    z-index: 10;
+    opacity: 1;
+    left: 0
+}
+
+#banner-pagina > #background {
+	height: 22em;
+}
+
+
+/*===========
+  SERVICIOS
+===========*/
 
 .index-servicios {
     padding-top: 3em;

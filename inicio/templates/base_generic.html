@@ -139,6 +139,7 @@
             <button type="submit"><img src="{% static 'images/buscar.svg' %}"></button>
         </nav>
 
+        {% block banner %}
         <h1 id="banner-pagina">
             <div>
                 <div class="titulo">Viceministerio de Comercio Interno</div>
@@ -147,6 +148,7 @@
             <img id="logo-ministerio" src="{% static 'images/ministerio_logo.png' %}" alt="logo-ministerio">
             <img id="logo-pais" src="{% static 'images/bolivia_logo.png' %}" alt="logo-pais">
         </h1>
+        {% endblock %}
 
         {% block contenido %}{% endblock %}
 

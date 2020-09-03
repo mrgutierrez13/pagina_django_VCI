@@ -5,6 +5,33 @@
 <link rel="stylesheet" href="{% static 'css/estilos_index.css' %}">
 {% endblock %}
 
+{% block banner %}
+<h1 id="banner-pagina">
+    <div class="contenedor-titulo">
+        <div class="titulo">Viceministerio de Comercio Interno</div>
+        <div class="subtitulo">El portal del comercio, logística, exportaciones e industria</div>
+    </div>
+    <div class="slider-item">
+        <img class="loading" src="{% static 'images/imagen1_quinua.jpg' %}">
+    </div>
+    <div class="slider-item">
+        <img class="loading" src="{% static 'images/imagen2_azucar.jpg' %}">
+    </div>
+    <div class="slider-item">
+        <img class="loading" src="{% static 'images/imagen3_papa.jpg' %}">
+    </div>
+    <div class="slider-item">
+        <img class="loading" src="{% static 'images/imagen4_motoyoe.jpg' %}">
+    </div>
+    <div id="background"></div>
+
+    <div class="contenedor-logos">
+        <img id="logo-ministerio" src="{% static 'images/ministerio_logo.png' %}" alt="logo-ministerio">
+        <img id="logo-pais" src="{% static 'images/bolivia_logo.png' %}" alt="logo-pais">
+    </div>
+</h1>
+{% endblock %}
+
 {% block contenido %}
 <div class="modal" id="modal">
     <div class="modal-backdrop" id="close-ext"></div>
@@ -12,8 +39,8 @@
         <button class="modal-close" id="close">
             <span class="sr-only">cerrar</span>
         </button>
-        <a class="modal-noticia" href="{{ noticia.enlace }}" target="_blank"
-            rel="noopener noreferrer"><img src="{{ MEDIA_URL }}{{ noticia.banner }}"></a>
+        <a class="modal-noticia" href="{{ noticia.enlace }}" target="_blank" rel="noopener noreferrer"><img
+                src="{{ MEDIA_URL }}{{ noticia.banner }}"></a>
     </div>
 </div>
 <div class="index-servicios" id="index-servicios">
@@ -108,18 +135,90 @@
 </script>
 
 <script>
-    const button = document.getElementById('close');
-    const cerrar = document.getElementById('close-ext');
-    const modal = document.getElementById('modal');
-
-    button.addEventListener('click', function (event) {
-        event.preventDefault();
-        modal.style.display = 'none';
-    });
-
-    cerrar.addEventListener('click', function (event) {
-        event.preventDefault();
-        modal.style.display = 'none';
-    });
+    "use strict"
+    const slider = document.querySelector("#banner-pagina");
+    if (slider) {
+        let e = slider.querySelectorAll(".slider-item");
+        const t = e.length;
+        let l, i = 0;
+        const c = (l) => {
+            0 == l
+                ? (e[t - 1].classList.remove("show"),
+                    e[t - 1].classList.add("close"))
+                : (e[l - 1].classList.remove("show"),
+                    e[l - 1].classList.add("close")),
+                l == t - 1
+                    ? e[0].classList.remove("close")
+                    : e[l + 1].classList.remove("close"),
+                e[l].classList.add("show");
+        },
+            r = (l) => {
+                0 == l
+                    ? (e[t - 1].classList.remove("show"),
+                        e[t - 1].classList.add("close"))
+                    : (e[l - 1].classList.remove("show"),
+                        e[l - 1].classList.add("close")),
+                    l == t - 1
+                        ? e[0].classList.remove("close")
+                        : e[l + 1].classList.remove("close"),
+                    l < t - 1
+                        ? (e[l + 1].classList.remove("show"))
+                        : (e[0].classList.remove("show")),
+                    e[l].classList.add("show");
+            };
+        function startSlideShow() {
+            l = setInterval(() => {
+                nextSliderImage();
+            }, 6000);
+        }
+        function nextSliderImage() {
+            i++, i == t && (i = 0), c(i), clearInterval(l), startSlideShow();
+        }
+        function previousSliderImage() {
+            i--, -1 == i && (i = t - 1), r(i), clearInterval(l), startSlideShow();
+        }
+        c(i),
+            startSlideShow();
+    }
 </script>
+
+<script>
+    "use strict"
+    const titulo = document.querySelector(".contenedor-titulo");
+    const logos = document.querySelector(".contenedor-logos");
+    const modal = document.querySelector(".modal-body");
+    const backdrop = document.querySelector(".modal-backdrop");
+
+
+    window.onload = function () {
+        setInterval(() => { mover(titulo); }, 500);
+        setInterval(() => { mover(logos); }, 2000);
+        setInterval(() => { mostrar(modal); }, 7000);
+        setInterval(() => { mostrar(backdrop); }, 7000);
+    };
+
+    function mover(b) {
+        b.classList.add("efecto");
+    }
+
+    function mostrar(e) {
+        e.classList.add("mostrado");
+
+        const button = document.getElementById('close');
+        const cerrar = document.getElementById('close-ext');
+        const modal = document.getElementById('modal');
+
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+            modal.style.display = 'none';
+        });
+
+        cerrar.addEventListener('click', function (event) {
+            event.preventDefault();
+            modal.style.display = 'none';
+        });
+    }
+
+</script>
+
 {% endblock %}

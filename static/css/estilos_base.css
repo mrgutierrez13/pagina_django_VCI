@@ -618,18 +618,11 @@ footer {
 }
 
 @media screen and (min-width: 70rem) {
-    .modal {
+
+    .modal{
         display: block;
     }
-    .modal-backdrop {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: hsla(0, 0%, 0%, 0.5);
-        z-index: 3;
-    }
+
     .modal-body {
         position: fixed;
         top: 10%;
@@ -640,6 +633,29 @@ footer {
         z-index: 4;
         border: 3px solid hsl(0, 0%, 50%);
         border-radius: .5em;
+        opacity: 0;
+        transform: translateY(-30em);
+        transition: opacity .2s ease-in, transform .2s ease-in;
+    }
+
+    .modal-body.mostrado {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: hsla(0, 0%, 0%, 0.5);
+        z-index: 3;
+        opacity: 0;
+        transition: opacity .2s ease-in;
+    }
+    .modal-backdrop.mostrado {
+        opacity: 1;
     }
     .modal-close {
         position: absolute;
