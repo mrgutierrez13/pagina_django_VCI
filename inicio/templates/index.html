@@ -13,16 +13,32 @@
     </div>
     <div id="contenedor-slides">
         <div class="slider-item">
-            <img class="loading" src="{% static 'images/imagen1_quinua.jpg' %}">
+            <picture>
+                <source media="(min-width: 720px)" srcset="{% static 'images/imagen1_quinua.jpg' %}">
+                <source media="(max-width: 719px)" srcset="{% static 'images/blank.gif' %}" sizes="100%">
+                <img src="{% static 'images/imagen1_quinua.jpg' %}" alt="slide-quinua">
+             </picture>
         </div>
         <div class="slider-item">
-            <img class="loading" src="{% static 'images/imagen2_azucar.jpg' %}">
+            <picture>
+                <source media="(min-width: 720px)" srcset="{% static 'images/imagen2_azucar.jpg' %}">
+                <source media="(max-width: 719px)" srcset="{% static 'images/blank.gif' %}" sizes="100%">
+                <img src="{% static 'images/imagen2_azucar.jpg' %}" alt="slider-azucar">
+             </picture>
         </div>
         <div class="slider-item">
-            <img class="loading" src="{% static 'images/imagen3_papa.jpg' %}">
+            <picture>
+                <source media="(min-width: 720px)" srcset="{% static 'images/imagen3_papa.jpg' %}">
+                <source media="(max-width: 719px)" srcset="{% static 'images/blank.gif' %}" sizes="100%">
+                <img src="{% static 'images/imagen3_papa.jpg' %}" alt="slider-papa">
+             </picture>
         </div>
         <div class="slider-item">
-            <img class="loading" src="{% static 'images/imagen4_motoyoe.jpg' %}">
+            <picture>
+                <source media="(min-width: 720px)" srcset="{% static 'images/imagen4_motoyoe.jpg' %}">
+                <source media="(max-width: 719px)" srcset="{% static 'images/blank.gif' %}" sizes="100%">
+                <img src="{% static 'images/imagen4_motoyoe.jpg' %}" alt="slide-motoyoe">
+             </picture>
         </div>
         <div id="background"></div>
     </div>    
@@ -41,8 +57,13 @@
         <button class="modal-close" id="close">
             <span class="sr-only">cerrar</span>
         </button>
-        <a class="modal-noticia" href="{{ noticia.enlace }}" target="_blank" rel="noopener noreferrer"><img
-                src="{{ MEDIA_URL }}{{ noticia.banner }}"></a>
+        <a class="modal-noticia" href="{{ noticia.enlace }}" target="_blank" rel="noopener noreferrer">
+            <picture>
+                <source media="(min-width: 720px)" srcset="{{ MEDIA_URL }}{{ noticia.banner }}">
+                <source media="(max-width: 719px)" srcset="{% static 'images/blank.gif' %}" sizes="100%">
+                <img src="{{ MEDIA_URL }}{{ noticia.banner }}" alt="slide-quinua">
+             </picture>
+        </a>
     </div>
 </div>
 <div class="index-servicios" id="index-servicios">
@@ -66,7 +87,7 @@
 <div class="index-libros" id="index-libros">
     {% for libro in libros %}
     <div class="index-libros-seccion" style="background-color: {{ libro.color }};">
-        <a href="{{ libro.get_absolute_url }}">
+        <a href="{{ MEDIA_URL }}{{ libro.archivo }}" target="_blank" rel="noopener noreferrer">
             <img src="{{ MEDIA_URL }}{{ libro.portada }}">
         </a>
         <div class="index-libros-explicacion">

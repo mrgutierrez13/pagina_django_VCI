@@ -341,19 +341,19 @@ BANNER DE LA PAGINA
 
 #banner-pagina {
     justify-content: space-between;
-    height: 10em;
-    background: url("../images/banner_campo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 10em;    
     position: relative;
+    margin-bottom: 1em;
 }
 
 #banner-pagina .titulo {
     font-family: var(--fuente-serif);
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
     letter-spacing: -.5px;
-    line-height: .9em;
+    line-height: 1em;   
+    text-align: center;
+    padding-top: .5em; 
 }
 
 #banner-pagina .titulo, #banner-pagina .subtitulo {
@@ -393,6 +393,17 @@ BANNER DE LA PAGINA
 }
 
 @media screen and (min-width: 70rem) {
+    #banner-pagina{
+        background: url("../images/banner_campo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+    }
+    #banner-pagina .titulo {
+        font-size: 4rem;
+        line-height: .9em;
+        text-align: unset;       
+    }
     #banner-pagina .subtitulo {
         display: block;
         font-family: var(--fuente-sans);

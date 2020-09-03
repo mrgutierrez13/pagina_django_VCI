@@ -29,7 +29,7 @@ class NormativaListView(generic.ListView):
 
 def guia_request(request):
     """Vista para mostrar la guia del exportador"""
-    guia = Libro.objects.filter(titulo='GUIA DE EXPORTACIONES')
+    guia = Libro.objects.filter(titulo='GUIA PARA LA EXPORTACIÓN')
 
     context = {
         'guia': guia

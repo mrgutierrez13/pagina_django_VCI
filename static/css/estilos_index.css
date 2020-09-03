@@ -1,102 +1,102 @@
 /*===========
   BANNER
 ===========*/
+
 /*
 .loading {
     background: transparent url('../images/spinner-icon.gif') center no-repeat;
 }
 */
-#banner-pagina{
-    z-index: 0;
-    background: unset;
-    height: unset;
-    background-color: inherit;
-    transition: background-color .1s ease-in;
+
+.slider-item>picture {
+    display: none;
 }
 
-#banner-pagina.efecto{
-    background-color: hsl(240, 10%, 50%);
+@media screen and (min-width: 70rem) {
+    #banner-pagina {
+        z-index: 0;
+        background: unset;
+        height: unset;
+        background-color: inherit;
+        transition: background-color .1s ease-in;
+    }
+    #banner-pagina.efecto {
+        background-color: hsl(240, 10%, 50%);
+    }
+    #contenedor-slides {
+        position: relative;
+        overflow: hidden;
+        opacity: 1;
+        transition: opacity 1s ease-in;
+    }
+    #contenedor-slides.efecto {
+        opacity: .8;
+    }
+    #banner-pagina>.contenedor-titulo {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        z-index: 11;
+        transform: translateX(-4em);
+        opacity: 0;
+        transition: opacity .8s ease-in, transform .8s ease-in;
+    }
+    #banner-pagina>.contenedor-titulo.efecto {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #banner-pagina .titulo, #banner-pagina .subtitulo {
+        text-shadow: 0 1px 1px black;
+        color: white;
+        font-weight: 600;
+    }
+    #banner-pagina .titulo {
+        font-size: 6rem;
+    }
+    #banner-pagina>.contenedor-logos {
+        position: absolute;
+        bottom: 20%;
+        right: 0%;
+        z-index: 11;
+        transform: translateX(4em);
+        opacity: 0;
+        transition: opacity .2s ease-in, transform .2s ease-in;
+    }
+    #banner-pagina>.contenedor-logos.efecto {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #banner-pagina>div {
+        height: unset;
+        width: unset;
+        padding: 0;
+    }
+    #contenedor-slides>.slider-item {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        opacity: 0;
+        transition: left 1s ease, 1s opacity ease;
+    }
+    #contenedor-slides>.slider-item.close {
+        opacity: 0;
+        left: 100%
+    }
+    #contenedor-slides>.slider-item.show {
+        z-index: 10;
+        opacity: 1;
+        left: 0
+    }
+    #contenedor-slides>#background {
+        height: 22em;
+    }
+    
+    .slider-item>picture {
+        display: unset;
+    }
+    
 }
-
-#contenedor-slides{
-    position: relative;
-    overflow: hidden;    
-    opacity: 1;
-    transition: opacity 1s ease-in;
-}
-
-#contenedor-slides.efecto {
-    opacity: .8;
-}
-
-#banner-pagina > .contenedor-titulo{
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    z-index: 11;
-    transform: translateX(-4em);
-    opacity: 0;
-    transition: opacity .8s ease-in, transform .8s ease-in;
-}
-
-#banner-pagina > .contenedor-titulo.efecto{
-    transform: translateX(0);
-    opacity: 1;
-}
-
-#banner-pagina .titulo, #banner-pagina .subtitulo {
-    text-shadow: 0 1px 1px black;
-    color: white;
-    font-weight: 600;
-}
-
-#banner-pagina .titulo {
-    font-size: 6rem;
-}
-
-#banner-pagina > .contenedor-logos{
-    position: absolute;
-    bottom: 20%;
-    right: 0%;
-    z-index: 11;
-    transform: translateX(4em);
-    opacity: 0;
-    transition: opacity .2s ease-in, transform .2s ease-in;
-}
-#banner-pagina > .contenedor-logos.efecto{
-    transform: translateX(0);
-    opacity: 1;
-}
-
-#banner-pagina > div {
-    height: unset;
-    width: unset;
-    padding: 0;
-}
-
-#contenedor-slides > .slider-item {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    left: -100%;
-    opacity: 0;
-    transition: left 1s ease, 1s opacity ease;
-}
-
-#contenedor-slides > .slider-item.close {
-    opacity: 0;
-    left: 100%
-}
-#contenedor-slides > .slider-item.show {
-    z-index: 10;
-    opacity: 1;
-    left: 0
-}
-
-#contenedor-slides > #background {
-	height: 22em;
-}
-
 
 /*===========
   SERVICIOS
@@ -357,13 +357,13 @@
     min-width: 18em;
 }
 
-.index-libros-explicacion>p,
-.index-libros-explicacion>h2{
+.index-libros-explicacion>p, .index-libros-explicacion>h2 {
     text-align: justify;
     margin-bottom: 2em;
     font-family: var(--fuente-sans);
 }
-.index-libros-explicacion>p{
+
+.index-libros-explicacion>p {
     font-size: 1.8rem;
 }
 
@@ -421,7 +421,7 @@
     flex-direction: column;
     font-size: inherit;
     margin: auto;
-    overflow: hidden;    
+    overflow: hidden;
     row-gap: .5em;
     margin-top: 0;
     max-height: 0;

@@ -9,7 +9,7 @@
 <div class="index-libros" id="index-libros">
     {% for libro in guia %}
     <div class="index-libros-seccion" style="background-color: {{ libro.color }};">
-        <a href="{{ libro.get_absolute_url }}">
+        <a href="{{ MEDIA_URL }}{{ libro.archivo }}" target="_blank" rel="noopener noreferrer">
             <img src="{{ MEDIA_URL }}{{ libro.portada }}">
         </a>
         <div class="index-libros-explicacion">

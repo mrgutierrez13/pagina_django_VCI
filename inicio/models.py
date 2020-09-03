@@ -22,10 +22,10 @@ from colorfield.fields import ColorField
 
 class Servicio(models.Model):
     """Modelo representando la informacion de un servicio a ser mostrado en la pagina de inicio"""
-    nombre = models.CharField(max_length=200)
-    descripcion = models.TextField(max_length=1000,
+    nombre = models.CharField(max_length=50)
+    descripcion = models.TextField(max_length=200,
                                    help_text='Escribe la descripcion del servicio que se vera en la pagina de inicio...')
-    descripcion_breve = models.CharField(max_length=200,
+    descripcion_breve = models.CharField(max_length=50,
                                          help_text='Escribe la descripcion del servicio que se vera en el menu de navegacion...')
     icono = models.FileField(upload_to='images/', null=True,
                              verbose_name="", help_text='Ingresa una imagen formato SVG')
@@ -34,16 +34,18 @@ class Servicio(models.Model):
         """String que representa el servicio"""
         return self.nombre
 
-
 class Libro(models.Model):
     """Modelo de un libro importante para mostrar en la pagina de inicio"""
-    titulo = models.CharField(max_length=200)
-    subtitulo = models.CharField(max_length=200)
+    titulo = models.CharField(max_length=50)
+    subtitulo = models.CharField(max_length=100)
     color = ColorField(default='#FF0000')
     descripcion = models.TextField(max_length=1000,
                                    help_text='Escribe la descripcion de este libro que se vera en la pagina de inicio...')
     portada = models.ImageField(
-        upload_to='images/', null=True, verbose_name="", help_text='Ingresa una imagen')
+        upload_to='images/', verbose_name="", help_text='Ingresa una imagen')
+    
+    archivo = models.FileField(
+        upload_to='pdf/', verbose_name="", help_text='Ingresa un archivo PDF.')
 
     def __str__(self):
         """String que representa el servicio"""
