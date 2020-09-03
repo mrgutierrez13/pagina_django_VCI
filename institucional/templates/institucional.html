@@ -7,7 +7,8 @@
 
 {% block contenido %}
 <h1 class="titulo-principal-contenido">VICEMINISTERIO DE COMERCIO INTERNO</h1>
-<div class="institucion-texto">
+<h2 class="insti-sub">VISIÓN ESTRATEGICA</h2>
+<div class="vision-estrategica">    
     <div id="quien">
         <h2>¿Quienes somos?</h2>
         <p>{% for texto in textos %}
@@ -28,11 +29,20 @@
         <h2>Objetivos</h2>
         <p>{% for texto in textos %}
             {% if texto.secciones == 2 %}
-            {{ texto.contenido }}
+            {{ texto.contenido|linebreaksbr }}
             {% endif %}
             {% endfor %}</p>
     </div>
 </div>
+<h2 class="insti-sub">EXPLICACIÓN DE LA ESTRUCTURA DEL VICEMINISTERIO</h2>
+<div id="organizacion">    
+    <p>{% for texto in textos %}
+        {% if texto.secciones == 3 %}
+        {{ texto.contenido|linebreaksbr }}
+        {% endif %}
+        {% endfor %}</p>
+</div>
+
 
 <h2 class="titulo-organigrama">Organización</h2>
 <div class="contenedor-perfiles seccion1">
@@ -44,7 +54,7 @@
     </div>
     {% endfor %}
 </div>
-<hr/>
+<hr />
 <div class="contenedor-perfiles seccion2">
     {% for funcionario in funcionarios2 %}
     <div class="perfil">
@@ -54,7 +64,7 @@
     </div>
     {% endfor %}
 </div>
-<hr/>
+<hr />
 <div class="contenedor-perfiles seccion3">
     {% for funcionario in funcionarios3 %}
     <div class="perfil">

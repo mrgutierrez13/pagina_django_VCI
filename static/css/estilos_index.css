@@ -7,11 +7,26 @@
 }
 */
 #banner-pagina{
-    position: relative;
-    overflow: hidden;
     z-index: 0;
     background: unset;
     height: unset;
+    background-color: inherit;
+    transition: background-color .1s ease-in;
+}
+
+#banner-pagina.efecto{
+    background-color: hsl(240, 10%, 50%);
+}
+
+#contenedor-slides{
+    position: relative;
+    overflow: hidden;    
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+#contenedor-slides.efecto {
+    opacity: .8;
 }
 
 #banner-pagina > .contenedor-titulo{
@@ -31,7 +46,8 @@
 
 #banner-pagina .titulo, #banner-pagina .subtitulo {
     text-shadow: 0 1px 1px black;
-    color: hsl(234, 57%, 93%);
+    color: white;
+    font-weight: 600;
 }
 
 #banner-pagina .titulo {
@@ -58,27 +74,26 @@
     padding: 0;
 }
 
-#banner-pagina > .slider-item {
+#contenedor-slides > .slider-item {
     display: flex;
     position: absolute;
     width: 100%;
     left: -100%;
     opacity: 0;
-    transition: 1s left ease, 1s opacity ease
+    transition: left 1s ease, 1s opacity ease;
 }
 
-#banner-pagina > .slider-item.close {
+#contenedor-slides > .slider-item.close {
     opacity: 0;
     left: 100%
 }
-
-#banner-pagina > .slider-item.show {
+#contenedor-slides > .slider-item.show {
     z-index: 10;
     opacity: 1;
     left: 0
 }
 
-#banner-pagina > #background {
+#contenedor-slides > #background {
 	height: 22em;
 }
 
@@ -530,7 +545,7 @@
     grid-gap: .5em;
     justify-content: space-evenly;
     justify-items: center;
-    padding: 0 2em 2em 2em;
+    padding: 0 2em 4em 2em;
 }
 
 .contenedor-entidades a {

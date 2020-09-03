@@ -1,31 +1,63 @@
 .titulo-organigrama {
     text-align: center;
     padding-bottom: 1em;
+    padding-top: 2em;
+    font-size: 2.9rem;
 }
 
-.institucion-texto {
+.insti-sub{
+    display: flex;
+    text-align: start;
+    padding: .5em;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 2.1rem;
+    background-color: var(--color-dark-letra);
+    color: white;
+    width: fit-content;
+    border-radius: 1em 0 1em 0;
+    box-shadow: 2px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+@media screen and (min-width: 70rem) {
+    .insti-sub{
+        width: max-content;
+        margin-right: 0;
+    }
+}
+
+.vision-estrategica {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
     grid-auto-rows: max-content;
-    padding: 1em 2em;
+    margin: 1em 5em;
+    margin-bottom: 5em;
+    gap: 1em;    
 }
 
-.institucion-texto>div {
+.vision-estrategica>div, #organizacion {
     padding: 1em;
     font-size: 1.6rem;
+    padding-left: 1em;
+    padding-bottom: 2em;
+    background-color: white;
+    font-size: 2rem;
+    border-radius: .7em;
+    font-family: var(--fuente-sans);
+    box-shadow: 2px 2px hsla(0, 0%, 0%, 0.2);
 }
 
-.institucion-texto>div h2 {
+.vision-estrategica>div h2 {
     padding-bottom: 1em;
 }
 
 @media screen and (min-width: 100rem) {
-    .institucion-texto>div {
-        padding: 1em 2em;
+    .vision-estrategica>div {
+        padding: 1em 2em;        
     }
 }
 
-.institucion-texto>div p, #objetivos ol {
+.vision-estrategica>div p, #objetivos ol {
     font-size: 1.5rem;
     text-align: justify;
     padding-left: .5em;
@@ -37,6 +69,18 @@
 
 #objetivos ol>li {
     padding-bottom: 1em;
+}
+
+#organizacion{
+    margin: 1em 3em;
+    padding: .5em;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 70rem) {
+    #organizacion{
+        padding: 2em 5em;
+    }
 }
 
 /*============

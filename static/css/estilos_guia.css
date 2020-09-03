@@ -1,0 +1,61 @@
+.index-libros-seccion {
+    display: flex;
+    color: white;
+    padding: 6em 1em;
+    font-size: 1.4rem;
+}
+
+.index-libros-seccion>a {
+    flex: 1;
+    line-height: 0;
+    margin: 0 auto;
+    max-width: 21em;
+}
+
+@media screen and (min-width: 88.5rem) {
+    .index-libros-seccion {
+        padding: 6em 12em;
+    }
+    .index-libros-seccion>a {
+        margin: 0 3em;
+    }
+}
+
+.index-libros-seccion>a>img {
+    transform: translateY(0);
+    transition: transform .2s ease-out, filter .1s ease-out;
+    transition-delay: .1s;
+    min-width: 18em;
+    border-radius: .5em;
+    box-shadow: 2px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+.index-libros-seccion>a>img:hover {
+    transform: translateY(-.2em);
+    filter: brightness(105%);
+}
+
+.index-libros-explicacion {
+    flex: 2;
+    margin: auto 2em;
+    min-width: 18em;
+}
+
+.index-libros-explicacion>p,
+.index-libros-explicacion>h2{
+    text-align: justify;
+    margin-bottom: 2em;
+    font-family: var(--fuente-sans);
+}
+.index-libros-explicacion>p{
+    font-size: 1.8rem;
+}
+
+.index-libros-seccion:nth-child(odd) {
+    flex-wrap: wrap-reverse;
+}
+
+.index-libros-seccion:nth-child(even) {
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}

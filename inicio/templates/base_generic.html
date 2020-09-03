@@ -154,30 +154,6 @@
 
         <footer>
             <div class="footer-info">
-                <div id="footer-vci" class="footer-contacto">
-                    <h2>Viceministerio de Comercio Interno: </h2>
-                    <ul>
-                        <li>Oficina Central - La Paz</li>
-                        <li>Av. Camacho Nro 1488, Edificio Ex-Refo</li>
-                        <li>
-                            <bold>Teléfono: </bold>77796069
-                        </li>
-                        <li>
-                            <bold>Fax: </bold>2372057
-                        </li>
-                        <li>
-                            <bold>Email: </bold>vci.te.asesora@gmail.com
-                        </li>
-                    </ul>
-                    <div class="footer-contacto-redes">
-                        {% for red_enlace in redes_enlaces %}
-                        {% if red_enlace.institucion == 'viceministerio' %}
-                        <a href="{{ red_enlace.enlace }}" target="_blank" rel="noopener noreferrer">
-                            <img src="{{ MEDIA_URL }}{{ red_enlace.red.icono }}"></a>
-                        {% endif %}
-                        {% endfor %}
-                    </div>
-                </div>
                 <div id="footer-mdp" class="footer-contacto">
                     <h2>Ministerio de Desarrollo Productivo y Economía Plural: </h2>
                     <ul>
@@ -196,6 +172,30 @@
                     <div class="footer-contacto-redes">
                         {% for red_enlace in redes_enlaces %}
                         {% if red_enlace.institucion == 'ministerio' %}
+                        <a href="{{ red_enlace.enlace }}" target="_blank" rel="noopener noreferrer">
+                            <img src="{{ MEDIA_URL }}{{ red_enlace.red.icono }}"></a>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div id="footer-vci" class="footer-contacto">
+                    <h2>Viceministerio de Comercio Interno: </h2>
+                    <ul>
+                        <li>Oficina Central - La Paz</li>
+                        <li>Av. Camacho Nro 1488, Edificio Ex-Refo</li>
+                        <li>
+                            <bold>Teléfono: </bold>77796069
+                        </li>
+                        <li>
+                            <bold>Fax: </bold>2372057
+                        </li>
+                        <li>
+                            <bold>Email: </bold>vci.te.asesora@gmail.com
+                        </li>
+                    </ul>
+                    <div class="footer-contacto-redes">
+                        {% for red_enlace in redes_enlaces %}
+                        {% if red_enlace.institucion == 'viceministerio' %}
                         <a href="{{ red_enlace.enlace }}" target="_blank" rel="noopener noreferrer">
                             <img src="{{ MEDIA_URL }}{{ red_enlace.red.icono }}"></a>
                         {% endif %}

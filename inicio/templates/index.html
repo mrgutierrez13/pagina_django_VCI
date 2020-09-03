@@ -8,22 +8,24 @@
 {% block banner %}
 <h1 id="banner-pagina">
     <div class="contenedor-titulo">
-        <div class="titulo">Viceministerio de Comercio Interno</div>
+        <div class="titulo">VICEMINISTERIO DE COMERCIO INTERNO</div>
         <div class="subtitulo">El portal del comercio, logística, exportaciones e industria</div>
     </div>
-    <div class="slider-item">
-        <img class="loading" src="{% static 'images/imagen1_quinua.jpg' %}">
-    </div>
-    <div class="slider-item">
-        <img class="loading" src="{% static 'images/imagen2_azucar.jpg' %}">
-    </div>
-    <div class="slider-item">
-        <img class="loading" src="{% static 'images/imagen3_papa.jpg' %}">
-    </div>
-    <div class="slider-item">
-        <img class="loading" src="{% static 'images/imagen4_motoyoe.jpg' %}">
-    </div>
-    <div id="background"></div>
+    <div id="contenedor-slides">
+        <div class="slider-item">
+            <img class="loading" src="{% static 'images/imagen1_quinua.jpg' %}">
+        </div>
+        <div class="slider-item">
+            <img class="loading" src="{% static 'images/imagen2_azucar.jpg' %}">
+        </div>
+        <div class="slider-item">
+            <img class="loading" src="{% static 'images/imagen3_papa.jpg' %}">
+        </div>
+        <div class="slider-item">
+            <img class="loading" src="{% static 'images/imagen4_motoyoe.jpg' %}">
+        </div>
+        <div id="background"></div>
+    </div>    
 
     <div class="contenedor-logos">
         <img id="logo-ministerio" src="{% static 'images/ministerio_logo.png' %}" alt="logo-ministerio">
@@ -136,7 +138,7 @@
 
 <script>
     "use strict"
-    const slider = document.querySelector("#banner-pagina");
+    const slider = document.querySelector("#contenedor-slides");
     if (slider) {
         let e = slider.querySelectorAll(".slider-item");
         const t = e.length;
@@ -186,14 +188,20 @@
     "use strict"
     const titulo = document.querySelector(".contenedor-titulo");
     const logos = document.querySelector(".contenedor-logos");
-    const modal = document.querySelector(".modal-body");
+    const modal = document.querySelector(".modal");
+    const modal_imagen = document.querySelector(".modal-body");
     const backdrop = document.querySelector(".modal-backdrop");
+    const slides = document.querySelector("#contenedor-slides");
+    const banner_bg = document.querySelector("#banner-pagina");
 
 
     window.onload = function () {
         setInterval(() => { mover(titulo); }, 500);
         setInterval(() => { mover(logos); }, 2000);
-        setInterval(() => { mostrar(modal); }, 7000);
+        setInterval(() => { mover(banner_bg); }, 2800);
+        setInterval(() => { mover(slides); }, 3000);
+        setInterval(() => { mostrar(modal); }, 6500);
+        setInterval(() => { mostrar(modal_imagen); }, 7000);
         setInterval(() => { mostrar(backdrop); }, 7000);
     };
 

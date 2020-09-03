@@ -14,11 +14,15 @@ class Texto(models.Model):
     """Modelo representando el texto a desplegar en la pagina institucional"""
     contenido = models.TextField(max_length=1000,
                                  help_text='El texto aparecera tal cual en la pagina')
+
     class Seccion(models.IntegerChoices):
         QUIENES = 0, _('¿Quienes Somos?')
         MISION = 1, _('Mision')
         OBJETIVOS = 2, _('Objetivos')
+        ORGANIZACION = 3, _('ORGANIZACIÓN')
+
     secciones = models.IntegerField(choices=Seccion.choices)
+
     def __str__(self):
         """String que representa el servicio"""
         return self.get_secciones_display()
@@ -28,8 +32,8 @@ class FuncionarioPublico(models.Model):
     """Modelo representando la informacion de un funcionario publico en la pagina Institucional"""
     nombre_completo = models.CharField(max_length=200,
                                        help_text='El nombre que aparecera tal cual en la pagina')
-    cargo = models.CharField(max_length=200,
-                             help_text='El cargo aparecera tal cual en la pagina', default='miembro')
+    cargo = models.CharField(max_length=200, default='miembro',
+                             help_text='El cargo aparecera tal cual en la pagina')
     NIVELES = (
         ('N1', "NIVEL 1"),
         ('N2', "NIVEL 2"),
@@ -43,6 +47,7 @@ class FuncionarioPublico(models.Model):
     )
     foto = models.FileField(upload_to='images/', null=True, verbose_name="",
                             help_text='Ingresa una foto del funcionario publico')
+
     class Meta:
         verbose_name = 'Funcionario Público'
         verbose_name_plural = 'Funcionarios Públicos'
