@@ -474,6 +474,7 @@
     .index-enlaces-contenedor {
         padding: 0 3em;
         --ancho-enlaces: 40%;
+        min-height: 30em;
     }
     .index-enlaces-contenedor::after, .index-enlaces-lista {
         position: absolute;

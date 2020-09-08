@@ -9,6 +9,9 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
+# CONSEJO: PARA UTILIZAR MYSQL Y DJANGO
+# https://www.digitalocean.com/community/tutorials/how-to-create-a-django-app-and-connect-it-to-a-database
+
 
 from pathlib import Path
 import os
@@ -26,7 +29,7 @@ SECRET_KEY = 'h-#anv$8knwx%=pv!x4_xctog!_*ayp29lb#%qrh90(%idtm=i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -85,8 +88,10 @@ WSGI_APPLICATION = 'paginaVCI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'read_default_file': 'C:\\my.cnf',  #EDITAR ESTO PARA EL SERVIDOR MYSQL
+        },
     }
 }
 
