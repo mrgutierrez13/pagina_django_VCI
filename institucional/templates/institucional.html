@@ -11,36 +11,20 @@
 <div class="vision-estrategica">    
     <div id="quien">
         <h2>¿Quienes somos?</h2>
-        <p>{% for texto in textos %}
-            {% if texto.secciones == 0 %}
-            {{ texto.contenido }}
-            {% endif %}
-            {% endfor %}</p>
+        <p>{{ quienes.contenido }}</p>
     </div>
     <div id="mision">
         <h2>Mision</h2>
-        <p>{% for texto in textos %}
-            {% if texto.secciones == 1 %}
-            {{ texto.contenido }}
-            {% endif %}
-            {% endfor %}</p>
+        <p>{{ mision.contenido }}</p>
     </div>
     <div id="objetivos">
         <h2>Objetivos</h2>
-        <p>{% for texto in textos %}
-            {% if texto.secciones == 2 %}
-            {{ texto.contenido|linebreaksbr }}
-            {% endif %}
-            {% endfor %}</p>
+        <p>{{ objetivos.contenido|linebreaks }}</p>
     </div>
 </div>
 <h2 class="insti-sub">EXPLICACIÓN DE LA ESTRUCTURA DEL VICEMINISTERIO</h2>
 <div id="organizacion">    
-    <p>{% for texto in textos %}
-        {% if texto.secciones == 3 %}
-        {{ texto.contenido|linebreaksbr }}
-        {% endif %}
-        {% endfor %}</p>
+    <p>{{ organizacion.contenido|linebreaks }}</p>
 </div>
 
 

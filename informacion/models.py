@@ -9,10 +9,10 @@ from django.db import models
 class Boletin(models.Model):
     """Modelo representando un boletin a subir a la pagina"""
     titulo = models.CharField(max_length=200)
-    portada = models.ImageField(upload_to='images/', null=True, verbose_name="",
+    portada = models.ImageField(upload_to='images/', verbose_name="Portada del Boletin",
                                 help_text='Ingresa la imagen que representara el boletin')
     archivo = models.FileField(
-        upload_to='pdf/', null=True, verbose_name="", help_text='Ingresa un archivo PDF.')
+        upload_to='pdf/', verbose_name="Documento PDF", help_text='Ingresa un archivo PDF.')
 
     class Meta:
         verbose_name = 'Boletin'
@@ -25,7 +25,7 @@ class Boletin(models.Model):
 
 class TipoNorma(models.Model):
     """Modelo representando una nueva seccion para las normas"""
-    nombre_seccion = models.CharField(max_length=200, primary_key=True,
+    nombre_seccion = models.CharField(max_length=200, 
                                       help_text="Ingresa el nombre para una nueva seccion de NORMAS.")
 
     class Meta:
@@ -45,9 +45,9 @@ class Norma(models.Model):
     titulo = models.CharField(max_length=200)
     descripcion = models.TextField(max_length=1000)
     seccion_de_norma = models.ForeignKey(
-        'TipoNorma', on_delete=models.CASCADE, null=True)
-    archivo = models.FileField(upload_to='pdf/', null=True, blank=True,
-                               verbose_name="", help_text='Ingresa un archivo PDF.')
+        'TipoNorma', on_delete=models.CASCADE)
+    archivo = models.FileField(upload_to='pdf/', null=True, blank=True, verbose_name="Archivo PDF de la norma",
+                               help_text='Ingresa un archivo PDF.')
 
     def __str__(self):
         """String que representa la norma"""
@@ -96,10 +96,11 @@ class Evento(models.Model):
         """String que representa el boletin"""
         return self.nombre
 
+
 class Departamento(models.Model):
     """Modelo de los departamentos de Bolivia"""
     nombre = models.CharField(max_length=10)
-        
+
     def __str__(self):
         """String que nombra el departamento"""
         return self.nombre
@@ -175,7 +176,6 @@ class Proveedor(models.Model):
     municipio = models.ForeignKey('Municipio', on_delete=models.CASCADE)
     zona = models.CharField(max_length=100)
     domicilio = models.CharField(max_length=100)
-
 
     class Meta:
         verbose_name = 'Proveedor'

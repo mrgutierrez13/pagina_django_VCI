@@ -1,5 +1,4 @@
 from django.db import models
-from django.utils.translation import gettext as _
 
 # Create your models here.
 # SOLUCION ERROR PARA BARRA BAJA '_'
@@ -15,17 +14,23 @@ class Texto(models.Model):
     contenido = models.TextField(max_length=1000,
                                  help_text='El texto aparecera tal cual en la pagina')
 
-    class Seccion(models.IntegerChoices):
-        QUIENES = 0, _('¿Quienes Somos?')
-        MISION = 1, _('Mision')
-        OBJETIVOS = 2, _('Objetivos')
-        ORGANIZACION = 3, _('ORGANIZACIÓN')
+    SECCIONES = (
+        ('qui', "¿Quienes Somos?"),
+        ('mis', "Mision"),
+        ('obj', "Objetivos"),
+        ('org', "Organización"),
+    )
 
-    secciones = models.IntegerField(choices=Seccion.choices)
+    seccion = models.CharField(
+        max_length=3,
+        choices=SECCIONES,
+        default='qui',
+        help_text='Selecciona la sección de este texto',
+    )
 
     def __str__(self):
         """String que representa el servicio"""
-        return self.get_secciones_display()
+        return self.get_seccion_display()
 
 
 class FuncionarioPublico(models.Model):
@@ -39,15 +44,16 @@ class FuncionarioPublico(models.Model):
         ('N2', "NIVEL 2"),
         ('N3', "NIVEL 3"),
     )
+
     nivel = models.CharField(
         max_length=2,
         choices=NIVELES,
         default='N3',
         help_text='Selecciona el nivel en que se ubicara en la pagina',
     )
-    foto = models.FileField(upload_to='images/', null=True, verbose_name="",
-                            help_text='Ingresa una foto del funcionario publico')
 
+    foto = models.FileField(upload_to='images/', verbose_name="",
+                            help_text='Ingresa una foto del funcionario publico')
     class Meta:
         verbose_name = 'Funcionario Público'
         verbose_name_plural = 'Funcionarios Públicos'

@@ -29,10 +29,9 @@ class NormativaListView(generic.ListView):
 
 def guia_request(request):
     """Vista para mostrar la guia del exportador"""
-    guia = Libro.objects.filter(titulo='GUIA PARA LA EXPORTACIÓN')
 
     context = {
-        'guia': guia
+        'guia': Libro.objects.filter(id=1)
     }
     # Render the HTML template
     return render(request, 'guia_exportador.html', context=context)
