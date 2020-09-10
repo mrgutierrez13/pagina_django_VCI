@@ -1,0 +1,22 @@
+[
+	{
+		"id_seccion" : 1,
+		"descripcion" : "Bienes de Consumo"
+	},
+	{
+		"id_seccion" : 2,
+		"descripcion" : "Materias Primas y Productos Intermedios"
+	},
+	{
+		"id_seccion" : 3,
+		"descripcion" : "Bienes de Capital"
+	},
+	{
+		"id_seccion" : 4,
+		"descripcion" : "Diversos"
+	},
+	{
+		"id_seccion" : 5,
+		"descripcion" : "Efectos Personales"
+	}
+]

@@ -1,0 +1,187 @@
+[
+	{
+		"id_cuode" : "00",
+		"descripcion" : "ORO",
+		"seccion" : 4
+	},
+	{
+		"id_cuode" : "01",
+		"descripcion" : "DIVERSOS",
+		"seccion" : 4
+	},
+	{
+		"id_cuode" : "11",
+		"descripcion" : "PRODUCTOS ALIMENTICIOS PARA EL CONSUMO",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "12",
+		"descripcion" : "BEBIDAS",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "13",
+		"descripcion" : "TABACO",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "14",
+		"descripcion" : "PRODUCTOS FARMACEUTICOS Y DE TOCADOR",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "15",
+		"descripcion" : "VESTUARIO Y OTRAS CONFECCIONES TEXTILES",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "19",
+		"descripcion" : "OTROS BIENES DE CONSUMO NO DURADERO",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "21",
+		"descripcion" : "UTENSILIOS DOMESTICOS",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "22",
+		"descripcion" : "OBJETOS DE ADORNO, DE USO PERSONAL, INSTRUMENTOS MUSICALES Y OTROS",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "23",
+		"descripcion" : "MUEBLES Y OTRO EQUIPO PARA EL HOGAR",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "24",
+		"descripcion" : "MAQUINAS Y APARATOS DE USO DOMESTICO",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "25",
+		"descripcion" : "VEHÍCULOS DE TRANSPORTE PARTICULAR",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "29",
+		"descripcion" : "ARMAS Y EQUIPO MILITAR",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "31",
+		"descripcion" : "COMBUSTIBLES",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "32",
+		"descripcion" : "LUBRICANTES",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "33",
+		"descripcion" : "ELECTRICIDAD",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "41",
+		"descripcion" : "ALIMENTOS PARA ANIMALES",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "42",
+		"descripcion" : "OTRAS MATERIAS PRIMAS PARA LA AGRICULTURA",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "51",
+		"descripcion" : "PRODUCTOS ALIMENTICIOS PARA LA INDUSTRIA",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "52",
+		"descripcion" : "PRODUCTOS AGROPECUARIOS NO ALIMENTICIOS",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "53",
+		"descripcion" : "PRODUCTOS MINEROS",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "55",
+		"descripcion" : "PRODUCTOS QUIMICOS Y FARMACEUTICOS",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "61",
+		"descripcion" : "MATERIALES DE CONSTRUCCION",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "71",
+		"descripcion" : "MAQUINARIAS Y HERRAMIENTAS",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "72",
+		"descripcion" : "OTRO EQUIPO PARA LA AGRICULTURA",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "73",
+		"descripcion" : "MATERIAL DE TRANSPORTE Y TRACCIÓN",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "74",
+		"descripcion" : "OTROS BIENES DE CAPITAL PARA LA AGRICULTURA",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "81",
+		"descripcion" : "MAQUINAS Y APARATOS DE OFICINA, SERVICIO Y CIENTIFICOS",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "82",
+		"descripcion" : "HERRAMIENTAS",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "83",
+		"descripcion" : "PARTES Y ACCESORIOS DE MAQUINARIA INDUSTRIAL",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "84",
+		"descripcion" : "MAQUINARIA INDUSTRIAL",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "85",
+		"descripcion" : "OTRO EQUIPO FIJO",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "91",
+		"descripcion" : "PARTES Y ACCESORIOS DE EQUIPO DE TRANSPORTE",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "92",
+		"descripcion" : "EQUIPO RODANTE DE TRANSPORTE",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "93",
+		"descripcion" : "EQUIPO FIJO DE TRANSPORTE",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "XX",
+		"descripcion" : "EFECTOS PERSONALES",
+		"seccion" : 5
+	}
+]

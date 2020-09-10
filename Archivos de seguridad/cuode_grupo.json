@@ -1,0 +1,57 @@
+[
+	{
+		"id_cuode" : "0",
+		"descripcion" : "Diversos",
+		"seccion" : 4
+	},
+	{
+		"id_cuode" : "1",
+		"descripcion" : "Bienes de Consumo No Duradero",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "2",
+		"descripcion" : "Bienes de Consumo Duradero",
+		"seccion" : 1
+	},
+	{
+		"id_cuode" : "3",
+		"descripcion" : "Combustibles, Lubricantes y Productos Conexos",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "4",
+		"descripcion" : "Materias Primas y Productos Intermedios para la Agricultura",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "5",
+		"descripcion" : "Materias Primas y Productos Intermedio para la Industria",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "6",
+		"descripcion" : "Materiales de Construcción",
+		"seccion" : 2
+	},
+	{
+		"id_cuode" : "7",
+		"descripcion" : "Bienes de Capital para la Agricultura",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "8",
+		"descripcion" : "Bienes de Capital para la Industria",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "9",
+		"descripcion" : "Equipo de Transporte",
+		"seccion" : 3
+	},
+	{
+		"id_cuode" : "X",
+		"descripcion" : "Efectos Personales",
+		"seccion" : 5
+	}
+]
