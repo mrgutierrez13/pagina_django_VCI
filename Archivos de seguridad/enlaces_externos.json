@@ -1,0 +1,457 @@
+[
+    {
+        "enlace_externo": "https://produccion.gob.bo/",
+        "nombre": "Ministerio de desarrollo productivo y Economía Plural",
+        "grupo_de_enlace_id": "1"
+    },
+    {
+        "enlace_externo": "https://produccion.gob.bo/viceministerios/viceministerio-de-produccion-industrial-a-mediana-y-gran-escala/",
+        "nombre": "Viceministerio de Producción Industrial a Mediana y Gran Escala",
+        "grupo_de_enlace_id": "1"
+    },
+    {
+        "enlace_externo": "https://produccion.gob.bo/viceministerios/viceministerio-de-la-micro-y-pequena-empresa/",
+        "nombre": "VICEMINISTERIO DE LA MICRO Y PEQUEÑA EMPRESA",
+        "grupo_de_enlace_id": "1"
+    },
+    {
+        "enlace_externo": "http://vcie.produccion.gob.bo/",
+        "nombre": "Viceministerio de Comercio Interno",
+        "grupo_de_enlace_id": "1"
+    },
+    {
+        "enlace_externo": "http://vcie.produccion.gob.bo/",
+        "nombre": "VICEMINISTERIO DE TURISMO",
+        "grupo_de_enlace_id": "1"
+    },
+    {
+        "enlace_externo": "http://www.aspb.gob.bo/",
+        "nombre": "Administración de Servicios Portuarios-Bolivia (ASP-B)",
+        "grupo_de_enlace_id": "2"
+    },
+    {
+        "enlace_externo": "http://www.aduana.gob.bo/aduana7/",
+        "nombre": "Aduana Nacional (AN)",
+        "grupo_de_enlace_id": "2"
+    },
+    {
+        "enlace_externo": "http://www.fundempresa.org.bo/",
+        "nombre": "Fundempresa",
+        "grupo_de_enlace_id": "2"
+    },
+    {
+        "enlace_externo": "http://www.rree.gob.bo/",
+        "nombre": "Ministerio de Relaciones Exteriores",
+        "grupo_de_enlace_id": "2"
+    },
+    {
+        "enlace_externo": "http://www.senasag.gob.bo/",
+        "nombre": "Servicio Nacional de Sanidad Agropecuaria e Inocuidad Alimentaria (SENASAG)",
+        "grupo_de_enlace_id": "2"
+    },
+    {
+        "enlace_externo": "http://www.senavex.gob.bo/",
+        "nombre": "Servicio Nacional de Verificación de Exportaciones (SENAVEX)",
+        "grupo_de_enlace_id": "2"
+    },
+    {
+        "enlace_externo": "http://www.cancilleria.gob.bo/node/91",
+        "nombre": "Viceministerio de Comercio Exterior e Integración",
+        "grupo_de_enlace_id": "2"
+    },
+    {
+        "enlace_externo": "http://www.autoridadempresas.gob.bo/",
+        "nombre": "Autoridad de Fiscalización y Control Social de Empresas (AEMP)",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.emapa.gob.bo/",
+        "nombre": "Empresa de Apoyo a la Producción de Alimentos (EMAPA)",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.ine.gob.bo/",
+        "nombre": "Instituto Nacional de Estadística (INE)",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.ibmetro.gob.bo/",
+        "nombre": "Instituto Boliviano de Metrología (IBMETRO)",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.insumosbolivia.gob.bo/",
+        "nombre": "INSUMOS Bolivia",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.produccion.gob.bo/",
+        "nombre": "Ministerio de Desarrollo Productivo y Economía Plural",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.ruralytierras.gob.bo/",
+        "nombre": "Ministerio de Desarrollo Rural y Tierras",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.hidrocarburos.gob.bo/",
+        "nombre": "Ministerio de Hidrocarburos y Energía",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.mmaya.gob.bo/",
+        "nombre": "Ministerio de Medio Ambiente y Agua",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.mineria.gob.bo/",
+        "nombre": "Ministerio de Minería y Metalurgia",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://observatorio.agrobolivia.gob.bo/",
+        "nombre": "Observatorio Agroambiental y Productivo (OAP)",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.probolivia.gob.bo/",
+        "nombre": "PRO Bolivia",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.senapi.gob.bo/",
+        "nombre": "Servicio Nacional de Propiedad Intelectual (SENAPI)",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.sedem.gob.bo/",
+        "nombre": "Servicio de Desarrollo de las Empresas Públicas Productivas (SEDEM)",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.oopp.gob.bo/",
+        "nombre": "Viceministerio de Transporte",
+        "grupo_de_enlace_id": "3"
+    },
+    {
+        "enlace_externo": "http://www.la-paz.diplo.de/",
+        "nombre": "Embajada de Alemania",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://ebolv.cancilleria.gov.ar/",
+        "nombre": "Embajada de Argentina",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://www.consbras.org.bo/index.php?id=135",
+        "nombre": "Embajada de Brasil",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://chileabroad.gov.cl/la-paz/",
+        "nombre": "Embajada de Chile",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://www.embajadadechina.org/pages/embajadas/bolivia.php",
+        "nombre": "Embajada de China",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://bolivia.embajada.gov.co/",
+        "nombre": "Embajada de Colombia",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://www.cubadiplomatica.cu/bolivia/Misi%C3%B3n/Secci%C3%B3nconsularenBolivia.aspx",
+        "nombre": "Embajada de Cuba",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://bolivia.um.dk/es.aspx",
+        "nombre": "Embajada de Dinamarca",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://www.cancilleria.gob.ec/bolivia/",
+        "nombre": "Embajada de Ecuador",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://www.exteriores.gob.es/embajadas/LAPAZ/es/Paginas/inicio.aspx",
+        "nombre": "Embajada de España",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://spanish.bolivia.usembassy.gov/",
+        "nombre": "Embajada de Estados Unidos",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://www.bo.emb-japan.go.jp/",
+        "nombre": "Embajada de Japón",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://embamex.sre.gob.mx/bolivia/",
+        "nombre": "Embajada de México",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://www.embaperubolivia.com/",
+        "nombre": "Embajada de Perú",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://eeas.europa.eu/delegations/bolivia/index_es.htm",
+        "nombre": "Embajada de la Unión Europea",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://bolivia.embajada.gob.ve/",
+        "nombre": "Embajada de Venezuela",
+        "grupo_de_enlace_id": "4"
+    },
+    {
+        "enlace_externo": "http://www.aopeb.org/",
+        "nombre": "Asociación de Organizaciones de Productores Ecológicos de Bolivia (AOPEB)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.anapqui.org.bo/",
+        "nombre": "Asociación Nacional de Productores de Quinua (ANAPQUI)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.cao.org.bo/",
+        "nombre": "Cámara Agropecuaria del Oriente (CAO)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.cainco.org.bo/",
+        "nombre": "Cámara de Industria y Comercio de Santa Cruz (CAINCO)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.cnc.bo/",
+        "nombre": "Cámara Nacional de Comercio (CNC)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.cnda.org.bo/",
+        "nombre": "Cámara Nacional de Despachantes de Aduanas (CDNA)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.caneb.org.bo/cnb/",
+        "nombre": "Cámara Nacional de Exportadores de Bolivia (CANEB)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.camexbolivia.com/cmx/",
+        "nombre": "Cámara de Exportadores de La Paz (CAMEX)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.cadexco.bo/",
+        "nombre": "Cámara de Exportadores de Cochabamba (CADEXCO)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.cadexpo.bo/",
+        "nombre": "Cámara de Exportadores de Potosi (CADEXPO)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.cadex.org/",
+        "nombre": "Cámara de Exportadores, Logística y Promoción de Inversiones de Santa Cruz (CADEX)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.bolivia-industry.com/",
+        "nombre": "Cámara Nacional de Industrias (CNI)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.ibnorca.org/",
+        "nombre": "Instituto Boliviano de Normalización y Calidad (IBNORCA)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.cepb.org.bo/",
+        "nombre": "Confederación de Empresarios Privados de Bolivia (CEPB)",
+        "grupo_de_enlace_id": "5"
+    },
+    {
+        "enlace_externo": "http://www.apexbrasil.com.br/home/index",
+        "nombre": "APEX Brasil",
+        "grupo_de_enlace_id": "6"
+    },
+    {
+        "enlace_externo": "http://www.avex.com.ve/",
+        "nombre": "Asociación Venezolana de Exportaciones",
+        "grupo_de_enlace_id": "6"
+    },
+    {
+        "enlace_externo": "http://www.exportar.org.ar/web2013/",
+        "nombre": "EXPORTAR Argentina",
+        "grupo_de_enlace_id": "6"
+    },
+    {
+        "enlace_externo": "http://www.prochile.gob.cl/",
+        "nombre": "PRO Chile",
+        "grupo_de_enlace_id": "6"
+    },
+    {
+        "enlace_externo": "http://www.procolombia.co/red-de-oficinas/suramerica/chile/",
+        "nombre": "PRO Colombia",
+        "grupo_de_enlace_id": "6"
+    },
+    {
+        "enlace_externo": "http://www.proecuador.gob.ec/",
+        "nombre": "PRO Ecuador",
+        "grupo_de_enlace_id": "6"
+    },
+    {
+        "enlace_externo": "http://www.promperu.gob.pe//",
+        "nombre": "PROM Perú",
+        "grupo_de_enlace_id": "6"
+    },
+    {
+        "enlace_externo": "http://www.promexico.gob.mx/",
+        "nombre": "PRO México",
+        "grupo_de_enlace_id": "6"
+    },
+    {
+        "enlace_externo": "http://www.rediex.gov.py/",
+        "nombre": " Red de Inversiones y Exportaciones (REDIEX)",
+        "grupo_de_enlace_id": "6"
+    },
+    {
+        "enlace_externo": "http://www.uruguayxxi.gub.uy/",
+        "nombre": "Uruguay XXI",
+        "grupo_de_enlace_id": "6"
+    },
+    {
+        "enlace_externo": "http://aico.org/",
+        "nombre": "Asociación Iberoamericana de Cámaras de Comercio",
+        "grupo_de_enlace_id": "7"
+    },
+    {
+        "enlace_externo": "http://www.aladi.org/",
+        "nombre": "Asociación Latinoamericana de Integración (ALADI)",
+        "grupo_de_enlace_id": "7"
+    },
+    {
+        "enlace_externo": "http://www.xn--cmara-xqa.com.bo/",
+        "nombre": "Cámara Oficial Española de Comercio e Industria de Bolivia",
+        "grupo_de_enlace_id": "7"
+    },
+    {
+        "enlace_externo": "http://www.cepal.org/es/areas-de-trabajo/comercio-internacional",
+        "nombre": "Comisión Económica para Latinoamérica y el Caribe (CEPAL)",
+        "grupo_de_enlace_id": "7"
+    },
+    {
+        "enlace_externo": "http://www.comunidadandina.org/",
+        "nombre": "Comunidad Andina (CAN)",
+        "grupo_de_enlace_id": "7"
+    },
+    {
+        "enlace_externo": "http://unctad.org/es/paginas/Home.aspx",
+        "nombre": "Conferencia de las Naciones Unidas sobre Comercio y Desarrollo (UNCTAD)",
+        "grupo_de_enlace_id": "7"
+    },
+    {
+        "enlace_externo": "http://www.intracen.org/",
+        "nombre": "International Trade Centre",
+        "grupo_de_enlace_id": "7"
+    },
+    {
+        "enlace_externo": "http://www.mercosur.int/",
+        "nombre": "Mercado Común del Sur (MERCOSUR)",
+        "grupo_de_enlace_id": "7"
+    },
+    {
+        "enlace_externo": "http://www.wcoomd.org/",
+        "nombre": "Organización Mundial de Aduanas (OMA)",
+        "grupo_de_enlace_id": "7"
+    },
+    {
+        "enlace_externo": "https://www.wto.org/indexsp.htm",
+        "nombre": "Organización Mundial de Comercio (OMC)",
+        "grupo_de_enlace_id": "7"
+    },
+    {
+        "enlace_externo": "http://wfto-la.org/",
+        "nombre": "Organización para Latinoamerica para el Comercio Justo",
+        "grupo_de_enlace_id": "7"
+    },
+    {
+        "enlace_externo": "http://www.investmentmap.org/",
+        "nombre": "Investment Map",
+        "grupo_de_enlace_id": "8"
+    },
+    {
+        "enlace_externo": "http://www.macmap.org/",
+        "nombre": "Market Access Map",
+        "grupo_de_enlace_id": "8"
+    },
+    {
+        "enlace_externo": "http://www.p-maps.org/",
+        "nombre": "Product Map",
+        "grupo_de_enlace_id": "8"
+    },
+    {
+        "enlace_externo": "http://www.trademap.org/",
+        "nombre": "Trade Map",
+        "grupo_de_enlace_id": "8"
+    },
+    {
+        "enlace_externo": "https://www.beni.gob.bo/",
+        "nombre": "Gobernación de Beni",
+        "grupo_de_enlace_id": "9"
+    },
+    {
+        "enlace_externo": "https://chuquisaca.gob.bo/",
+        "nombre": "Gobernación de Chuquisaca",
+        "grupo_de_enlace_id": "9"
+    },
+    {
+        "enlace_externo": "http://www.gobernaciondecochabamba.bo/",
+        "nombre": "Gobernación de Cochabamba",
+        "grupo_de_enlace_id": "9"
+    },
+    {
+        "enlace_externo": "http://www.gobernacionlapaz.gob.bo/",
+        "nombre": "Gobernación de La Paz",
+        "grupo_de_enlace_id": "9"
+    },
+    {
+        "enlace_externo": "http://www.oruro.gob.bo/",
+        "nombre": "Gobernación de Oruro",
+        "grupo_de_enlace_id": "9"
+    },
+    {
+        "enlace_externo": "http://www.pando.gob.bo/",
+        "nombre": "Gobernación de Pando",
+        "grupo_de_enlace_id": "9"
+    },
+    {
+        "enlace_externo": "http://www.potosi.gob.bo/",
+        "nombre": "Gobernación de Potosí",
+        "grupo_de_enlace_id": "9"
+    },
+    {
+        "enlace_externo": "https://www.santacruz.gob.bo/",
+        "nombre": "Gobernación de Santa Cruz",
+        "grupo_de_enlace_id": "9"
+    },
+    {
+        "enlace_externo": "https://www.tarija.gob.bo/",
+        "nombre": "Gobernación de Tarija",
+        "grupo_de_enlace_id": "9"
+    }
+]

@@ -109,7 +109,7 @@ class Departamento(models.Model):
 class Municipio(models.Model):
     """Modelo para el municipio en que esta una empresa"""
     nombre = models.CharField(max_length=30)
-    ubicacion_dep = models.ForeignKey('Departamento', on_delete=models.CASCADE)
+    departamento = models.ForeignKey('Departamento', on_delete=models.CASCADE)
 
     def __str__(self):
         """String que nombra el municipio"""
@@ -118,7 +118,7 @@ class Municipio(models.Model):
 
 class Proveedor(models.Model):
     """Modelo representando un proveedor"""
-    nit = models.CharField(max_length=11, primary_key=True)
+    nit_ci = models.CharField(max_length=11, primary_key=True)
     razon_social = models.CharField(max_length=150)
 
     TIPO_DE_EMPRESA = (
