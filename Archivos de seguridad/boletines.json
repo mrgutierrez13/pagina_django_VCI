@@ -1,0 +1,82 @@
+[
+    {
+        "titulo": "Iniciativa VUCE",
+        "archivo": "pdf/boletin-nro-0-1.pdf",
+        "portada": "images/portada-00-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Orégano",
+        "archivo": "pdf/boletin-nro-1-2.pdf",
+        "portada": "images/portada-01-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Calzado",
+        "archivo": "pdf/boletin-nro-2-3.pdf",
+        "portada": "images/portada-02-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Banana o Plátanos",
+        "archivo": "pdf/boletin-nro-3-4.pdf",
+        "portada": "images/portada-03-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Carne Bovina y sus Preparaciones",
+        "archivo": "pdf/boletin-nro-4-5.pdf",
+        "portada": "images/portada-04-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Café",
+        "archivo": "pdf/boletin-nro-5-6.pdf",
+        "portada": "images/portada-05-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Azúcar, Alcohol y derivados",
+        "archivo": "pdf/boletin-nro-6-7.pdf",
+        "portada": "images/portada-06-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Cacao y derivados",
+        "archivo": "pdf/boletin-nro-7-8.pdf",
+        "portada": "images/portada-07-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Palmito",
+        "archivo": "pdf/boletin-nro-8-9.pdf",
+        "portada": "images/portada-08-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Castaña",
+        "archivo": "pdf/boletin-nro-9-10.pdf",
+        "portada": "images/portada-09-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Chía",
+        "archivo": "pdf/boletin-nro-10-11.pdf",
+        "portada": "images/portada-10-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Frijol",
+        "archivo": "pdf/boletin-nro-11-12.pdf",
+        "portada": "images/portada-11-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Sal",
+        "archivo": "pdf/boletin-nro-12-13.pdf",
+        "portada": "images/portada-12-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Soya y derivados",
+        "archivo": "pdf/boletin-nro-13-14.pdf",
+        "portada": "images/portada-13-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Limón y derivados",
+        "archivo": "pdf/boletin-nro-14-15.pdf",
+        "portada": "images/portada-14-compressor.png"
+    },
+    {
+        "titulo": "Boletin del Exportador - Baterías",
+        "archivo": "pdf/boletin-nro-15-16.pdf",
+        "portada": "images/portada-15-compressor.png"
+    }
+]

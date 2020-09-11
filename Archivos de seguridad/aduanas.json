@@ -1,0 +1,386 @@
+[
+	{
+		"aduana" : 71,
+		"descripcion" : "Agencia Exterior Matarani "
+	},
+	{
+		"aduana" : 72,
+		"descripcion" : "Agencia Exterior Arica "
+	},
+	{
+		"aduana" : 101,
+		"descripcion" : "Interior Sucre "
+	},
+	{
+		"aduana" : 109,
+		"descripcion" : "Sucre - varios"
+	},
+	{
+		"aduana" : 201,
+		"descripcion" : "Interior La Paz "
+	},
+	{
+		"aduana" : 208,
+		"descripcion" : "Zona franca - varios"
+	},
+	{
+		"aduana" : 209,
+		"descripcion" : "La Paz -  varios"
+	},
+	{
+		"aduana" : 211,
+		"descripcion" : "Aeropuerto El Alto "
+	},
+	{
+		"aduana" : 220,
+		"descripcion" : "Adm. distrital de Desaguadero"
+	},
+	{
+		"aduana" : 221,
+		"descripcion" : "Frontera Charaña "
+	},
+	{
+		"aduana" : 230,
+		"descripcion" : "Adm. distrital de Kasani"
+	},
+	{
+		"aduana" : 231,
+		"descripcion" : "Zona Franca Comercial El Alto "
+	},
+	{
+		"aduana" : 232,
+		"descripcion" : "Zona Franca Industrial El Alto "
+	},
+	{
+		"aduana" : 233,
+		"descripcion" : "Zona Franca Comercial Desaguadero "
+	},
+	{
+		"aduana" : 234,
+		"descripcion" : "Zona Franca Industrial Patacamaya "
+	},
+	{
+		"aduana" : 240,
+		"descripcion" : "Adm. distrital Charaña"
+	},
+	{
+		"aduana" : 241,
+		"descripcion" : "Frontera Desaguadero "
+	},
+	{
+		"aduana" : 242,
+		"descripcion" : "Frontera Kasani "
+	},
+	{
+		"aduana" : 243,
+		"descripcion" : "Subadm. Collpa"
+	},
+	{
+		"aduana" : 244,
+		"descripcion" : "Frontera Puerto Acosta "
+	},
+	{
+		"aduana" : 261,
+		"descripcion" : "Postal La Paz "
+	},
+	{
+		"aduana" : 291,
+		"descripcion" : "SIVEX La Paz "
+	},
+	{
+		"aduana" : 300,
+		"descripcion" : "Adm. distrital Cochabamba"
+	},
+	{
+		"aduana" : 301,
+		"descripcion" : "Interior Cochabamba "
+	},
+	{
+		"aduana" : 309,
+		"descripcion" : "Cochabamba - varios"
+	},
+	{
+		"aduana" : 311,
+		"descripcion" : "Aeropuerto Cochabamba "
+	},
+	{
+		"aduana" : 331,
+		"descripcion" : "Zona Franca Comercial Cochabamba "
+	},
+	{
+		"aduana" : 332,
+		"descripcion" : "Zona Franca Industrial Cochabamba "
+	},
+	{
+		"aduana" : 361,
+		"descripcion" : "Postal Cochabamba "
+	},
+	{
+		"aduana" : 401,
+		"descripcion" : "Interior Oruro "
+	},
+	{
+		"aduana" : 409,
+		"descripcion" : "Oruro - varios"
+	},
+	{
+		"aduana" : 421,
+		"descripcion" : "Frontera Pisiga "
+	},
+	{
+		"aduana" : 422,
+		"descripcion" : "Frontera Tambo Quemado "
+	},
+	{
+		"aduana" : 431,
+		"descripcion" : "Zona Franca Comercial Oruro "
+	},
+	{
+		"aduana" : 432,
+		"descripcion" : "Zona Franca Industrial Oruro "
+	},
+	{
+		"aduana" : 491,
+		"descripcion" : "SIVEX Oruro "
+	},
+	{
+		"aduana" : 501,
+		"descripcion" : "Interior Potos¡ "
+	},
+	{
+		"aduana" : 509,
+		"descripcion" : "Potosi - varios"
+	},
+	{
+		"aduana" : 520,
+		"descripcion" : "Adm. Distrital villazon"
+	},
+	{
+		"aduana" : 521,
+		"descripcion" : "Frontera Villaz¢n "
+	},
+	{
+		"aduana" : 531,
+		"descripcion" : "Zona Franca Comercial Villaz¢n "
+	},
+	{
+		"aduana" : 541,
+		"descripcion" : "Adm. Distrital de uyuni"
+	},
+	{
+		"aduana" : 542,
+		"descripcion" : "Frontera Apacheta "
+	},
+	{
+		"aduana" : 543,
+		"descripcion" : "Frontera Avaroa "
+	},
+	{
+		"aduana" : 601,
+		"descripcion" : "Interior Tarija "
+	},
+	{
+		"aduana" : 607,
+		"descripcion" : "Yacuiba - varios"
+	},
+	{
+		"aduana" : 620,
+		"descripcion" : "Adm. Distrital yacuiba"
+	},
+	{
+		"aduana" : 621,
+		"descripcion" : "Frontera Yacuiba "
+	},
+	{
+		"aduana" : 622,
+		"descripcion" : "Frontera Picada Sucre "
+	},
+	{
+		"aduana" : 631,
+		"descripcion" : "Zona Franca Comercial Yacuiba "
+	},
+	{
+		"aduana" : 641,
+		"descripcion" : "Frontera Bermejo "
+	},
+	{
+		"aduana" : 642,
+		"descripcion" : "Sub-administracion boyuibe"
+	},
+	{
+		"aduana" : 643,
+		"descripcion" : "Frontera Villamontes "
+	},
+	{
+		"aduana" : 701,
+		"descripcion" : "Interior Santa Cruz "
+	},
+	{
+		"aduana" : 708,
+		"descripcion" : "Puerto suarez - varios"
+	},
+	{
+		"aduana" : 709,
+		"descripcion" : "Santa cruz - varios"
+	},
+	{
+		"aduana" : 711,
+		"descripcion" : "Aeropuerto Viru-Viru "
+	},
+	{
+		"aduana" : 721,
+		"descripcion" : "Frontera Puerto Suárez "
+	},
+	{
+		"aduana" : 722,
+		"descripcion" : "Frontera Arroyo Concepci¢n "
+	},
+	{
+		"aduana" : 731,
+		"descripcion" : "Zona Franca Comercial Pto. Aguirre "
+	},
+	{
+		"aduana" : 732,
+		"descripcion" : "Zona Franca Comercial Santa Cruz "
+	},
+	{
+		"aduana" : 733,
+		"descripcion" : "Zona Franca Comercial San Mat¡as "
+	},
+	{
+		"aduana" : 734,
+		"descripcion" : "Zona Franca Comercial Pto. Suárez "
+	},
+	{
+		"aduana" : 735,
+		"descripcion" : "Zona Franca Comercial Winner "
+	},
+	{
+		"aduana" : 736,
+		"descripcion" : "Zona Franca Industrial Pto. Suárez "
+	},
+	{
+		"aduana" : 737,
+		"descripcion" : "Zona Franca Industrial Winner "
+	},
+	{
+		"aduana" : 738,
+		"descripcion" : "Zona Franca Industrial Santa Cruz "
+	},
+	{
+		"aduana" : 741,
+		"descripcion" : "Frontera San Matias "
+	},
+	{
+		"aduana" : 742,
+		"descripcion" : "Sub-adm san ignacion de velasc"
+	},
+	{
+		"aduana" : 743,
+		"descripcion" : "Frontera San Vicente "
+	},
+	{
+		"aduana" : 761,
+		"descripcion" : "Postal Santa Cruz "
+	},
+	{
+		"aduana" : 791,
+		"descripcion" : "SIVEX Santa Cruz "
+	},
+	{
+		"aduana" : 801,
+		"descripcion" : "Interior beni"
+	},
+	{
+		"aduana" : 808,
+		"descripcion" : "Guayaramerin - varios"
+	},
+	{
+		"aduana" : 809,
+		"descripcion" : "Beni - varios"
+	},
+	{
+		"aduana" : 831,
+		"descripcion" : "Zona Franca Comercial Guayaramer¡n "
+	},
+	{
+		"aduana" : 841,
+		"descripcion" : "Frontera Guayaramerín "
+	},
+	{
+		"aduana" : 862,
+		"descripcion" : "Postal Trinidad "
+	},
+	{
+		"aduana" : 900,
+		"descripcion" : "Adm. Distrital cobija"
+	},
+	{
+		"aduana" : 909,
+		"descripcion" : "Pando - varios"
+	},
+	{
+		"aduana" : 921,
+		"descripcion" : "Frontera Cobija"
+	},
+	{
+		"aduana" : 931,
+		"descripcion" : "Zona Franca Comercial e Ind.Cobija "
+	},
+	{
+		"aduana" : 999,
+		"descripcion" : "No especificado"
+	},
+	{
+		"aduana" : 235,
+		"descripcion" : "Zona Franca Comercial Patacama"
+	},
+	{
+		"aduana" : 0,
+		"descripcion" : "Desconocido"
+	},
+	{
+		"aduana" : 723,
+		"descripcion" : "Punto de Control El Faro"
+	},
+	{
+		"aduana" : 402,
+		"descripcion" : "Pasto Grande"
+	},
+	{
+		"aduana" : 302,
+		"descripcion" : "Punto de Control Interior Cochabamba"
+	},
+	{
+		"aduana" : 702,
+		"descripcion" : "Punto de Control Interior Santa Cruz"
+	},
+	{
+		"aduana" : 202,
+		"descripcion" : "Especializada Interior La Paz"
+	},
+	{
+		"aduana" : 602,
+		"descripcion" : "Especializada Interior Tarija"
+	},
+	{
+		"aduana" : 102,
+		"descripcion" : "Especializada Interior Sucre"
+	},
+	{
+		"aduana" : 502,
+		"descripcion" : "Especializada Interior Potosi"
+	},
+	{
+		"aduana" : 522,
+		"descripcion" : "ACI Villazon"
+	},
+	{
+		"aduana" : 752,
+		"descripcion" : "Punto de Control \"El Faro\""
+	},
+	{
+		"aduana" : 751,
+		"descripcion" : "Fluvial Puerto Jennefer"
+	}
+]

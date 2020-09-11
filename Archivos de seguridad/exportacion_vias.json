@@ -1,0 +1,122 @@
+[
+	{
+		"VIA" : 1,
+		"DESCRIPCION" : "Amazonas - Cobija -Guayaramerín",
+		"ANTES" : "Guayaramerín"
+	},
+	{
+		"VIA" : 2,
+		"DESCRIPCION" : "Antofagasta - Ollague - Uyuni",
+		"ANTES" : "Uyuni"
+	},
+	{
+		"VIA" : 3,
+		"DESCRIPCION" : "Arica - Charana - Tambo Quemado",
+		"ANTES" : "Tambo Quemado"
+	},
+	{
+		"VIA" : 4,
+		"DESCRIPCION" : "Corumba - Puerto Suárez",
+		"ANTES" : "Puerto Suárez"
+	},
+	{
+		"VIA" : 5,
+		"DESCRIPCION" : "Pocitos - Yacuiba",
+		"ANTES" : "Yacuiba"
+	},
+	{
+		"VIA" : 6,
+		"DESCRIPCION" : "Mollendo - Matatrasrani - Guaqui",
+		"ANTES" : "Guaqui"
+	},
+	{
+		"VIA" : 7,
+		"DESCRIPCION" : "Oran - Bermejo",
+		"ANTES" : "Bermejo"
+	},
+	{
+		"VIA" : 8,
+		"DESCRIPCION" : "La Quiaca - Villazón",
+		"ANTES" : "Villazón"
+	},
+	{
+		"VIA" : 9,
+		"DESCRIPCION" : "Aérea",
+		"ANTES" : "Aeropuertos"
+	},
+	{
+		"VIA" : 10,
+		"DESCRIPCION" : "Desaguadero",
+		"ANTES" : "Desaguadero"
+	},
+	{
+		"VIA" : 11,
+		"DESCRIPCION" : "Postal - Correo",
+		"ANTES" : "Postal - Correo"
+	},
+	{
+		"VIA" : 12,
+		"DESCRIPCION" : "Yunguyo - Kasani",
+		"ANTES" : "Kasani"
+	},
+	{
+		"VIA" : 13,
+		"DESCRIPCION" : "Moho - Puerto Acosta",
+		"ANTES" : "Puerto Acosta"
+	},
+	{
+		"VIA" : 14,
+		"DESCRIPCION" : "Iquique - Pisiga - Bella Vista",
+		"ANTES" : "Pisiga"
+	},
+	{
+		"VIA" : 15,
+		"DESCRIPCION" : "Zonas Francas",
+		"ANTES" : "Zonas Francas"
+	},
+	{
+		"VIA" : 16,
+		"DESCRIPCION" : "Boyuibe-Fortín Villazón",
+		"ANTES" : "Fortín Villazón"
+	},
+	{
+		"VIA" : 17,
+		"DESCRIPCION" : "Charaña - Arica",
+		"ANTES" : "Charaña"
+	},
+	{
+		"VIA" : 18,
+		"DESCRIPCION" : "San Matías-San Ignacio-San Vicente",
+		"ANTES" : "San Matías"
+	},
+	{
+		"VIA" : 19,
+		"DESCRIPCION" : "Apacheta - Antofagasta",
+		"ANTES" : "Apacheta"
+	},
+	{
+		"VIA" : 20,
+		"DESCRIPCION" : "Puerto Quijarro - Arroyo Concepción",
+		"ANTES" : "Puerto Quijarro"
+	},
+	{
+		"VIA" : 21,
+		"DESCRIPCION" : "Laguna Concepción",
+		"ANTES" : "Laguna Concepción"
+	},
+	{
+		"VIA" : 22,
+		"DESCRIPCION" : "Central Aguirre",
+		"ANTES" : "Central Aguirre"
+	},
+	{
+		"VIA" : 90,
+		"DESCRIPCION" : "Zona Franca",
+		"ANTES" : "Zona Franca"
+	},
+	{
+		"VIA" : 999,
+		"DESCRIPCION" : "Desconocida",
+		"ANTES" : "Desconocida"
+	}
+]

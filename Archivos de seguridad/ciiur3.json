@@ -1,0 +1,2672 @@
+[
+	{
+		"codigo" : "A",
+		"descripcion" : "Agricultura, ganadería, caza y silvicultura",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "01",
+		"descripcion" : "Agricultura, ganadería, caza y actividades de servicios conexas",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "011",
+		"descripcion" : "Cultivos en general; cultivo de productos de mercado; horticultura",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "0111",
+		"descripcion" : "Cultivo de cereales y otros cultivos n.c.p.",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "0112",
+		"descripcion" : "Cultivo de hortalizas y legumbres, especialidades hortícolas y productos de vivero",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "0113",
+		"descripcion" : "Cultivo de frutas, nueces, plantas cuyas hojas o frutas se utilizan para preparar bebidas, y especias",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "012",
+		"descripcion" : "Cría de animales",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "0121",
+		"descripcion" : "Cría de ganado vacuno y de ovejas, cabras, caballos, asnos, mulas y burdéganos; cría de ganado lechero",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "0122",
+		"descripcion" : "Cría de otros animales; elaboración de productos animales n.c.p.",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "013",
+		"descripcion" : "Cultivo de productos agrícolas en combinación con la cría de animales (explotación mixta)",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "0130",
+		"descripcion" : "Cultivo de productos agrícolas en combinación con la cría de animales (explotación mixta)",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "014",
+		"descripcion" : "Actividades de servicios agrícolas y ganaderos, excepto las actividades veterinarias",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "0140",
+		"descripcion" : "Actividades de servicios agrícolas y ganaderos, excepto las actividades veterinarias",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "015",
+		"descripcion" : "Caza ordinaria y mediante trampas, y repoblación de animales de caza, incluso las actividades de serviciosconexas",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "0150",
+		"descripcion" : "Caza ordinaria y mediante trampas, y repoblación de animales de caza, incluso las actividades de serviciosconexas",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "02",
+		"descripcion" : "Silvicultura, extracción de madera y actividades de servicios conexas",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "020",
+		"descripcion" : "Silvicultura, extracción de madera y actividades de servicios conexas",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "0200",
+		"descripcion" : "Silvicultura, extracción de madera y actividades de servicios conexas",
+		"seccion" : "A"
+	},
+	{
+		"codigo" : "B",
+		"descripcion" : "Pesca",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "05",
+		"descripcion" : "Pesca, explotación de criaderos de peces y granjas piscícolas; actividades de servicios relacionadas conlapesca",
+		"seccion" : "B"
+	},
+	{
+		"codigo" : "050",
+		"descripcion" : "Pesca, explotación de criaderos de peces y granjas piscícolas; actividades de servicios relacionadas conlapesca",
+		"seccion" : "B"
+	},
+	{
+		"codigo" : "0500",
+		"descripcion" : "Pesca, explotación de criaderos de peces y granjas piscícolas; actividades de servicios relacionadas conlapesca",
+		"seccion" : "B"
+	},
+	{
+		"codigo" : "C",
+		"descripcion" : "Explotación de minas y canteras",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "10",
+		"descripcion" : "Extracción de carbón y lignito; extracción de turba",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "101",
+		"descripcion" : "Extracción y aglomeración de carbón de piedra",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "1010",
+		"descripcion" : "Extracción y aglomeración de carbón de piedra",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "102",
+		"descripcion" : "Extracción y aglomeración de lignito",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "1020",
+		"descripcion" : "Extracción y aglomeración de lignito",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "103",
+		"descripcion" : "Extracción y aglomeración de turba",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "1030",
+		"descripcion" : "Extracción y aglomeración de turba",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "11",
+		"descripcion" : "Extracción de petróleo crudo y gas natural; actividades de servicios relacionadas con la extracción de petróleo y gas, excepto las actividades de prospección",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "111",
+		"descripcion" : "Extracción de petróleo crudo y gas natural",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "1110",
+		"descripcion" : "Extracción de petróleo crudo y gas natural",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "112",
+		"descripcion" : "Actividades de servicios relacionadas con la extracción de petróleo y gas, excepto las actividades de prospección",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "1120",
+		"descripcion" : "Actividades de servicios relacionadas con la extracción de petróleo y gas, excepto las actividades de prospección",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "12",
+		"descripcion" : "Extracción de minerales de uranio y torio",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "120",
+		"descripcion" : "Extracción de minerales de uranio y torio",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "1200",
+		"descripcion" : "Extracción de minerales de uranio y torio",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "13",
+		"descripcion" : "Extracción de minerales metalíferos",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "131",
+		"descripcion" : "Extracción de minerales de hierro",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "1310",
+		"descripcion" : "Extracción de minerales de hierro",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "132",
+		"descripcion" : "Extracción de minerales metalíferos no ferrosos, excepto los minerales de uranio y torio",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "1320",
+		"descripcion" : "Extracción de minerales metalíferos no ferrosos, excepto los minerales de uranio y torio",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "14",
+		"descripcion" : "Explotación de otras minas y canteras",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "141",
+		"descripcion" : "Extracción de piedra, arena y arcilla",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "1410",
+		"descripcion" : "Extracción de piedra, arena y arcilla",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "142",
+		"descripcion" : "Explotación de minas y canteras n.c.p.",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "1421",
+		"descripcion" : "Extracción de minerales para la fabricación de abonos y productos químicos",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "1422",
+		"descripcion" : "Extracción de sal",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "1429",
+		"descripcion" : "Explotación de otras minas y canteras n.c.p.",
+		"seccion" : "C"
+	},
+	{
+		"codigo" : "D",
+		"descripcion" : "Industrias manufactureras",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "15",
+		"descripcion" : "Elaboración de productos alimenticios y bebidas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "151",
+		"descripcion" : "Producción, procesamiento y conservación de carne, pescado, frutas, legumbres, hortalizas, aceites y grasas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1511",
+		"descripcion" : "Producción, procesamiento y conservación de carne y productos cárnicos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1512",
+		"descripcion" : "Elaboración y conservación de pescado y productos de pescado",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1513",
+		"descripcion" : "Elaboración y conservación de frutas, legumbres y hortalizas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1514",
+		"descripcion" : "Elaboración de aceites y grasas de origen vegetal y animal",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "152",
+		"descripcion" : "Elaboración de productos lácteos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1520",
+		"descripcion" : "Elaboración de productos lácteos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "153",
+		"descripcion" : "Elaboración de productos de molinería, almidones y productos derivados del almidón, y de alimentos preparados para animales",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1531",
+		"descripcion" : "Elaboración de productos de molinería",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1532",
+		"descripcion" : "Elaboración de almidones y productos derivados del almidón",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1533",
+		"descripcion" : "Elaboración de alimentos preparados para animales",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "154",
+		"descripcion" : "Elaboración de otros productos alimenticios",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1541",
+		"descripcion" : "Elaboración de productos de panadería",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1542",
+		"descripcion" : "Elaboración de azúcar",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1543",
+		"descripcion" : "Elaboración de cacao y chocolate y de productos de confitería",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1544",
+		"descripcion" : "Elaboración de macarrones, fideos, alcuzcuz y productos farináceos similares",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1549",
+		"descripcion" : "Elaboración de otros productos alimenticios n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "155",
+		"descripcion" : "Elaboración de bebidas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1551",
+		"descripcion" : "Destilación, rectificación y mezcla de bebidas alcohólicas; producción de alcohol etílico a partir de sustancias fermentadas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1552",
+		"descripcion" : "Elaboración de vinos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1553",
+		"descripcion" : "Elaboración de bebidas malteadas y de malta",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1554",
+		"descripcion" : "Elaboración de bebidas no alcohólicas; producción de aguas minerales",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "16",
+		"descripcion" : "Elaboración de productos de tabaco",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "160",
+		"descripcion" : "Elaboración de productos de tabaco",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1600",
+		"descripcion" : "Elaboración de productos de tabaco",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "17",
+		"descripcion" : "Fabricación de productos textiles",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "171",
+		"descripcion" : "Hilatura, tejedura y acabado de productos textiles",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1711",
+		"descripcion" : "Preparación e hilatura de fibras textiles; tejedura de productos textiles",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1712",
+		"descripcion" : "Acabado de productos textiles",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "172",
+		"descripcion" : "Fabricación de otros productos textiles",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1721",
+		"descripcion" : "Fabricación de artículos confeccionados de materiales textiles, excepto prendas de vestir",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1722",
+		"descripcion" : "Fabricación de tapices y alfombras",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1723",
+		"descripcion" : "Fabricación de cuerdas, cordeles, bramantes y redes",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1729",
+		"descripcion" : "Fabricación de otros productos textiles n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "173",
+		"descripcion" : "Fabricación de tejidos y artículos de punto y ganchillo",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1730",
+		"descripcion" : "Fabricación de tejidos y artículos de punto y ganchillo",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "18",
+		"descripcion" : "Fabricación de prendas de vestir; adobo y teñido de pieles",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "181",
+		"descripcion" : "Fabricación de prendas de vestir, excepto prendas de piel",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1810",
+		"descripcion" : "Fabricación de prendas de vestir, excepto prendas de piel",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "182",
+		"descripcion" : "Adobo y teñido de pieles; fabricación de artículos de piel",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1820",
+		"descripcion" : "Adobo y teñido de pieles; fabricación de artículos de piel",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "19",
+		"descripcion" : "Curtido y adobo de cueros; fabricación de maletas, bolsos de mano, artículos de talabartería y guarnicionaría, y calzado",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "191",
+		"descripcion" : "Curtido y adobo de cueros; fabricación de maletas, bolsos de mano y artículos de talabartería y guarnicionería",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1911",
+		"descripcion" : "Curtido y adobo de cueros",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1912",
+		"descripcion" : "Fabricación de maletas, bolsos de mano y artículos similares, y de artículos de talabartería y guarnicionería",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "192",
+		"descripcion" : "Fabricación de calzado",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "1920",
+		"descripcion" : "Fabricación de calzado",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "20",
+		"descripcion" : "Producción de madera y fabricación de productos de madera y corcho, excepto muebles; fabricación de artículos de paja y de materiales trenzables",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "201",
+		"descripcion" : "Aserrado y acepilladura de madera",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2010",
+		"descripcion" : "Aserrado y acepilladura de madera",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "202",
+		"descripcion" : "Fabricación de productos de madera, corcho, paja y materiales trenzables",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2021",
+		"descripcion" : "Fabricación de hojas de madera para enchapado; fabricación de tableros contrachapados, tableros laminados,tableros de partículas y otros tableros y paneles",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2022",
+		"descripcion" : "Fabricación de partes y piezas de carpintería para edificios y construcciones",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2023",
+		"descripcion" : "Fabricación de recipientes de madera",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2029",
+		"descripcion" : "Fabricación de otros productos de madera; fabricación de artículos de corcho, paja y materiales trenzables",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "21",
+		"descripcion" : "Fabricación de papel y de productos de papel",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "210",
+		"descripcion" : "Fabricación de papel y de productos de papel",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2101",
+		"descripcion" : "Fabricación de pasta de madera, papel y cartón",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2102",
+		"descripcion" : "Fabricación de papel y cartón ondulado y de envases de papel y cartón",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2109",
+		"descripcion" : "Fabricación de otros artículos de papel y cartón",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "22",
+		"descripcion" : "Actividades de edición e impresión y de reproducción de grabaciones",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "221",
+		"descripcion" : "Actividades de edición",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2211",
+		"descripcion" : "Edición de libros, folletos, partituras y otras publicaciones",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2212",
+		"descripcion" : "Edición de periódicos, revistas y publicaciones periódicas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2213",
+		"descripcion" : "Edición de grabaciones",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2219",
+		"descripcion" : "Otras actividades de edición",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "222",
+		"descripcion" : "Actividades de impresión y actividades de servicios conexas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2221",
+		"descripcion" : "Actividades de impresión",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2222",
+		"descripcion" : "Actividades de servicios relacionadas con la impresión",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "223",
+		"descripcion" : "Reproducción de grabaciones",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2230",
+		"descripcion" : "Reproducción de grabaciones",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "23",
+		"descripcion" : "Fabricación de coque, productos de la refinación del petróleo y combustible nuclear",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "231",
+		"descripcion" : "Fabricación de productos de hornos de coque",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2310",
+		"descripcion" : "Fabricación de productos de hornos de coque",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "232",
+		"descripcion" : "Fabricación de productos de la refinación del petróleo",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2320",
+		"descripcion" : "Fabricación de productos de la refinación del petróleo",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "233",
+		"descripcion" : "Elaboración de combustible nuclear",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2330",
+		"descripcion" : "Elaboración de combustible nuclear",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "24",
+		"descripcion" : "Fabricación de sustancias y productos químicos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "241",
+		"descripcion" : "Fabricación de sustancias químicas básicas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2411",
+		"descripcion" : "Fabricación de sustancias químicas básicas, excepto abonos y compuestos de nitrógeno",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2412",
+		"descripcion" : "Fabricación de abonos y compuestos de nitrógeno",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2413",
+		"descripcion" : "Fabricación de plásticos en formas primarias y de caucho sintítico",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "242",
+		"descripcion" : "Fabricación de otros productos químicos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2421",
+		"descripcion" : "Fabricación de plaguicidas y otros productos químicos de uso agropecuario",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2422",
+		"descripcion" : "Fabricación de pinturas, barnices y productos de revestimiento similares, tintas de imprenta y masillas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2423",
+		"descripcion" : "Fabricación de productos farmacéuticos, sustancias químicas medicinales y productos botánicos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2424",
+		"descripcion" : "Fabricación de jabones y detergentes, preparados para limpiar y pulir, perfumes y preparados de tocador",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2429",
+		"descripcion" : "Fabricación de otros productos químicos n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "243",
+		"descripcion" : "Fabricación de fibras manufacturadas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2430",
+		"descripcion" : "Fabricación de fibras manufacturadas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "25",
+		"descripcion" : "Fabricación de productos de caucho y plástico",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "251",
+		"descripcion" : "Fabricación de productos de caucho",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2511",
+		"descripcion" : "Fabricación de cubiertas y cámaras de caucho; recauchado y renovación de cubiertas de caucho",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2519",
+		"descripcion" : "Fabricación de otros productos de caucho",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "252",
+		"descripcion" : "Fabricación de productos de plástico",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2520",
+		"descripcion" : "Fabricación de productos de plástico",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "26",
+		"descripcion" : "Fabricación de otros productos minerales no metálicos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "261",
+		"descripcion" : "Fabricación de vidrio y productos de vidrio",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2610",
+		"descripcion" : "Fabricación de vidrio y productos de vidrio",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "269",
+		"descripcion" : "Fabricación de productos minerales no metálicos n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2691",
+		"descripcion" : "Fabricación de productos de cerámica no refractaria para uso no estructural",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2692",
+		"descripcion" : "Fabricación de productos de cerámica refractaria",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2693",
+		"descripcion" : "Fabricación de productos de arcilla y cerámica no refractarias para uso estructural",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2694",
+		"descripcion" : "Fabricación de cemento, cal y yeso",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2695",
+		"descripcion" : "Fabricación de artículos de hormigón, cemento y yeso",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2696",
+		"descripcion" : "Corte, tallado y acabado de la piedra",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2699",
+		"descripcion" : "Fabricación de otros productos minerales no metálicos n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "27",
+		"descripcion" : "Fabricación de metales comunes",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "271",
+		"descripcion" : "Industrias básicas de hierro y acero",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2710",
+		"descripcion" : "Industrias básicas de hierro y acero",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "272",
+		"descripcion" : "Fabricación de productos primarios de metales preciosos y metales no ferrosos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2720",
+		"descripcion" : "Fabricación de productos primarios de metales preciosos y metales no ferrosos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "273",
+		"descripcion" : "Fundición de metales",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2731",
+		"descripcion" : "Fundición de hierro y acero",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2732",
+		"descripcion" : "Fundición de metales no ferrosos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "28",
+		"descripcion" : "Fabricación de productos elaborados de metal, excepto maquinaria y equipo",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "281",
+		"descripcion" : "Fabricación de productos metálicos para uso estructural, tanques, depósitos y generadores de vapor",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2811",
+		"descripcion" : "Fabricación de productos metálicos para uso estructural",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2812",
+		"descripcion" : "Fabricación de tanques, depósitos y recipientes de metal",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2813",
+		"descripcion" : "Fabricación de generadores de vapor, excepto calderas de agua caliente para calefacción central",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "289",
+		"descripcion" : "Fabricación de otros productos elaborados de metal; actividades de servicios de trabajo de metales",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2891",
+		"descripcion" : "Forja, prensado, estampado y laminado de metales; pulvimetalurgia",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2892",
+		"descripcion" : "Tratamiento y revestimiento de metales; obras de ingeniería mecánica en general realizadas a cambio de unaretribución o por contrata",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2893",
+		"descripcion" : "Fabricación de artículos de cuchillería, herramientas de mano y artículos de ferretería",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2899",
+		"descripcion" : "Fabricación de otros productos elaborados de metal n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "29",
+		"descripcion" : "Fabricación de maquinaria y equipo n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "291",
+		"descripcion" : "Fabricación de maquinaria de uso general",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2911",
+		"descripcion" : "Fabricación de motores y turbinas, excepto motores para aeronaves, vehículos automotores y motocicletas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2912",
+		"descripcion" : "Fabricación de bombas, compresores, grifos y válvulas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2913",
+		"descripcion" : "Fabricación de cojinetes, engranajes, trenes de engranajes y piezas de transmisión",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2914",
+		"descripcion" : "Fabricación de hornos, hogares y quemadores",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2915",
+		"descripcion" : "Fabricación de equipo de elevación y manipulación",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2919",
+		"descripcion" : "Fabricación de otros tipos de maquinaria de uso general",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "292",
+		"descripcion" : "Fabricación de maquinaria de uso especial",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2921",
+		"descripcion" : "Fabricación de maquinaria agropecuaria y forestal",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2922",
+		"descripcion" : "Fabricación de máquinas herramienta",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2923",
+		"descripcion" : "Fabricación de maquinaria metalúrgica",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2924",
+		"descripcion" : "Fabricación de maquinaria para la explotación de minas y canteras y para obras de construcción",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2925",
+		"descripcion" : "Fabricación de maquinaria para la elaboración de alimentos, bebidas y tabaco",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2926",
+		"descripcion" : "Fabricación de maquinaria para la elaboración de productos textiles, prendas de vestir y cueros",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2927",
+		"descripcion" : "Fabricación de armas y municiones",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2929",
+		"descripcion" : "Fabricación de otros tipos de maquinaria de uso especial",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "293",
+		"descripcion" : "Fabricación de aparatos de uso doméstico n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "2930",
+		"descripcion" : "Fabricación de aparatos de uso doméstico n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "30",
+		"descripcion" : "Fabricación de maquinaria de oficina, contabilidad e informática",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "300",
+		"descripcion" : "Fabricación de maquinaria de oficina, contabilidad e informática",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3000",
+		"descripcion" : "Fabricación de maquinaria de oficina, contabilidad e informática",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "31",
+		"descripcion" : "Fabricación de maquinaria y aparatos eléctricos n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "311",
+		"descripcion" : "Fabricación de motores, generadores y transformadores eléctricos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3110",
+		"descripcion" : "Fabricación de motores, generadores y transformadores eléctricos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "312",
+		"descripcion" : "Fabricación de aparatos de distribución y control de la energía eléctrica",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3120",
+		"descripcion" : "Fabricación de aparatos de distribución y control de la energía eléctrica",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "313",
+		"descripcion" : "Fabricación de hilos y cables aislados",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3130",
+		"descripcion" : "Fabricación de hilos y cables aislados",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "314",
+		"descripcion" : "Fabricación de acumuladores y de pilas y baterías primarias",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3140",
+		"descripcion" : "Fabricación de acumuladores y de pilas y baterías primarias",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "315",
+		"descripcion" : "Fabricación de lámparas eléctricas y equipo de iluminación",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3150",
+		"descripcion" : "Fabricación de lámparas eléctricas y equipo de iluminación",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "319",
+		"descripcion" : "Fabricación de otros tipos de equipo eléctrico n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3190",
+		"descripcion" : "Fabricación de otros tipos de equipo eléctrico n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "32",
+		"descripcion" : "Fabricación de equipo y aparatos de radio, televisión y comunicaciones",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "321",
+		"descripcion" : "Fabricación de tubos y válvulas electrónicos y de otros componentes electrónicos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3210",
+		"descripcion" : "Fabricación de tubos y válvulas electrónicos y de otros componentes electrónicos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "322",
+		"descripcion" : "Fabricación de transmisores de radio y televisión y de aparatos para telefonía y telegrafía con hilos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3220",
+		"descripcion" : "Fabricación de transmisores de radio y televisión y de aparatos para telefonía y telegrafía con hilos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "323",
+		"descripcion" : "Fabricación de receptores de radio y televisión, aparatos de grabación y reproducción de sonido y vídeo,yproductos conexos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3230",
+		"descripcion" : "Fabricación de receptores de radio y televisión, aparatos de grabación y reproducción de sonido y vídeo,yproductos conexos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "33",
+		"descripcion" : "Fabricación de instrumentos médicos, ópticos y de precisión y fabricación de relojes",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "331",
+		"descripcion" : "Fabricación de aparatos e instrumentos médicos y de aparatos para medir, verificar, ensayar, navegar y otros fines, excepto instrumentos de ópticas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3311",
+		"descripcion" : "Fabricación de equipo médico y quirúrgico y de aparatos ortopédicos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3312",
+		"descripcion" : "Fabricación de instrumentos y aparatos para medir, verificar, ensayar, navegar y otros fines, excepto elequipo de control de procesos industriales",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3313",
+		"descripcion" : "Fabricación de equipo de control de procesos industriales",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "332",
+		"descripcion" : "Fabricación de instrumentos de óptica y equipo fotográfico",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3320",
+		"descripcion" : "Fabricación de instrumentos de óptica y equipo fotográfico",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "333",
+		"descripcion" : "Fabricación de relojes",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3330",
+		"descripcion" : "Fabricación de relojes",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "34",
+		"descripcion" : "Fabricación de vehículos automotores, remolques y semirremolques",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "341",
+		"descripcion" : "Fabricación de vehículos automotores",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3410",
+		"descripcion" : "Fabricación de vehículos automotores",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "342",
+		"descripcion" : "Fabricación de carrocerías para vehículos automotores; fabricación de remolques y semirremolques",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3420",
+		"descripcion" : "Fabricación de carrocerías para vehículos automotores; fabricación de remolques y semirremolques",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "343",
+		"descripcion" : "Fabricación de partes, piezas y accesorios para vehículos automotores y sus motores",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3430",
+		"descripcion" : "Fabricación de partes, piezas y accesorios para vehículos automotores y sus motores",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "35",
+		"descripcion" : "Fabricación de otros tipos de equipo de transporte",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "351",
+		"descripcion" : "Construcción y reparación de buques y otras embarcaciones",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3511",
+		"descripcion" : "Construcción y reparación de buques",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3512",
+		"descripcion" : "Construcción y reparación de embarcaciones de recreo y deporte",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "352",
+		"descripcion" : "Fabricación de locomotoras y de material rodante para ferrocarriles y tranvías",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3520",
+		"descripcion" : "Fabricación de locomotoras y de material rodante para ferrocarriles y tranvías",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "353",
+		"descripcion" : "Fabricación de aeronaves y naves espaciales",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3530",
+		"descripcion" : "Fabricación de aeronaves y naves espaciales",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "359",
+		"descripcion" : "Fabricación de otros tipos de equipo de transporte n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3591",
+		"descripcion" : "Fabricación de motocicletas",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3592",
+		"descripcion" : "Fabricación de bicicletas y de sillones de ruedas para inválidos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3599",
+		"descripcion" : "Fabricación de otros tipos de equipo de transporte n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "36",
+		"descripcion" : "Fabricación de muebles; industrias manufactureras n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "361",
+		"descripcion" : "Fabricación de muebles",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3610",
+		"descripcion" : "Fabricación de muebles",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "369",
+		"descripcion" : "Industrias manufactureras n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3691",
+		"descripcion" : "Fabricación de joyas y artículos conexos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3692",
+		"descripcion" : "Fabricación de instrumentos de música",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3693",
+		"descripcion" : "Fabricación de artículos de deporte",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3694",
+		"descripcion" : "Fabricación de juegos y juguetes",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3699",
+		"descripcion" : "Otras industrias manufactureras n.c.p.",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "37",
+		"descripcion" : "Reciclamiento",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "371",
+		"descripcion" : "Reciclamiento de desperdicios y desechos metálicos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3710",
+		"descripcion" : "Reciclamiento de desperdicios y desechos metálicos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "372",
+		"descripcion" : "Reciclamiento de desperdicios y desechos no metálicos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "3720",
+		"descripcion" : "Reciclamiento de desperdicios y desechos no metálicos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "E",
+		"descripcion" : "Suministro de electricidad, gas y agua",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "40",
+		"descripcion" : "Suministro de electricidad, gas, vapor y agua caliente",
+		"seccion" : "E"
+	},
+	{
+		"codigo" : "401",
+		"descripcion" : "Generación, captación y distribución de energía eléctrica",
+		"seccion" : "E"
+	},
+	{
+		"codigo" : "4010",
+		"descripcion" : "Generación, captación y distribución de energía eléctrica",
+		"seccion" : "E"
+	},
+	{
+		"codigo" : "402",
+		"descripcion" : "Fabricación de gas; distribución de combustibles gaseosos por tuberías",
+		"seccion" : "E"
+	},
+	{
+		"codigo" : "4020",
+		"descripcion" : "Fabricación de gas; distribución de combustibles gaseosos por tuberías",
+		"seccion" : "E"
+	},
+	{
+		"codigo" : "403",
+		"descripcion" : "Suministro de vapor y agua caliente",
+		"seccion" : "E"
+	},
+	{
+		"codigo" : "4030",
+		"descripcion" : "Suministro de vapor y agua caliente",
+		"seccion" : "E"
+	},
+	{
+		"codigo" : "41",
+		"descripcion" : "Captación, depuración y distribución de agua",
+		"seccion" : "E"
+	},
+	{
+		"codigo" : "410",
+		"descripcion" : "Captación, depuración y distribución de agua",
+		"seccion" : "E"
+	},
+	{
+		"codigo" : "4100",
+		"descripcion" : "Captación, depuración y distribución de agua",
+		"seccion" : "E"
+	},
+	{
+		"codigo" : "F",
+		"descripcion" : "Construcción",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "45",
+		"descripcion" : "Construcción",
+		"seccion" : "F"
+	},
+	{
+		"codigo" : "451",
+		"descripcion" : "Preparación del terreno",
+		"seccion" : "F"
+	},
+	{
+		"codigo" : "4510",
+		"descripcion" : "Preparación del terreno",
+		"seccion" : "F"
+	},
+	{
+		"codigo" : "452",
+		"descripcion" : "Construcción de edificios completos y de partes de edificios; obras de ingeniería civil",
+		"seccion" : "F"
+	},
+	{
+		"codigo" : "4520",
+		"descripcion" : "Construcción de edificios completos y de partes de edificios; obras de ingeniería civil",
+		"seccion" : "F"
+	},
+	{
+		"codigo" : "453",
+		"descripcion" : "Acondicionamiento de edificios",
+		"seccion" : "F"
+	},
+	{
+		"codigo" : "4530",
+		"descripcion" : "Acondicionamiento de edificios",
+		"seccion" : "F"
+	},
+	{
+		"codigo" : "454",
+		"descripcion" : "Terminación de edificios",
+		"seccion" : "F"
+	},
+	{
+		"codigo" : "4540",
+		"descripcion" : "Terminación de edificios",
+		"seccion" : "F"
+	},
+	{
+		"codigo" : "455",
+		"descripcion" : "Alquiler de equipo de construcción y demolición dotado de operarios",
+		"seccion" : "F"
+	},
+	{
+		"codigo" : "4550",
+		"descripcion" : "Alquiler de equipo de construcción y demolición dotado de operarios",
+		"seccion" : "F"
+	},
+	{
+		"codigo" : "G",
+		"descripcion" : "Comercio al por mayor y al por menor; reparación de vehículos automotores, motocicletas, efectos personalesy enseres domésticos",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "50",
+		"descripcion" : "Venta, mantenimiento y reparación de vehículos automotores y motocicletas; venta al por menor de combustible para automotores",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "501",
+		"descripcion" : "Venta de vehículos automotores",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5010",
+		"descripcion" : "Venta de vehículos automotores",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "502",
+		"descripcion" : "Mantenimiento y reparación de vehículos automotores",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5020",
+		"descripcion" : "Mantenimiento y reparación de vehículos automotores",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "503",
+		"descripcion" : "Venta de partes, piezas y accesorios de vehículos automotores",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5030",
+		"descripcion" : "Venta de partes, piezas y accesorios de vehículos automotores",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "504",
+		"descripcion" : "Venta, mantenimiento y reparación de motocicletas y de sus partes, piezas y accesorios",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5040",
+		"descripcion" : "Venta, mantenimiento y reparación de motocicletas y de sus partes, piezas y accesorios",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "505",
+		"descripcion" : "Venta al por menor de combustible para automotores",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5050",
+		"descripcion" : "Venta al por menor de combustible para automotores",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "51",
+		"descripcion" : "Comercio al por mayor y en comisión, excepto el comercio de vehículos automotores y motocicletas",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "511",
+		"descripcion" : "Venta al por mayor a cambio de una retribución o por contrata",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5110",
+		"descripcion" : "Venta al por mayor a cambio de una retribución o por contrata",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "512",
+		"descripcion" : "Venta al por mayor de materias primas agropecuarias, animales vivos, alimentos, bebidas y tabaco",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5121",
+		"descripcion" : "Venta al por mayor de materias primas agropecuarias y de animales vivos",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5122",
+		"descripcion" : "Venta al por mayor de alimentos, bebidas y tabaco",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "513",
+		"descripcion" : "Venta al por mayor de enseres domésticos",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5131",
+		"descripcion" : "Venta al por mayor de productos textiles, prendas de vestir y calzado",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5139",
+		"descripcion" : "Venta al por mayor de otros enseres domésticos",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "514",
+		"descripcion" : "Venta al por mayor de productos intermedios, desperdicios y desechos no agropecuarios",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5141",
+		"descripcion" : "Venta al por mayor de combustibles sólidos, líquidos y gaseosos y de productos conexos",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5142",
+		"descripcion" : "Venta al por mayor de metales y minerales metalíferos",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5143",
+		"descripcion" : "Venta al por mayor de materiales de construcción, artículos de ferretería y equipo y materiales de fontanería y calefacción",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5149",
+		"descripcion" : "Venta al por mayor de otros productos intermedios, desperdicios y desechos",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "515",
+		"descripcion" : "Venta al por mayor de maquinaria, equipo y materiales",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5150",
+		"descripcion" : "Venta al por mayor de maquinaria, equipo y materiales",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "519",
+		"descripcion" : "Venta al por mayor de otros productos",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5190",
+		"descripcion" : "Venta al por mayor de otros productos",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "52",
+		"descripcion" : "Comercio al por menor, excepto el comercio de vehículos automotores y motocicletas; reparación de efectos personales y enseres domésticos",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "521",
+		"descripcion" : "Comercio al por menor no especializado en almacenes",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5211",
+		"descripcion" : "Venta al por menor en almacenes no especializados con surtido compuesto principalmente de alimentos, bebidas y tabaco",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5219",
+		"descripcion" : "Venta al por menor de otros productos en almacenes no especializados",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "522",
+		"descripcion" : "Venta al por menor de alimentos, bebidas y tabaco en almacenes especializados",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5220",
+		"descripcion" : "Venta al por menor de alimentos, bebidas y tabaco en almacenes especializados",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "523",
+		"descripcion" : "Comercio al por menor de otros productos nuevos en almacenes especializados",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5231",
+		"descripcion" : "Venta al por menor de productos farmacéuticos y medicinales, cosméticos y artículos de tocador",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5232",
+		"descripcion" : "Venta al por menor de productos textiles, prendas de vestir, calzado y artículos de cuero",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5233",
+		"descripcion" : "Venta al por menor de aparatos, artículos y equipo de uso doméstico",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5234",
+		"descripcion" : "Venta al por menor de artículos de ferretería, pinturas y productos de vidrio",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5239",
+		"descripcion" : "Venta al por menor de otros productos en almacenes especializados",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "524",
+		"descripcion" : "Venta al por menor en almacenes de artículos usados",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5240",
+		"descripcion" : "Venta al por menor en almacenes de artículos usados",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "525",
+		"descripcion" : "Comercio al por menor no realizado en almacenes",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5251",
+		"descripcion" : "Venta al por menor de casas de venta por correo",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5252",
+		"descripcion" : "Venta al por menor en puestos de venta y mercados",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5259",
+		"descripcion" : "Otros tipos de venta al por menor no realizada en almacenes",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "526",
+		"descripcion" : "Reparación de efectos personales y enseres domésticos",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "5260",
+		"descripcion" : "Reparación de efectos personales y enseres domésticos",
+		"seccion" : "G"
+	},
+	{
+		"codigo" : "H",
+		"descripcion" : "Hoteles y restaurantes",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "55",
+		"descripcion" : "Hoteles y restaurantes",
+		"seccion" : "H"
+	},
+	{
+		"codigo" : "551",
+		"descripcion" : "Hoteles; campamentos y otros tipos de hospedaje temporal",
+		"seccion" : "H"
+	},
+	{
+		"codigo" : "5510",
+		"descripcion" : "Hoteles; campamentos y otros tipos de hospedaje temporal",
+		"seccion" : "H"
+	},
+	{
+		"codigo" : "552",
+		"descripcion" : "Restaurantes, bares y cantinas",
+		"seccion" : "H"
+	},
+	{
+		"codigo" : "5520",
+		"descripcion" : "Restaurantes, bares y cantinas",
+		"seccion" : "H"
+	},
+	{
+		"codigo" : "I",
+		"descripcion" : "Transporte, almacenamiento y comunicaciones",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "60",
+		"descripcion" : "Transporte por vía terrestre; transporte por tuberías",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "601",
+		"descripcion" : "Transporte por vía férrea",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6010",
+		"descripcion" : "Transporte por vía férrea",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "602",
+		"descripcion" : "Otros tipos de transporte por vía terrestre",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6021",
+		"descripcion" : "Otros tipos de transporte regular de pasajeros por vía terrestre",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6022",
+		"descripcion" : "Otros tipos de transporte no regular de pasajeros por vía terrestre",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6023",
+		"descripcion" : "Transporte de carga por carretera",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "603",
+		"descripcion" : "Transporte por tuberías",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6030",
+		"descripcion" : "Transporte por tuberías",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "61",
+		"descripcion" : "Transporte por vía acuática",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "611",
+		"descripcion" : "Transporte marítimo y de cabotaje",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6110",
+		"descripcion" : "Transporte marítimo y de cabotaje",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "612",
+		"descripcion" : "Transporte por vías de navegación interiores",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6120",
+		"descripcion" : "Transporte por vías de navegación interiores",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "62",
+		"descripcion" : "Transporte por vía aérea",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "621",
+		"descripcion" : "Transporte regular por vía aérea",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6210",
+		"descripcion" : "Transporte regular por vía aérea",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "622",
+		"descripcion" : "Transporte no regular por vía aérea",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6220",
+		"descripcion" : "Transporte no regular por vía aérea",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "63",
+		"descripcion" : "Actividades de transporte complementarias y auxiliares; actividades de agencias de viajes",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "630",
+		"descripcion" : "Actividades de transporte complementarias y auxiliares; actividades de agencias de viajes",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6301",
+		"descripcion" : "Manipulación de la carga",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6302",
+		"descripcion" : "Almacenamiento y depósito",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6303",
+		"descripcion" : "Otras actividades de transporte complementarias",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6304",
+		"descripcion" : "Actividades de agencias de viajes y organizadores de viajes; actividades de asistencia a turistas n.c.p.",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6309",
+		"descripcion" : "Actividades de otras agencias de transporte",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "64",
+		"descripcion" : "Correo y telecomunicaciones",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "641",
+		"descripcion" : "Actividades postales y de correo",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6411",
+		"descripcion" : "Actividades postales nacionales",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6412",
+		"descripcion" : "Actividades de correo distintas de las actividades postales nacionales",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "642",
+		"descripcion" : "Telecomunicaciones",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "6420",
+		"descripcion" : "Telecomunicaciones",
+		"seccion" : "I"
+	},
+	{
+		"codigo" : "J",
+		"descripcion" : "Intermediación financiera",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "65",
+		"descripcion" : "Intermediación financiera, excepto la financiación de planes de seguros y de pensiones",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "651",
+		"descripcion" : "Intermediación monetaria",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "6511",
+		"descripcion" : "Banca central",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "6519",
+		"descripcion" : "Otros tipos de intermediación monetaria",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "659",
+		"descripcion" : "Otros tipos de intermediación financiera",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "6591",
+		"descripcion" : "Arrendamiento financiero",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "6592",
+		"descripcion" : "Otros tipos de crédito",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "6599",
+		"descripcion" : "Otros tipos de intermediación financiera n.c.p.",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "66",
+		"descripcion" : "Financiación de planes de seguros y de pensiones, excepto los planes de seguridad social de afiliación obligatoria",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "660",
+		"descripcion" : "Financiación de planes de seguros y de pensiones, excepto los planes de seguridad social de afiliación obligatoria",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "6601",
+		"descripcion" : "Planes de seguros de vida",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "6602",
+		"descripcion" : "Planes de pensiones",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "6603",
+		"descripcion" : "Planes de seguros generales",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "67",
+		"descripcion" : "Actividades auxiliares de la intermediación financiera",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "671",
+		"descripcion" : "Actividades auxiliares de la intermediación financiera, excepto la financiación de planes de seguros y de pensiones",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "6711",
+		"descripcion" : "Administración de mercados financieros",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "6712",
+		"descripcion" : "Actividades bursátiles",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "6719",
+		"descripcion" : "Actividades auxiliares de la intermediación financiera n.c.p.",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "672",
+		"descripcion" : "Actividades auxiliares de la financiación de planes de seguros y de pensiones",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "6720",
+		"descripcion" : "Actividades auxiliares de la financiación de planes de seguros y de pensiones",
+		"seccion" : "J"
+	},
+	{
+		"codigo" : "K",
+		"descripcion" : "Actividades inmobiliarias, empresariales y de alquiler",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "70",
+		"descripcion" : "Actividades inmobiliarias",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "701",
+		"descripcion" : "Actividades inmobiliarias realizadas con bienes propios o arrendados",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7010",
+		"descripcion" : "Actividades inmobiliarias realizadas con bienes propios o arrendados",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "702",
+		"descripcion" : "Actividades inmobiliarias realizadas a cambio de una retribución o por contrata",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7020",
+		"descripcion" : "Actividades inmobiliarias realizadas a cambio de una retribución o por contrata",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "71",
+		"descripcion" : "Alquiler de maquinaria y equipo sin operarios y de efectos personales y enseres domésticos",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "711",
+		"descripcion" : "Alquiler de equipo de transporte",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7111",
+		"descripcion" : "Alquiler de equipo de transporte por vía terrestre",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7112",
+		"descripcion" : "Alquiler de equipo de transporte por vía acuática",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7113",
+		"descripcion" : "Alquiler de equipo de transporte por vía aérea",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "712",
+		"descripcion" : "Alquiler de otros tipos de maquinaria y equipo",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7121",
+		"descripcion" : "Alquiler de maquinaria y equipo agropecuario",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7122",
+		"descripcion" : "Alquiler de maquinaria y equipo de construcción e ingeniería civil",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7123",
+		"descripcion" : "Alquiler de maquinaria y equipo de oficina (incluso computadoras)",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7129",
+		"descripcion" : "Alquiler de otros tipos de maquinaria y equipo n.c.p.",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "713",
+		"descripcion" : "Alquiler de efectos personales y enseres domésticos n.c.p.",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7130",
+		"descripcion" : "Alquiler de efectos personales y enseres domésticos n.c.p.",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "72",
+		"descripcion" : "Informática y actividades conexas",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "721",
+		"descripcion" : "Consultores en equipo de informática",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7210",
+		"descripcion" : "Consultores en equipo de informática",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "722",
+		"descripcion" : "Consultores en programas de informática y suministro de programas de informática",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7220",
+		"descripcion" : "Consultores en programas de informática y suministro de programas de informática",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "723",
+		"descripcion" : "Procesamiento de datos",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7230",
+		"descripcion" : "Procesamiento de datos",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "724",
+		"descripcion" : "Actividades relacionadas con bases de datos",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7240",
+		"descripcion" : "Actividades relacionadas con bases de datos",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "725",
+		"descripcion" : "Mantenimiento y reparación de maquinaria de oficina, contabilidad e informática",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7250",
+		"descripcion" : "Mantenimiento y reparación de maquinaria de oficina, contabilidad e informática",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "729",
+		"descripcion" : "Otras actividades de informática",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7290",
+		"descripcion" : "Otras actividades de informática",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "73",
+		"descripcion" : "Investigación y desarrollo",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "731",
+		"descripcion" : "Investigaciones y desarrollo experimental en el campo de las ciencias naturales y la ingeniería",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7310",
+		"descripcion" : "Investigaciones y desarrollo experimental en el campo de las ciencias naturales y la ingeniería",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "732",
+		"descripcion" : "Investigaciones y desarrollo experimental en el campo de las ciencias sociales y las humanidades",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7320",
+		"descripcion" : "Investigaciones y desarrollo experimental en el campo de las ciencias sociales y las humanidades",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "74",
+		"descripcion" : "Otras actividades empresariales",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "741",
+		"descripcion" : "Actividades jurídicas y de contabilidad, teneduría de libros y auditoría; asesoramiento en materia de impuestos; estudio de mercados y realización de encuestas de opinión pública; asesoramiento empresarial y en materia de gestión",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7411",
+		"descripcion" : "Actividades jurídicas",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7412",
+		"descripcion" : "Actividades de contabilidad, teneduría de libros y auditoría; asesoramiento en materia de impuestos",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7413",
+		"descripcion" : "Investigación de mercados y realización de encuestas de opinión pública",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7414",
+		"descripcion" : "Actividades de asesoramiento empresarial y en materia de gestión",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "742",
+		"descripcion" : "Actividades de arquitectura e ingeniería y otras actividades técnicas",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7421",
+		"descripcion" : "Actividades de arquitectura e ingeniería y actividades conexas de asesoramiento técnico",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7422",
+		"descripcion" : "Ensayos y análisis técnicos",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "743",
+		"descripcion" : "Publicidad",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7430",
+		"descripcion" : "Publicidad",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "749",
+		"descripcion" : "Actividades empresariales n.c.p.",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7491",
+		"descripcion" : "Obtención y dotación de personal",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7492",
+		"descripcion" : "Actividades de investigación y seguridad",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7493",
+		"descripcion" : "Actividades de limpieza de edificios",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7494",
+		"descripcion" : "Actividades de fotografía",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7495",
+		"descripcion" : "Actividades de envase y empaque",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "7499",
+		"descripcion" : "Otras actividades empresariales n.c.p.",
+		"seccion" : "K"
+	},
+	{
+		"codigo" : "L",
+		"descripcion" : "Administración publica y defensa; planes de seguridad social de afiliación obligatoria",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "75",
+		"descripcion" : "Administración pública y defensa; planes de seguridad social de afiliación obligatoria",
+		"seccion" : "L"
+	},
+	{
+		"codigo" : "751",
+		"descripcion" : "Administración del Estado y aplicación de la política económica y social de la comunidad",
+		"seccion" : "L"
+	},
+	{
+		"codigo" : "7511",
+		"descripcion" : "Actividades de la administración pública en general",
+		"seccion" : "L"
+	},
+	{
+		"codigo" : "7512",
+		"descripcion" : "Regulación de las actividades de organismos que prestan servicios sanitarios, educativos, culturales y otros servicios sociales, excepto servicios de seguridad social",
+		"seccion" : "L"
+	},
+	{
+		"codigo" : "7513",
+		"descripcion" : "Regulación y facilitación de la actividad económica",
+		"seccion" : "L"
+	},
+	{
+		"codigo" : "7514",
+		"descripcion" : "Actividades de servicios auxiliares para la administración pública en general",
+		"seccion" : "L"
+	},
+	{
+		"codigo" : "752",
+		"descripcion" : "Prestación de servicios a la comunidad en general",
+		"seccion" : "L"
+	},
+	{
+		"codigo" : "7521",
+		"descripcion" : "Relaciones exteriores",
+		"seccion" : "L"
+	},
+	{
+		"codigo" : "7522",
+		"descripcion" : "Actividades de defensa",
+		"seccion" : "L"
+	},
+	{
+		"codigo" : "7523",
+		"descripcion" : "Actividades de mantenimiento del orden público y de seguridad",
+		"seccion" : "L"
+	},
+	{
+		"codigo" : "753",
+		"descripcion" : "Actividades de planes de seguridad social de afiliación obligatoria",
+		"seccion" : "L"
+	},
+	{
+		"codigo" : "7530",
+		"descripcion" : "Actividades de planes de seguridad social de afiliación obligatoria",
+		"seccion" : "L"
+	},
+	{
+		"codigo" : "M",
+		"descripcion" : "Enseñanza",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "80",
+		"descripcion" : "Enseñanza",
+		"seccion" : "M"
+	},
+	{
+		"codigo" : "801",
+		"descripcion" : "Enseñanza primaria",
+		"seccion" : "M"
+	},
+	{
+		"codigo" : "8010",
+		"descripcion" : "Enseñanza primaria",
+		"seccion" : "M"
+	},
+	{
+		"codigo" : "802",
+		"descripcion" : "Enseñanza secundaria",
+		"seccion" : "M"
+	},
+	{
+		"codigo" : "8021",
+		"descripcion" : "Enseñanza secundaria de formación general",
+		"seccion" : "M"
+	},
+	{
+		"codigo" : "8022",
+		"descripcion" : "Enseñanza secundaria de formación técnica y profesional",
+		"seccion" : "M"
+	},
+	{
+		"codigo" : "803",
+		"descripcion" : "Enseñanza superior",
+		"seccion" : "M"
+	},
+	{
+		"codigo" : "8030",
+		"descripcion" : "Enseñanza superior",
+		"seccion" : "M"
+	},
+	{
+		"codigo" : "809",
+		"descripcion" : "Enseñanza de adultos y otros tipos de enseñanza",
+		"seccion" : "M"
+	},
+	{
+		"codigo" : "8090",
+		"descripcion" : "Enseñanza de adultos y otros tipos de enseñanza",
+		"seccion" : "M"
+	},
+	{
+		"codigo" : "N",
+		"descripcion" : "Servicios sociales y de salud",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "85",
+		"descripcion" : "Servicios sociales y de salud",
+		"seccion" : "N"
+	},
+	{
+		"codigo" : "851",
+		"descripcion" : "Actividades relacionadas con la salud humana",
+		"seccion" : "N"
+	},
+	{
+		"codigo" : "8511",
+		"descripcion" : "Actividades de hospitales",
+		"seccion" : "N"
+	},
+	{
+		"codigo" : "8512",
+		"descripcion" : "Actividades de médicos y odontólogos",
+		"seccion" : "N"
+	},
+	{
+		"codigo" : "8519",
+		"descripcion" : "Otras actividades relacionadas con la salud humana",
+		"seccion" : "N"
+	},
+	{
+		"codigo" : "852",
+		"descripcion" : "Actividades veterinarias",
+		"seccion" : "N"
+	},
+	{
+		"codigo" : "8520",
+		"descripcion" : "Actividades veterinarias",
+		"seccion" : "N"
+	},
+	{
+		"codigo" : "853",
+		"descripcion" : "Actividades de servicios sociales",
+		"seccion" : "N"
+	},
+	{
+		"codigo" : "8531",
+		"descripcion" : "Servicios sociales con alojamiento",
+		"seccion" : "N"
+	},
+	{
+		"codigo" : "8532",
+		"descripcion" : "Servicios sociales sin alojamiento",
+		"seccion" : "N"
+	},
+	{
+		"codigo" : "O",
+		"descripcion" : "Otras actividades de servicios comunitarios, sociales y personales",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "90",
+		"descripcion" : "Eliminación de desperdicios y aguas residuales, saneamiento y actividades similares",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "900",
+		"descripcion" : "Eliminación de desperdicios y aguas residuales, saneamiento y actividades similares",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9000",
+		"descripcion" : "Eliminación de desperdicios y aguas residuales, saneamiento y actividades similares",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "91",
+		"descripcion" : "Actividades de asociaciones n.c.p.",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "911",
+		"descripcion" : "Actividades de organizaciones empresariales, profesionales y de empleadores",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9111",
+		"descripcion" : "Actividades de organizaciones empresariales y de empleadores",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9112",
+		"descripcion" : "Actividades de organizaciones profesionales",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "912",
+		"descripcion" : "Actividades de sindicatos",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9120",
+		"descripcion" : "Actividades de sindicatos",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "919",
+		"descripcion" : "Actividades de otras asociaciones",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9191",
+		"descripcion" : "Actividades de organizaciones religiosas",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9192",
+		"descripcion" : "Actividades de organizaciones políticas",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9199",
+		"descripcion" : "Actividades de otras asociaciones n.c.p.",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "92",
+		"descripcion" : "Actividades de esparcimiento y actividades culturales y deportivas",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "921",
+		"descripcion" : "Actividades de cinematografía, radio y televisión y otras actividades de entretenimiento",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9211",
+		"descripcion" : "Producción y distribución de filmes y videocintas",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9212",
+		"descripcion" : "Exhibición de filmes y videocintas",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9213",
+		"descripcion" : "Actividades de radio y televisión",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9214",
+		"descripcion" : "Actividades teatrales y musicales y otras actividades artísticas",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9219",
+		"descripcion" : "Otras actividades de entretenimiento n.c.p.",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "922",
+		"descripcion" : "Actividades de agencias de noticias",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9220",
+		"descripcion" : "Actividades de agencias de noticias",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "923",
+		"descripcion" : "Actividades de bibliotecas, archivos y museos y otras actividades culturales",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9231",
+		"descripcion" : "Actividades de bibliotecas y archivos",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9232",
+		"descripcion" : "Actividades de museos y preservación de lugares y edificios históricos",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9233",
+		"descripcion" : "Actividades de jardines botánicos y zoológicos y de parques nacionales",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "924",
+		"descripcion" : "Actividades deportivas y otras actividades de esparcimiento",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9241",
+		"descripcion" : "Actividades deportivas",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9249",
+		"descripcion" : "Otras actividades de esparcimiento",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "93",
+		"descripcion" : "Otras actividades de servicios",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "930",
+		"descripcion" : "Otras actividades de servicios",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9301",
+		"descripcion" : "Lavado y limpieza de prendas de tela y de piel, incluso la limpieza en seco",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9302",
+		"descripcion" : "Peluquería y otros tratamientos de belleza",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9303",
+		"descripcion" : "Pompas fúnebres y actividades conexas",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "9309",
+		"descripcion" : "Otras actividades de servicios n.c.p.",
+		"seccion" : "O"
+	},
+	{
+		"codigo" : "P",
+		"descripcion" : "Hogares privados con servicio doméstico",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "95",
+		"descripcion" : "Hogares privados con servicio doméstico",
+		"seccion" : "P"
+	},
+	{
+		"codigo" : "950",
+		"descripcion" : "Hogares privados con servicio doméstico",
+		"seccion" : "P"
+	},
+	{
+		"codigo" : "9500",
+		"descripcion" : "Hogares privados con servicio doméstico",
+		"seccion" : "P"
+	},
+	{
+		"codigo" : "Q",
+		"descripcion" : "Organizaciones y órganos extraterritoriales",
+		"seccion" : ""
+	},
+	{
+		"codigo" : "99",
+		"descripcion" : "Organizaciones y órganos extraterritoriales",
+		"seccion" : "Q"
+	},
+	{
+		"codigo" : "990",
+		"descripcion" : "Organizaciones y órganos extraterritoriales",
+		"seccion" : "Q"
+	},
+	{
+		"codigo" : "9900",
+		"descripcion" : "Organizaciones y órganos extraterritoriales",
+		"seccion" : "Q"
+	},
+	{
+		"codigo" : "9999",
+		"descripcion" : "Efectos personales",
+		"seccion" : "Q"
+	},
+	{
+		"codigo" : "3800",
+		"descripcion" : "Deshechos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "999",
+		"descripcion" : "Efectos personales",
+		"seccion" : "Q"
+	},
+	{
+		"codigo" : "38",
+		"descripcion" : "Deshechos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "380",
+		"descripcion" : "Deshechos",
+		"seccion" : "D"
+	},
+	{
+		"codigo" : "0",
+		"descripcion" : "Desconocido",
+		"seccion" : ""
+	}
+]

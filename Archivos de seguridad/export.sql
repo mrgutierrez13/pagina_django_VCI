@@ -1,0 +1,7 @@
+SELECT * 
+FROM bdsiexco.importacion2014
+INTO OUTFILE 'importacion2014.csv' 
+FIELDS ENCLOSED BY '"' 
+TERMINATED BY ';' 
+ESCAPED BY '"' 
+LINES TERMINATED BY '\r\n';

@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\MOISES\\envs\\my_django_env\\Scripts\\python.exe",
+    "python.pythonPath": "C:\\Users\\PROEX016\\envs\\my_django_env\\Scripts\\python.exe",
     "python.linting.pylintArgs": ["--load-plugins", "pylint_django"] //agregar para cargar el modulo apropiado de linting
 }

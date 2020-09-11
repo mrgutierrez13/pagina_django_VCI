@@ -1,0 +1,14 @@
+[
+	{
+		"tnt_clase" : 1,
+		"descripcion" : "Tradicionales"
+	},
+	{
+		"tnt_clase" : 2,
+		"descripcion" : "No tradicionales"
+	},
+	{
+		"tnt_clase" : 3,
+		"descripcion" : "Efectos personales"
+	}
+]

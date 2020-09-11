@@ -1,0 +1,62 @@
+[
+	{
+		"codigo_dep" : 1,
+		"descripcion" : "Chuquisaca",
+		"sigla" : "CH",
+		"mapa" : "cq"
+	},
+	{
+		"codigo_dep" : 2,
+		"descripcion" : "La Paz",
+		"sigla" : "LP",
+		"mapa" : "lp"
+	},
+	{
+		"codigo_dep" : 3,
+		"descripcion" : "Cochabamba",
+		"sigla" : "CB",
+		"mapa" : "cb"
+	},
+	{
+		"codigo_dep" : 4,
+		"descripcion" : "Oruro",
+		"sigla" : "OR",
+		"mapa" : "or"
+	},
+	{
+		"codigo_dep" : 5,
+		"descripcion" : "Potosí",
+		"sigla" : "PT",
+		"mapa" : "po"
+	},
+	{
+		"codigo_dep" : 6,
+		"descripcion" : "Tarija",
+		"sigla" : "TJ",
+		"mapa" : "tr"
+	},
+	{
+		"codigo_dep" : 7,
+		"descripcion" : "Santa Cruz",
+		"sigla" : "SC",
+		"mapa" : "sc"
+	},
+	{
+		"codigo_dep" : 8,
+		"descripcion" : "Beni",
+		"sigla" : "BN",
+		"mapa" : "eb"
+	},
+	{
+		"codigo_dep" : 9,
+		"descripcion" : "Pando",
+		"sigla" : "PD",
+		"mapa" : "pa"
+	},
+	{
+		"codigo_dep" : 10,
+		"descripcion" : "S/N",
+		"sigla" : "X",
+		"mapa" : "nn"
+	}
+]

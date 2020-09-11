@@ -1,0 +1,164 @@
+[
+	{
+		"id_tnt" : 0,
+		"descripcion" : "EXPORTACIONES DE METALES CON MATERIA PRIMA IMPORTADA",
+		"grupo" : 11,
+		"clase" : 1
+	},
+	{
+		"id_tnt" : 2,
+		"descripcion" : "ESTAÑO",
+		"grupo" : 11,
+		"clase" : 1
+	},
+	{
+		"id_tnt" : 3,
+		"descripcion" : "ZINC",
+		"grupo" : 11,
+		"clase" : 1
+	},
+	{
+		"id_tnt" : 30,
+		"descripcion" : "OTROS MINERALES",
+		"grupo" : 11,
+		"clase" : 1
+	},
+	{
+		"id_tnt" : 4,
+		"descripcion" : "WOLFRAM",
+		"grupo" : 11,
+		"clase" : 1
+	},
+	{
+		"id_tnt" : 5,
+		"descripcion" : "ANTIMONIO",
+		"grupo" : 11,
+		"clase" : 1
+	},
+	{
+		"id_tnt" : 6,
+		"descripcion" : "PLOMO",
+		"grupo" : 11,
+		"clase" : 1
+	},
+	{
+		"id_tnt" : 7,
+		"descripcion" : "ORO",
+		"grupo" : 11,
+		"clase" : 1
+	},
+	{
+		"id_tnt" : 8,
+		"descripcion" : "PLATA",
+		"grupo" : 11,
+		"clase" : 1
+	},
+	{
+		"id_tnt" : 19,
+		"descripcion" : "GAS NATURAL",
+		"grupo" : 12,
+		"clase" : 1
+	},
+	{
+		"id_tnt" : 31,
+		"descripcion" : "OTROS HIDROCARBUROS",
+		"grupo" : 12,
+		"clase" : 1
+	},
+	{
+		"id_tnt" : 1,
+		"descripcion" : "GANADO VACUNO",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 10,
+		"descripcion" : "CAFE",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 11,
+		"descripcion" : "CACAO",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 12,
+		"descripcion" : "AZUCAR",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 13,
+		"descripcion" : "BEBIDAS",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 14,
+		"descripcion" : "GOMAS",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 15,
+		"descripcion" : "CUEROS",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 16,
+		"descripcion" : "MADERAS",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 17,
+		"descripcion" : "ALGODON",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 18,
+		"descripcion" : "SOYA",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 20,
+		"descripcion" : "JOYERIA",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 21,
+		"descripcion" : "JOYERIA CON ORO IMPORTADA",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 34,
+		"descripcion" : "OTROS/a",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 9,
+		"descripcion" : "CASTAÑA",
+		"grupo" : 21,
+		"clase" : 2
+	},
+	{
+		"id_tnt" : 33,
+		"descripcion" : "Efectos personales",
+		"grupo" : 31,
+		"clase" : 3
+	},
+	{
+		"id_tnt" : 24,
+		"descripcion" : "OTROS MINERALES MANUFACTURADOS",
+		"grupo" : 11,
+		"clase" : 1
+	}
+]
