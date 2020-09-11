@@ -1,0 +1,191 @@
+
+.barra-paginas{
+    display: flex;
+    height: 2.5em;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35em, 1fr));
+    grid-auto-rows: max-content;
+    gap: 2em 1em;
+    width: 100%;
+    padding: 0 2em;
+    --fondo-celda: hsl(216, 40%, 90%);
+    justify-content: center;
+    justify-items: center;
+}
+
+.celda-proveedor{
+    display: grid;
+    grid-template-columns: 13fr 7fr;
+    grid-auto-rows: auto;
+    grid-template-areas: "socio socio"
+                         "titulo titulo"
+                         "contacto nit"
+                         "contacto tipo"
+                         "email email"
+                         "numeros numeros"
+                         "municipio depa" 
+                         "zona zona" 
+                         "calle calle";
+    font-size: 1.3rem;
+    width: 24em;
+    border-radius: 1em;
+    text-align: left;
+    background-color: var(--fondo-celda);    
+    align-items: center;
+    line-height: 1em;
+}
+
+@media screen and (min-width: 23rem){
+    .celda-proveedor{
+        width: 27em;
+    }
+}
+
+.celda-proveedor>*{
+    height: 100%;
+    width: 100%;
+    padding: .7em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;   
+}
+
+.proveedor-tipo-societario{
+    grid-area: socio;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 1em 1em 0 0;
+    letter-spacing: .6px;
+    font-family: var(--fuente-sans);
+}
+
+.celda-proveedor>h2{
+    grid-area: titulo;
+    font-size: 1.6rem;
+    border-radius: 1em 1em 0 0;
+    letter-spacing: .6px;
+}
+
+.proveedor-nit{
+    grid-area: nit;
+    text-align: center;
+    border-radius: 0 0 .5em 0;
+    padding: 0 .7em;
+    font-family: var(--fuente-sans);   
+}
+.proveedor-nit::before{
+    content: 'NIT: ';
+    font-weight: 600;
+}
+
+.proveedor-tipo-empresa{
+    grid-area: tipo;
+    font-size: 1.1rem;
+    text-transform: lowercase;
+    font-style: oblique;
+    text-align: center;
+}
+
+@media screen and (min-width: 88.5rem){
+    .celda-proveedor{
+        width: 33em;
+    }
+    .proveedor-tipo-empresa{
+        font-size: 1.3rem;
+    }
+}
+
+.proveedor-contacto{
+    grid-area: contacto;
+    text-align: left;
+    border-radius: 0 .5em 0 0;
+    background-color: white;
+    white-space: pre;
+    line-height: 1.4em;
+    padding-bottom: 0;
+    font-family: var(--fuente-sans);
+}
+
+/* https://blog.escapecreative.com/add-line-breaks-css-generated-content/ */
+.proveedor-contacto::before{
+    content: 'CONTACTO: \A';
+    font-weight: 600;
+}
+
+.proveedor-email{
+    grid-area: email;
+    text-align: left;
+    background-color: white;
+    font-style: oblique;
+    letter-spacing: .5px;
+    font-size: 1.5rem;
+    padding-top: 1em;
+    font-family: var(--fuente-sans);
+}
+
+.numeros-contenedor{
+    grid-area: numeros;
+    display: flex;
+    background-color: white;
+    font-family: var(--fuente-sans);
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+}
+
+.numeros-contenedor>*{
+    position: relative;
+    text-align: left;
+    padding-top: .1em;
+}
+
+.proveedor-celular::before{
+    content: 'Celular: ';
+    font-weight: 600;
+}
+
+.proveedor-fax::before{
+    content: 'Fax: ';
+    font-weight: 600;
+}
+
+.proveedor-telefono::before{
+    content: 'Teléfono: ';
+    font-weight: 600;
+}
+
+.proveedor-departamento{
+    grid-area: depa;
+    text-align: center;
+    font-weight: 600;
+}
+
+.proveedor-municipio{
+    grid-area: municipio;
+    text-align: left;
+}
+
+.proveedor-municipio::before{
+    content: 'Municipio: ';
+    font-weight: 600;
+}
+
+.proveedor-zona{
+    grid-area: zona;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    font-family: var(--fuente-sans);    
+}
+
+.proveedor-domicilio{
+    grid-area: calle;
+    text-transform: capitalize;
+    letter-spacing: .3px;
+    padding-top: 0;
+    font-family: var(--fuente-sans);
+}

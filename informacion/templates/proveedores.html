@@ -8,25 +8,78 @@
 {% block contenido %}
 <h1 class="titulo-contenido-principal">Directorio de proveedores</h1>
 
-<div class="barra-paginas"></div>
+<div class="barra-paginas">
+    <span class="step-links">
+        {% if pagina_actual.has_previous %}
+            <a href="?page=1">&laquo; primer</a>
+            <a href="?page={{ pagina_actual.previous_page_number }}">Anterior</a>
+        {% endif %}
+
+        <span class="current">
+            Página {{ pagina_actual.number }} de {{ pagina_actual.paginator.num_pages }}.
+        </span>
+
+        {% if pagina_actual.has_next %}
+            <a href="?page={{ pagina_actual.next_page_number }}">Siguiente</a>
+            <a href="?page={{ pagina_actual.paginator.num_pages }}">ultimo &raquo;</a>
+        {% endif %}
+    </span>
+</div>
 
 <div class="contenedor-tabla-directorio">
     <div class="grilla">
+        {% for proveedor in pagina_actual %}
         <div class="celda-proveedor">
-            <h2 title="{{ proveedor.nombre }}">{{ proveedor.nombre }}</h2>
-            <div class="proveedor-nit">{{ proveedor.nit }}</div>
-            <div class="proveedor-tipo">{{ proveedor.tipo_empresa }}</div>
-            <div class="proveedor-contacto">{{ proveedor.nombre_contacto }}</div>
-            <div class="proveedor-email">{{ proveedor.email }}</div>
-            <div class="proveedor-celular">{{ proveedor.celular }}</div>
-            <div class="proveedor-departamento">{{ proveedor.departamento }}</div>
-            <div class="proveedor-barrio">{{ proveedor.barrio }}</div>
-            <div class="proveedor-calle">{{ proveedor.calle }}</div>
-            <a class="proveedor-numero-productos" href="">5 productos...</a>
+            <h2 title="{{ proveedor.razon_social }}">{{ proveedor.razon_social }}</h2>
+            <div class="proveedor-nit">{{ proveedor.nit_ci }}</div>
+            <div title="{{ proveedor.get_tipo_empresa_display }}" class="proveedor-tipo-empresa">{{ proveedor.get_tipo_empresa_display }}</div>
+            <div title="{{ proveedor.get_tipo_societario_display }}" class="proveedor-tipo-societario">{{ proveedor.get_tipo_societario_display }}</div>
+            <div title="{{ proveedor.nombre_contacto }}" class="proveedor-contacto">{{ proveedor.nombre_contacto }}</div>
+            <div title="{{ proveedor.email_contacto }}" class="proveedor-email">{{ proveedor.email_contacto }}</div>
+            <div class="numeros-contenedor">
+                {% if proveedor.celular %}
+                <div class="proveedor-celular">{{ proveedor.celular }}</div>
+                {% else %}
+                <div class="celular"></div>
+                {% endif %}
+                {% if proveedor.telefono %}
+                <div class="proveedor-telefono">{{ proveedor.telefono }}</div>
+                {% else %}
+                <div class="telefono"></div>
+                {% endif %}
+                {% if proveedor.fax %}
+                <div class="proveedor-fax">{{ proveedor.fax }}</div>
+                {% else %}
+                <div class="fax"></div>
+                {% endif %} 
+            </div>           
+            <div title="{{ proveedor.municipio }}" class="proveedor-municipio">{{ proveedor.municipio }}</div>
+            <div class="proveedor-departamento">{{ proveedor.municipio.departamento }}</div>
+            <div title="{{ proveedor.zona }}" class="proveedor-zona">{{ proveedor.zona }}</div>
+            <div title="{{ proveedor.domicilio }}" class="proveedor-domicilio">{{ proveedor.domicilio }}</div>
         </div>
+        {% endfor %}
     </div>
 </div>
 </div>
 
-<div class="barra-paginas"></div>
+
+<div class="barra-paginas">
+    <span class="step-links">
+        {% if pagina_actual.has_previous %}
+            <a href="?page=1">&laquo; primer</a>
+            <a href="?page={{ pagina_actual.previous_page_number }}">Anterior</a>
+        {% endif %}
+
+        <span class="current">
+            Página {{ pagina_actual.number }} de {{ pagina_actual.paginator.num_pages }}.
+        </span>
+
+        {% if pagina_actual.has_next %}
+            <a href="?page={{ pagina_actual.next_page_number }}">Siguiente</a>
+            <a href="?page={{ pagina_actual.paginator.num_pages }}">ultimo &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
 {% endblock %}

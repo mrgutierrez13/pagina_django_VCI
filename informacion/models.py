@@ -96,6 +96,9 @@ class Evento(models.Model):
         """String que representa el boletin"""
         return self.nombre
 
+###########################################
+#   MODELOS PARA DIRECTORIO DE PROVEEDORES
+###########################################
 
 class Departamento(models.Model):
     """Modelo de los departamentos de Bolivia"""
