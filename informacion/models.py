@@ -1,8 +1,10 @@
 from django.db import models
 
 # Create your models here.
-# CONSEJO: Sacar las fecha como nombre: https://stackoverflow.com/questions/9621388/django-how-to-get-month-name
-# CONSEJO: Manejar Fechas https://docs.djangoproject.com/en/3.1/ref/class-based-views/generic-date-based/#montharchiveview
+# CONSEJO: Sacar las fecha como nombre:
+# https://stackoverflow.com/questions/9621388/django-how-to-get-month-name
+# CONSEJO: Manejar Fechas
+# https://docs.djangoproject.com/en/3.1/ref/class-based-views/generic-date-based/#montharchiveview
 # CONSEJO: Utilizar REGEX y remover lineas contienen Ej. contenido  ===>  ^.*contenido.*$\n
 
 
@@ -25,7 +27,7 @@ class Boletin(models.Model):
 
 class TipoNorma(models.Model):
     """Modelo representando una nueva seccion para las normas"""
-    nombre_seccion = models.CharField(max_length=200, 
+    nombre_seccion = models.CharField(max_length=200,
                                       help_text="Ingresa el nombre para una nueva seccion de NORMAS.")
 
     class Meta:
@@ -100,23 +102,16 @@ class Evento(models.Model):
 #   MODELOS PARA DIRECTORIO DE PROVEEDORES
 ###########################################
 
+
 class Departamento(models.Model):
     """Modelo de los departamentos de Bolivia"""
     nombre = models.CharField(max_length=10)
-
-    def __str__(self):
-        """String que nombra el departamento"""
-        return self.nombre
 
 
 class Municipio(models.Model):
     """Modelo para el municipio en que esta una empresa"""
     nombre = models.CharField(max_length=30)
     departamento = models.ForeignKey('Departamento', on_delete=models.CASCADE)
-
-    def __str__(self):
-        """String que nombra el municipio"""
-        return self.nombre
 
 
 class Proveedor(models.Model):
@@ -184,6 +179,43 @@ class Proveedor(models.Model):
         verbose_name = 'Proveedor'
         verbose_name_plural = 'Proveedores'
 
-    def __str__(self):
-        """String que la empresa"""
-        return self.razon_social
+
+class PaisDestino(models.Model):
+    """El pais destino de una actividad economica"""
+    nombre = models.CharField(max_length=60)
+
+
+class RutaProveedor(models.Model):
+    """El departamento de su sucursal y el pais de la exportacion"""
+    departamento = models.ForeignKey('Departamento', on_delete=models.CASCADE)
+    pais = models.ForeignKey('PaisDestino', on_delete=models.CASCADE)
+
+
+class ProveedorActivo(models.Model):
+    """Representa una empresa con actividad economica registrada"""
+    nit_ci = models.CharField(max_length=11, unique=True)
+    razon_social = models.CharField(max_length=150)
+
+
+class Nandina10(models.Model):
+    """Los datos de nandina con 10 digitos"""
+    nandina = models.CharField(max_length=10, unique=True)
+    descripcion = models.CharField(max_length=600)
+
+
+class Cuode3(models.Model):
+    """Los datos de cuode con 3 digitos"""
+    cuode = models.CharField(max_length=10, unique=True)
+    descripcion = models.CharField(max_length=100)
+
+
+class ActividadEconomica(models.Model):
+    """Muestra la actividad economica de las empresas con registro en la DB"""
+    nit_ci = models.ForeignKey('ProveedorActivo', on_delete=models.CASCADE)
+    nandina = models.ForeignKey('Nandina10', on_delete=models.CASCADE)
+    cuode = models.ForeignKey('Cuode3', on_delete=models.CASCADE)
+    ruta = models.ForeignKey('RutaProveedor', on_delete=models.CASCADE)
+    gestion = models.PositiveSmallIntegerField()
+    kg_bruto = models.FloatField()
+    kg_neto = models.FloatField()
+    cif = models.FloatField()

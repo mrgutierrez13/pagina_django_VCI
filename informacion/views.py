@@ -8,7 +8,8 @@ from inicio.models import Libro
 # TODO: INTENTAR SOLUCIONAR https://stackoverflow.com/questions/45135263/class-has-no-objects-member
 # CONSEJO: INNER JOIN, REVERSE LOOKUP GRANDPARENT TABLE
 # https://docs.djangoproject.com/en/2.2/ref/models/querysets/#select-related
-
+# CONSEJO: Para convertir un Queryset a JSON usar Django serializer
+# https://stackoverflow.com/questions/15874233/output-django-queryset-as-json
 
 class BoletinListView(generic.ListView):
     """Vista para renderizar la informacion sobre boletines"""
@@ -17,18 +18,15 @@ class BoletinListView(generic.ListView):
     template_name = 'boletines.html'
 
 
-class NormativaListView(generic.ListView):
-    """Vista para mostrar las normas"""
-    context_object_name = 'normativa'
-    template_name = 'normativa.html'
-    queryset = TipoNorma.objects.all()
+def normativa(request):
+    """Vista para renderizar las normas"""
 
-    def get_context_data(self, **kwargs):
-        context = super(NormativaListView, self).get_context_data(**kwargs)
-        context['secciones_normas'] = self.queryset
-        context['normas'] = Norma.objects.all()
-        return context
+    context = {
+        'secciones_normas': TipoNorma.objects.all(),
+        'normas': Norma.objects.all(),
+    }
 
+    return render(request, 'normativa.html', context=context)
 
 def guia_request(request):
     """Vista para mostrar la guia del exportador"""
@@ -62,11 +60,17 @@ class EventosListView(generic.ListView):
 
 
 def proveedores(request):
+    """Vista para mostrar la pagina inicial de proveedores"""
+    context = {}
+    return render(request, 'proveedores.html', context=context)
+
+
+def proveedores_contacto(request):
     """Vista para pedir los registros de proveedores"""
 
     proveedores_completo = Proveedor.objects.select_related('municipio__departamento')
     paginator = Paginator(proveedores_completo, 100)
-    numero_pagina = request.GET.get('page')
+    numero_pagina = request.GET.get('pag')
     pagina_actual = paginator.get_page(numero_pagina)
 
-    return render(request, 'proveedores.html', {'pagina_actual': pagina_actual})
+    return render(request, 'proveedores_contacto.html', {'pagina_actual': pagina_actual})

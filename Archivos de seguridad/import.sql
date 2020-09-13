@@ -1,4 +1,0 @@
-LOAD DATA INFILE 'proveedores_v3.txt' INTO TABLE informacion_proveedor
-FIELDS TERMINATED BY ',' ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
-IGNORE 1 LINES;

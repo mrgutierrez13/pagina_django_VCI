@@ -357,8 +357,8 @@ BANNER DE LA PAGINA
 }
 
 #banner-pagina .titulo, #banner-pagina .subtitulo {
-    text-shadow: 0 1px 1px hsl(234, 60%, 100%);
-    color: hsl(234, 60%, 10%);
+    text-shadow: 0 1px 1px  white;
+    color: var(--color-dark-letra);
 }
 
 #banner-pagina .subtitulo {
@@ -394,7 +394,7 @@ BANNER DE LA PAGINA
 
 @media screen and (min-width: 70rem) {
     #banner-pagina{
-        background: url("../images/banner_campo.jpg");
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 80%, var(--color-fondo-claro) 100%), url("../images/imagen1_quinua.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         margin-bottom: 0;
@@ -404,6 +404,11 @@ BANNER DE LA PAGINA
         line-height: .9em;
         text-align: unset;       
     }
+    #banner-pagina .titulo, #banner-pagina .subtitulo {
+        text-shadow: 0 1px 1px  hsl(234, 60%, 10%);
+        color: hsl(234, 60%, 100%);
+    }
+    
     #banner-pagina .subtitulo {
         display: block;
         font-family: var(--fuente-sans);

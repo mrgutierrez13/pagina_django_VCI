@@ -58,7 +58,7 @@
         bottom: 20%;
         right: 0%;
         z-index: 11;
-        transform: translateX(4em);
+        transform: translateX(3em);
         opacity: 0;
         transition: opacity .2s ease-in, transform .2s ease-in;
     }
