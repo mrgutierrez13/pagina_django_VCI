@@ -1,0 +1,44 @@
+.barra-paginas{
+    margin: 1em auto;
+    text-align: center;
+}
+
+.contenedor-tabla{
+    display: flex;
+    justify-content: center;
+}
+
+.tabla{
+    margin: 2em auto;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 1.5rem;
+    font-family: var(--fuente-sans);
+    box-shadow: 3px 3px hsla(0, 0%, 0%, 0.2);
+    width: 90%;
+}
+
+.nit-ci{width: 8%;}
+.razon-social{width: 62%;}
+.peso-bruto{width: 10%;}
+.peso-neto{width: 10%;}
+.cif{width: 10%;}
+
+th{
+    background-color: var(--color-dark-letra);
+    color: white;
+    font-size: 1.7rem;
+}
+
+tr:nth-child(odd){
+    background-color: hsl(227, 20%, 90%);
+}
+
+td{
+    padding: .5em;
+}
+
+.celda-peso-bruto,
+.celda-peso-neto,
+.celda-cif{
+    text-align: right;
+}

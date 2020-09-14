@@ -10,6 +10,7 @@ urlpatterns = [
     #path('brokers/', views.BrokersListView.as_view(), name='brokers'),
     path('proveedores/', views.proveedores, name='proveedores'),
     path('proveedores/contacto/', views.proveedores_contacto, name='proveedores_contacto'),
+    path('proveedores/empresas/', views.proveedores_empresas, name='proveedores_empresas'),
     #path('videos/', views.VideosListView.as_view(), name='videos'),
     path('eventos/', views.EventosListView.as_view(), name='eventos'),
 ]

@@ -8,24 +8,38 @@
 {% block contenido %}
 <h1 class="titulo-principal-contenido">Información sobre proveedores</h1>
 
-<div class="barra-enlace" id="informacion-contacto">
-    INFORMACIÓN DE CONTACTO
-</div>
+<div class="contenedor-barras">
 
-<div class="barra-enlace" id="empresas-proveedoras">
-    EMPRESAS Y SU ACTIVIDAD COMERCIAL
-</div>
+    <a href="{% url 'proveedores_contacto' %}" class="barra-enlace" id="informacion-contacto">
+        <h3>INFORMACIÓN DE CONTACTO</h3>
+        <div class="imagen-logo"></div>
+        <div class="fondo-barra"></div>
+    </a>
 
-<div class="barra-enlace" id="ruta-comercial">
-    DEPARTAMENTOS, PAISES EXTRANJEROS Y RUTAS COMERCIALES
-</div>
+    <a href="{% url 'proveedores_empresas' %}" class="barra-enlace" id="empresas-proveedoras">
+        <h3>EMPRESAS Y SU ACTIVIDAD COMERCIAL</h3>
+        <div class="imagen-logo"></div>
+        <div class="fondo-barra"></div>
+    </a>
 
-<div class="barra-enlace" id="sectores-comeciales">
-    SECTORES COMERCIALES (CUODE)
-</div>
+    <div class="barra-enlace" id="ruta-comercial">
+        <h3>DEPARTAMENTOS,<br> PAISES EXTRANJEROS Y RUTAS COMERCIALES</h3>
+        <div class="imagen-logo"></div>
+        <div class="fondo-barra"></div>
+    </div>
 
-<div class="barra-enlace" id="productos-individuales">
-    PRODUCTOS INDIVIDUALES (NANDINA)
+    <div class="barra-enlace" id="sectores-comerciales">
+        <h3>SECTORES COMERCIALES (CUODE)</h3>
+        <div class="imagen-logo"></div>
+        <div class="fondo-barra"></div>
+    </div>
+
+    <div class="barra-enlace" id="productos-individuales">
+        <h3>PRODUCTOS INDIVIDUALES (NANDINA)</h3>
+        <div class="imagen-logo"></div>
+        <div class="fondo-barra"></div>
+    </div>
+
 </div>
 
 {% endblock %}

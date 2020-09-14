@@ -6,25 +6,9 @@
 {% endblock %}
 
 {% block contenido %}
-<h1 class="titulo-contenido-principal">Directorio de proveedores</h1>
+<h1 class="titulo-principal-contenido">Directorio de proveedores</h1>
 
-<div class="barra-paginas">
-    <span class="step-links">
-        {% if pagina_actual.has_previous %}
-            <a href="?pag=1">&laquo; primer</a>
-            <a href="?pag={{ pagina_actual.previous_page_number }}">Anterior</a>
-        {% endif %}
-
-        <span class="current">
-            Página {{ pagina_actual.number }} de {{ pagina_actual.paginator.num_pages }}.
-        </span>
-
-        {% if pagina_actual.has_next %}
-            <a href="?pag={{ pagina_actual.next_page_number }}">Siguiente</a>
-            <a href="?pag={{ pagina_actual.paginator.num_pages }}">ultimo &raquo;</a>
-        {% endif %}
-    </span>
-</div>
+{% include "barra_paginas.html"%}
 
 <div class="contenedor-tabla-directorio">
     <div class="grilla">
@@ -63,23 +47,7 @@
 </div>
 </div>
 
-
-<div class="barra-paginas">
-    <span class="step-links">
-        {% if pagina_actual.has_previous %}
-            <a href="?pag=1">&laquo; primer</a>
-            <a href="?pag={{ pagina_actual.previous_page_number }}">Anterior</a>
-        {% endif %}
-
-        <span class="current">
-            Página {{ pagina_actual.number }} de {{ pagina_actual.paginator.num_pages }}.
-        </span>
-
-        {% if pagina_actual.has_next %}
-            <a href="?pag={{ pagina_actual.next_page_number }}">Siguiente</a>
-            <a href="?pag={{ pagina_actual.paginator.num_pages }}">ultimo &raquo;</a>
-        {% endif %}
-    </span>
-</div>
+{% include "barra_paginas.html"%}
 
 {% endblock %}
+

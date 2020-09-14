@@ -7,54 +7,36 @@
 
 {% block contenido %}
 <h1 class="titulo-principal-contenido">VCI te asesora</h1>
-<div class="asesora-area1">
-    <p>Bienvenido al portal de Asesoramiento del Viceministerio de Comercio Interno, mediante este medio,
-        usted
-        empresa exportadora, puede realizar consultas referidas a:</p>
-    <ul class="preguntas">
-        <li>¿Qué es el régimen RITEX?</li>
-        <li>¿Qué es un FIDECOMISO?</li>
-        <li>¿Qué es la devolución del Gravamen arancelario (GA)?</li>
-        <li>¿Qué es el registro de importadores?</li>
-        <li>¿Cómo obtengo datos de Exportaciones e Importaciones?</li>
-    </ul>
-    <!--h3>Ubicacion</h3>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d239.09466994942045!2d-68.13225823126855!3d-16.500092270722337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2s!4v1468017520660"
-        style="border:0" allowfullscreen="" width="500" height="450" frameborder="0"></iframe-->
-    <form class="asesora-forma" action="" method="post">
-        <span>Nombre:</span>
-        <input type="text" name="field1" required="true"
-            oninvalid="this.setCustomValidity('Por favor ingrese un nombre..')"
-            oninput="setCustomValidity('')" />
-        <span>Email:</span>
-        <input type="email" name="field2" required="true"
-            oninvalid="this.setCustomValidity('Por favor ingrese una direccion de correo valida..')"
-            oninput="setCustomValidity('')" />
-        <span>Teléfono/Celular:</span>
-        <input type="text" name="field3" required="true"
-            oninvalid="this.setCustomValidity('Por favor ingrese su número de teléfono..')"
-            oninput="setCustomValidity('')" />
-        <span>¿En que podría ayudarle el VCI?</span>
-        <textarea name="field4" onkeyup="adjust_textarea(this)" required="true" spellcheck="false"
-            placeholder="Escriba su mensaje para el VCI por favor..."></textarea>
-        <label id="asesora-enviar">
-            <input type="submit" value="Enviar al VCI" />
-        </label>
-    </form>
+<div class="asesora-contenedor">
+    <div class="texto-asesora">
+        <p>Bienvenido al portal de Asesoramiento del Viceministerio de Comercio Interno, mediante este medio,
+            usted empresa exportadora, puede realizar consultas referidas a:</p>
+        <ul class="preguntas">
+            <li>¿Qué es el régimen RITEX?</li>
+            <li>¿Qué es un FIDECOMISO?</li>
+            <li>¿Qué es la devolución del Gravamen arancelario (GA)?</li>
+            <li>¿Qué es el registro de importadores?</li>
+            <li>¿Cómo obtengo datos de Exportaciones e Importaciones?</li>
+        </ul>
+        <ul class="datos-ubicacion">
+            <li>Oficina Central - La Paz</li>
+            <li>Av. Camacho Nro 1488, Edificio Ex-Refo</li>
+            <li>
+                <bold>Teléfono: </bold>77796069
+            </li>
+            <li>
+                <bold>Fax: </bold>2372057
+            </li>
+            <li>
+                <bold>Email: </bold>vci.te.asesora@gmail.com
+            </li>
+        </ul>
+    </div>
 
-    <ul class="datos-ubicacion">
-        <li>Oficina Central - La Paz</li>
-        <li>Av. Camacho Nro 1488, Edificio Ex-Refo</li>
-        <li>
-            <bold>Teléfono: </bold>77796069
-        </li>
-        <li>
-            <bold>Fax: </bold>2372057
-        </li>
-        <li>
-            <bold>Email: </bold>vci.te.asesora@gmail.com
-        </li>
-    </ul>
+    <form class="asesora-forma" action="" method="post">
+        {% csrf_token %}
+        {{ formulario }}
+        <input id="boton-enviar" type="submit" value="Enviar" />
+    </form>
 </div>
 {% endblock %}

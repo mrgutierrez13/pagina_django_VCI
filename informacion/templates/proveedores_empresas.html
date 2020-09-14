@@ -1,0 +1,42 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block estilos_propios %}
+<link rel="stylesheet" href="{% static 'css/estilos_proveedores_empresas.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<h1 class="titulo-principal-contenido">Empresas Proveedoras</h1>
+
+{% include "barra_paginas.html"%}
+
+<div class="contendor-tabla">
+    <table class="tabla">
+        <thead>
+            <tr>
+                <th class="nit-ci">NIT/CI</th>
+                <th class="razon-social">RAZON SOCIAL</th>
+                <th class="peso-bruto">Total Peso Bruto Importado (Kg)</th>
+                <th class="peso-neto">Total Peso Neto Importado (Kg)</th>
+                <th class="cif">CIF (Incoterm)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for proveedor in pagina_actual %}
+            <tr>
+                <td>{{ proveedor.nit_ci }}</td>
+                <td>{{ proveedor.razon_social }}</td>
+                <td class="celda-peso-bruto">{{ proveedor.kg_bruto|floatformat }}</td>
+                <td class="celda-peso-neto">{{ proveedor.kg_neto|floatformat }}</td>
+                <td class="celda-cif">{{ proveedor.cif|floatformat }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+{% include "barra_paginas.html"%}
+
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% block barras-navegadoras %}
+<div class="barra-paginas">
+    <span class="step-links">
+        {% if pagina_actual.has_previous %}
+            <a href="?pag=1">&laquo; primer</a>
+            <a href="?pag={{ pagina_actual.previous_page_number }}">Anterior</a>
+        {% endif %}
+
+        <span class="current">
+            Página {{ pagina_actual.number }} de {{ pagina_actual.paginator.num_pages }}.
+        </span>
+
+        {% if pagina_actual.has_next %}
+            <a href="?pag={{ pagina_actual.next_page_number }}">Siguiente</a>
+            <a href="?pag={{ pagina_actual.paginator.num_pages }}">ultimo &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+{% endblock %}

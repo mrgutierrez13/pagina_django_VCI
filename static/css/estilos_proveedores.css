@@ -1,33 +1,91 @@
-.barra-enlace {
-    background-color: orange;
+.contenedor-barras{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(50em, 1fr));
+    grid-auto-rows: auto;
+}
+
+.contenedor-barras>div:last-child{
+    grid-column: span 2;
     width: 50%;
-    margin: 2em auto;
-    font-size: 2rem;
-    padding: 1em;
+    justify-self: center;
+}
+
+
+.barra-enlace {    
+    display: flex;
+    width: 100%;
+    margin: 1em auto;
+    font-size: 1.8rem;
+    font-family: var(--fuente-sans);
     position: relative;
-    display: inline-block;
+    z-index: 1;    
+    height: 10em;    
+    overflow: hidden;
 }
 
-.barra-enlace:after {
+.fondo-barra{
+    background-color: hsl(240, 60%, 95%);
     position: absolute;
-    z-index: -1;
-    content: "";
-    right: -10%;
+    left: 3em;
     top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: inherit;
+    width: 80%;
+    height: 95%;
     transform: skewX(-10deg);
+    z-index: 1;
+    box-shadow: 3px 3px hsla(0, 0%, 0%, 0.2);
+    border-radius: .5em;
+    transition: transform .1s ease-in;
+    transform-origin: left;
 }
 
-.barra-enlace:before {
-    z-index: -1;
-    content: "";
+.barra-enlace:hover .fondo-barra{
+    transform: scaleX(1.05) skewX(-10deg);
+    transform-origin: left;
+}
+
+
+.barra-enlace:hover h3{
+    text-decoration: underline;
+}
+
+.barra-enlace>h3{
     position: absolute;
-    left: -10%;
+    left: 4em;
+    top: 1em;
+    z-index: 2;
+    width: 10em;
+}
+
+.imagen-logo{
+    position: absolute;
+    z-index: 2;
+    width: 15em;
+    height: 95%;
     top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: inherit;
-    transform: skewX(-10deg);
+    right: 7em;    
+    box-shadow: -8px -8px 8px 8px hsl(240, 60%, 95%) inset;
+    background-size: cover;
+    transition: transform .1s ease-in, box-shadow .1s ease-in;
+    border-radius: .3em;
+}
+
+#informacion-contacto .imagen-logo{
+    background-image: url(../images/guia_telefonica.jpg);
+}
+#empresas-proveedoras .imagen-logo{
+    background-image: url(../images/empresa_boliviana.jpg);
+}
+#ruta-comercial .imagen-logo{
+    background-image: url(../images/bolivia_mundo.jpg);
+}
+#sectores-comerciales .imagen-logo{
+    background-image: url(../images/sectores_comerciales.jpg);
+}
+#productos-individuales .imagen-logo{
+    background-image: url(../images/productos_individuales.jpg);
+}
+.barra-enlace:hover .imagen-logo{
+    transform: translateX(3em);
+    transform-origin: left;
+    box-shadow: none;
 }

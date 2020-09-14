@@ -14,7 +14,8 @@ html {
 }
 
 body {
-    --fuente-serif: 'PT Serif', "Lucida Sans", "Lucida Grande", Lucida, serif;
+    --fuente-serif: 'Open Sans', "Lucida Sans", "Lucida Grande", Lucida, serif;
+    /*--fuente-serif: 'PT Serif', "Lucida Sans", "Lucida Grande", Lucida, serif;*/
     --fuente-sans: 'PT Sans', "Lucida Sans", "Lucida Grande", Lucida, sans-serif;
     --color-dark-letra: hsl(198, 100%, 17%);
     --color-fondo-claro: hsl(0, 0%, 95%);
