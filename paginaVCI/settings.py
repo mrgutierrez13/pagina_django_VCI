@@ -29,7 +29,8 @@ SECRET_KEY = 'h-#anv$8knwx%=pv!x4_xctog!_*ayp29lb#%qrh90(%idtm=i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1',
+                 '192.168.70.11']
 
 #INTERNAL_IPS = ['127.0.0.1',]
 
@@ -94,7 +95,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'OPTIONS': {
-            'read_default_file': 'C:\\my.cnf',  #EDITAR ESTO PARA EL SERVIDOR MYSQL
+            'read_default_file': '/etc/mysql/my.cnf',  #EDITAR ESTO PARA EL SERVIDOR MYSQL
         },
     }
 }
@@ -141,15 +142,15 @@ USE_TZ = True
 
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
+#STATICFILES_DIRS = [
+#    BASE_DIR / "static",
+#]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
