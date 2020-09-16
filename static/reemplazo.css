@@ -1,0 +1,23 @@
+.column-nombre{
+    width: 20%;
+}
+
+.column-mensaje{
+    width: 40%;
+}
+
+.column-telefono{
+    width: 10%;
+}
+
+.column-email{
+    width: 15%;
+}
+
+.column-fecha_creacion{
+    width: 15%;
+}
+
+.nowrap {
+	white-space: normal;
+}

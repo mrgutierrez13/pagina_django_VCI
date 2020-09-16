@@ -33,10 +33,12 @@
         </ul>
     </div>
 
+    {% block gracias %}
     <form class="asesora-forma" action="" method="post">
         {% csrf_token %}
         {{ formulario }}
         <input id="boton-enviar" type="submit" value="Enviar" />
     </form>
+    {% endblock %}
 </div>
 {% endblock %}

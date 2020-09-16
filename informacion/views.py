@@ -72,7 +72,7 @@ def proveedores(request):
 def proveedores_contacto(request):
     """Vista para pedir los registros de proveedores"""
 
-    proveedores_completo = Proveedor.objects.select_related('municipio__departamento')
+    proveedores_completo = Proveedor.objects.select_related('municipio__departamento').order_by('razon_social')
     paginator = Paginator(proveedores_completo, 100)
     numero_pagina = request.GET.get('pag')
     pagina_actual = paginator.get_page(numero_pagina)
@@ -89,7 +89,7 @@ def proveedores_empresas(request):
     proveedores_activos = ProveedorActivo.objects.annotate(kg_bruto=Sum('actividadeconomica__kg_bruto'),
                                                            kg_neto=Sum(
                                                                'actividadeconomica__kg_neto'),
-                                                           cif=Sum('actividadeconomica__cif'))
+                                                           cif=Sum('actividadeconomica__cif')).order_by('razon_social')
     paginator = Paginator(proveedores_activos, 100)
     numero_pagina = request.GET.get('pag')
     pagina_actual = paginator.get_page(numero_pagina)

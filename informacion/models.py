@@ -95,7 +95,7 @@ class Evento(models.Model):
         max_length=500, help_text="Ingresa el enlace de google maps", null=True, blank=True)
 
     def __str__(self):
-        """String que representa el boletin"""
+        """Nombre del evento"""
         return self.nombre
 
 ###########################################
@@ -106,12 +106,18 @@ class Evento(models.Model):
 class Departamento(models.Model):
     """Modelo de los departamentos de Bolivia"""
     nombre = models.CharField(max_length=10)
+    def __str__(self):
+        """Nombre del Departamento"""
+        return self.nombre
 
 
 class Municipio(models.Model):
     """Modelo para el municipio en que esta una empresa"""
     nombre = models.CharField(max_length=30)
     departamento = models.ForeignKey('Departamento', on_delete=models.CASCADE)
+    def __str__(self):
+        """Nombre del Municipio"""
+        return self.nombre
 
 
 class Proveedor(models.Model):
