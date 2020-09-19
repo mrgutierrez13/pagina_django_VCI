@@ -15,7 +15,6 @@ html {
 
 body {
     --fuente-serif: 'Open Sans', "Lucida Sans", "Lucida Grande", Lucida, serif;
-    /*--fuente-serif: 'PT Serif', "Lucida Sans", "Lucida Grande", Lucida, serif;*/
     --fuente-sans: 'PT Sans', "Lucida Sans", "Lucida Grande", Lucida, sans-serif;
     --color-dark-letra: hsl(198, 100%, 17%);
     --color-fondo-claro: hsl(0, 0%, 95%);
@@ -155,7 +154,7 @@ img {
         top: 0;
         left: 0;
         display: grid;
-        grid-template-columns: repeat(7, minmax(5em, 1fr)) auto auto;
+        grid-template-columns: repeat(7, minmax(5em, 1fr)) 20em;
         height: 4em;
         grid-template-areas: "nav-ini nav-inst nav-serv nav-info nav-logi nav-tram nav-asesora nav-busqueda nav-boton";
         align-items: center;
@@ -441,7 +440,7 @@ BANNER DE LA PAGINA
     position: fixed;
     bottom: 1%;
     left: 5%;
-    width: calc(25*var(--icon-bar-escala));
+    width: calc(30*var(--icon-bar-escala));
     height: auto;
     justify-content: space-between;
     z-index: 2;
@@ -454,7 +453,7 @@ BANNER DE LA PAGINA
         bottom: unset;
         top: 60%;
         left: 1%;
-        height: calc(25*var(--icon-bar-escala));
+        height: calc(30*var(--icon-bar-escala));
         width: auto;
     }
 }
@@ -482,21 +481,26 @@ BANNER DE LA PAGINA
     filter: invert(100%);
 }
 
-.Facebook:hover {
-    background: hsla(221, 44%, 41%, 0.9);
+.facebook:hover {
+    background: #3b5897e6;
 }
 
-.Twitter:hover {
-    background: hsla(206, 82%, 63%, 0.9);
+.twitter:hover {
+    background: #53abeee6;
 }
 
-.Whatsapp:hover {
-    background: hsla(132, 78%, 47%, 0.9);
+.whatsapp:hover {
+    background: #1ad540e6;
 }
 
-.Youtube:hover {
-    background: hsla(0, 100%, 37%, 0.9);
+.youtube:hover {
+    background: #bd0000e6;
 }
+
+.instagram:hover {
+    background: #cb5000;
+}
+
 
 /*==============
     FOOTER
@@ -636,7 +640,7 @@ footer {
 
 @media screen and (min-width: 70rem) {
 
-    .modal.mostrado{
+    .modal{
         display: block;
     }
 
@@ -698,3 +702,17 @@ footer {
         overflow: hidden;
     }
 }
+
+
+.bloque-desarrollo{
+    display: flex;
+    justify-content: center;
+    margin: 20em auto;
+}
+
+.bloque-desarrollo>img{
+    width: 20em;
+    animation:spin 8s linear infinite;
+}
+
+@keyframes spin { 100% { transform:rotate(360deg); } }

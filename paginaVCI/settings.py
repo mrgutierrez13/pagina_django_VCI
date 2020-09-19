@@ -9,8 +9,8 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-# CONSEJO: PARA UTILIZAR MYSQL Y DJANGO
-# https://www.digitalocean.com/community/tutorials/how-to-create-a-django-app-and-connect-it-to-a-database
+# CONSEJO: TUTORIAL PARA SETUP DE DJANGO Y NGINX EN UBUNTU SERVER
+# https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html
 
 
 from pathlib import Path
@@ -32,7 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1',
                  '192.168.70.11']
 
-#INTERNAL_IPS = ['127.0.0.1',]
+# INTERNAL_IPS = ['127.0.0.1',] # USAR PARA DEBUG TOOLBAR
 
 
 # Application definition
@@ -48,8 +48,11 @@ INSTALLED_APPS = [
     'institucional',
     'informacion',
     'asesora',
+    'logistica',
+    'en_desarrollo',
+    'tramites',
     'colorfield',
-    #'debug_toolbar',
+    # 'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -95,17 +98,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'OPTIONS': {
-            'read_default_file': '/etc/mysql/my.cnf',  #EDITAR ESTO PARA EL SERVIDOR MYSQL
+            # 'read_default_file': '/etc/mysql/my.cnf',  # USAR PARA UBUNTU
+            'read_default_file': 'C://my.cnf',          # USAR PARA WINDOWS
         },
     }
 }
-
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
 
 
 # Password validation
@@ -140,17 +137,13 @@ USE_L10N = True
 
 USE_TZ = True
 
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-
-#STATICFILES_DIRS = [
-#    BASE_DIR / "static",
-#]
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+STATICFILES_DIRS = [BASE_DIR / "static", ]   # COMENTAR PARA UTILIZAR NGINX
+
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+# STATIC_ROOT = os.path.join(BASE_DIR, "static/") # USAR PARA NGINX
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')

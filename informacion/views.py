@@ -42,12 +42,6 @@ def guia_request(request):
     return render(request, 'guia_exportador.html', context=context)
 
 
-def sprocon_request(request):
-    """Vista para mostrar sprocon"""
-    context = {}
-    # Render the HTML template
-    return render(request, 'sprocon.html', context=context)
-
 
 class FideicomisosListView(generic.ListView):
     """Vista para renderizar los fideicomisos"""
@@ -100,3 +94,13 @@ def proveedores_empresas(request):
     }
 
     return render(request, 'proveedores_empresas.html', context=context)
+
+def brokers(request):
+    """Vista para mostrar los brokers"""
+    context = {}
+    return render(request, 'brokers.html', context=context)
+
+def videos(request):
+    """Vista para mostrar los videos"""
+    context = {}
+    return render(request, 'videos.html', context=context)

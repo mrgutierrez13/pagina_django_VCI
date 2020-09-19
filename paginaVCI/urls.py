@@ -26,9 +26,13 @@ urlpatterns = [
     path('institucional/', include('institucional.urls')),
     path('informacion/', include('informacion.urls')),
     path('asesora/', include('asesora.urls')),
+    path('en_desarrollo/', include('en_desarrollo.urls')),
+    path('logistica/', include('logistica.urls')),
+    path('tramites/', include('tramites.urls')),
     path('', RedirectView.as_view(url='inicio/')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
   + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 
 
 #if settings.DEBUG:

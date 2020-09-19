@@ -1,40 +1,23 @@
 from django.db import models
-
-# Create your models here.
-# SOLUCION ERROR PARA BARRA BAJA '_'
-# https://stackoverflow.com/questions/12995888/name-is-not-defined/12995923
-# CONSEJO: Para sacar el 'human readable text'
-# https://stackoverflow.com/questions/47881817/the-human-readable-value-of-the-field-choices-in-django
-# TODO:  Limit number of model instances to be created - django
-# https://stackoverflow.com/questions/2138408/limit-number-of-model-instances-to-be-created-django
+from django.utils.html import mark_safe
+from django.conf import settings
 
 
-class Texto(models.Model):
+class SeccionTexto(models.Model):
     """Modelo representando el texto a desplegar en la pagina institucional"""
+    posicion = models.PositiveSmallIntegerField()
+    titulo = models.CharField(max_length=100)
     contenido = models.TextField(max_length=1000,
                                  help_text='El texto aparecera tal cual en la pagina')
 
-    SECCIONES = (
-        ('qui', "¿Quienes Somos?"),
-        ('mis', "Mision"),
-        ('obj', "Objetivos"),
-        ('org', "Organización"),
-    )
-
-    seccion = models.CharField(
-        max_length=3,
-        choices=SECCIONES,
-        default='qui',
-        help_text='Selecciona la sección de este texto',
-    )
-
     def __str__(self):
         """String que representa el servicio"""
-        return self.get_seccion_display()
+        return self.titulo
 
 
 class FuncionarioPublico(models.Model):
     """Modelo representando la informacion de un funcionario publico en la pagina Institucional"""
+    posicion = models.PositiveSmallIntegerField()
     nombre_completo = models.CharField(max_length=200,
                                        help_text='El nombre que aparecera tal cual en la pagina')
     cargo = models.CharField(max_length=200, default='miembro',
@@ -52,8 +35,13 @@ class FuncionarioPublico(models.Model):
         help_text='Selecciona el nivel en que se ubicara en la pagina',
     )
 
-    foto = models.FileField(upload_to='images/', verbose_name="",
+    foto = models.FileField(upload_to='images/', verbose_name="FOTO DEL FUNCIONARIO",
                             help_text='Ingresa una foto del funcionario publico')
+
+    def foto_tag(self):
+        """Para mostrar imagenes en el panel de administracion"""
+        return mark_safe('<img src="%s" width="150" />' % (settings.MEDIA_URL + self.foto.name))
+
     class Meta:
         verbose_name = 'Funcionario Público'
         verbose_name_plural = 'Funcionarios Públicos'

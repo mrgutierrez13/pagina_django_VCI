@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import FuncionarioPublico, Texto
+from .models import FuncionarioPublico, SeccionTexto
 
 # VISTAS
 
@@ -8,13 +8,10 @@ def institucional(request):
     """Vista para renderizar la pagina institucional"""
 
     context = {
-        'quienes': Texto.objects.get(seccion='qui'),
-        'mision': Texto.objects.get(seccion='mis'),
-        'objetivos': Texto.objects.get(seccion='obj'),
-        'organizacion': Texto.objects.get(seccion='org'),
-        'funcionarios1': FuncionarioPublico.objects.filter(nivel='N1'),
-        'funcionarios2': FuncionarioPublico.objects.filter(nivel='N2'),
-        'funcionarios3': FuncionarioPublico.objects.filter(nivel='N3'),
+        'textos': SeccionTexto.objects.all().order_by('posicion'),
+        'funcionarios1': FuncionarioPublico.objects.filter(nivel='N1').order_by('posicion'),
+        'funcionarios2': FuncionarioPublico.objects.filter(nivel='N2').order_by('posicion'),
+        'funcionarios3': FuncionarioPublico.objects.filter(nivel='N3').order_by('posicion'),
     }
 
     return render(request, 'institucional.html', context=context)
