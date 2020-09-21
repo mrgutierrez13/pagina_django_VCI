@@ -30,7 +30,7 @@ SECRET_KEY = 'h-#anv$8knwx%=pv!x4_xctog!_*ayp29lb#%qrh90(%idtm=i'
 #    SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1',
                  '192.168.70.11']
@@ -101,8 +101,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'OPTIONS': {
-            # 'read_default_file': '/etc/mysql/my.cnf',  # USAR PARA UBUNTU
-            'read_default_file': 'C://my.cnf',          # USAR PARA WINDOWS
+            'read_default_file': '/etc/mysql/my.cnf',  # USAR PARA UBUNTU
+            #'read_default_file': 'C://my.cnf',          # USAR PARA WINDOWS
         },
     }
 }
@@ -143,10 +143,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATICFILES_DIRS = [BASE_DIR / "static", ]   # COMENTAR PARA UTILIZAR NGINX
+#STATICFILES_DIRS = [BASE_DIR / "static", ]   # COMENTAR PARA UTILIZAR NGINX
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, "static/") # USAR PARA NGINX
+STATIC_ROOT = os.path.join(BASE_DIR, "static/") # USAR PARA NGINX
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')

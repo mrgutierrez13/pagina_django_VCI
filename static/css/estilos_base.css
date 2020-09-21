@@ -641,6 +641,10 @@ footer {
 @media screen and (min-width: 70rem) {
 
     .modal{
+        display: none;
+    }
+
+    .modal.mostrado{
         display: block;
     }
 

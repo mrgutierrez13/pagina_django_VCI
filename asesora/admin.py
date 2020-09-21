@@ -10,8 +10,8 @@ from asesora.models import ContactoAsesora
 class ContactoAdmin(admin.ModelAdmin):
     """Opciones del panel de Administrador VCI te asesora"""
     list_display = ('nombre', 'mensaje', 'telefono', 'email',
-                    'fecha_creacion', 'email_enviado', 'botones')
-
+                    'fecha_creacion', 'email_enviado',   # 'botones'
+                    )
     class Media:
         css = {
             'all': ('reemplazo.css',),
@@ -20,11 +20,11 @@ class ContactoAdmin(admin.ModelAdmin):
     def has_add_permission(self, request):
         return False
 
-    def botones(self, obj):
-        url = ""
-        return mark_safe(
-            '<a href="%s">Responder a %s</a>' % (url, obj.nombre))
+#    def botones(self, obj):
+#        url = ""
+#        return mark_safe(
+#            '<a href="%s">Responder a %s</a>' % (url, obj.nombre))
 
-    botones.allow_tags = True
-    botones.short_description = '-----'
-    change_form_template = 'admin/responder.html'
+    #botones.allow_tags = True
+    #botones.short_description = '-----'
+    #change_form_template = 'admin/responder.html'

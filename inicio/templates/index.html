@@ -238,18 +238,20 @@
     const backdrop = document.querySelector(".modal-backdrop");
     const slides = document.querySelector("#contenedor-slides");
     const banner_bg = document.querySelector("#banner-pagina");
+    const modal = document.getElementById('modal');
 
 
     const load = () => {
         if (storageAvailable('sessionStorage')) {
             var storage = window['sessionStorage'];
             if (storage && storage.length > 0) {
-                modal_imagen.style.display = 'none';
+                modal.style.display = 'none';
             }
             else {
                 sessionStorage.setItem('modal-mostrado', 'true');
+                mostrar(modal);
                 mostrar(modal_imagen);
-                mostrar(backdrop);
+                mostrar(backdrop);                
             }
 
         }
