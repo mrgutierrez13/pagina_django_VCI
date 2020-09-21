@@ -1,4 +1,6 @@
 from django.db import models
+from django.utils.html import mark_safe
+from django.conf import settings
 
 # Create your models here.
 # CONSEJO: Sacar las fecha como nombre:
@@ -19,6 +21,10 @@ class Boletin(models.Model):
     class Meta:
         verbose_name = 'Boletin'
         verbose_name_plural = 'Boletines'
+
+    def portada_tag(self):
+        """Para mostrar imagenes en el panel de administracion"""
+        return mark_safe('<img src="%s" width="150" />' % (settings.MEDIA_URL + self.portada.name))
 
     def __str__(self):
         """String que representa el boletin"""
@@ -59,6 +65,7 @@ class Norma(models.Model):
 class Fideicomiso(models.Model):
     """Modelo representando un fideicomiso"""
     nombre = models.CharField(max_length=200)
+    fecha = models.DateField(help_text="Ingresa la fecha de creacion del fideicomiso")
     decreto = models.CharField(
         max_length=200, help_text="Ingresa el numero del decreto")
     decreto_descripcion = models.TextField(

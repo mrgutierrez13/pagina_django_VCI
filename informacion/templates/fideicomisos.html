@@ -17,18 +17,18 @@
         "Fideicomiso Venezuela", y al "Fideicomiso Insumos Bolivia".
     </text>
     {% for fideicomiso in fideicomisos %}
-    <div class="fideicomiso-descripcion">
-        <h1>{{ fideicomiso.nombre }}</h1>
-        <text class="fid1">
-            <bold>{{ fideicomiso.decreto }}</bold>, {{ fideicomiso.decreto_descripcion }}<br><br>
+    <div class="fideicomiso-contenedor">        
+        <div class="fid1">
+            <h1>{{ fideicomiso.nombre }}</h1>
+            <bold>{{ fideicomiso.decreto }} de {{ fideicomiso.fecha }}</bold>, {{ fideicomiso.decreto_descripcion }}<br><br>
             <bold>Finalidad:</bold> {{ fideicomiso.finalidad }}
-        </text>
-        <h2>Caracteristicas</h2>
-        <text class="fid2">
+        </div>        
+        <div class="fid2">
+            <h2>Caracteristicas</h2>
             <bold>Beneficiarios:</bold>
             {{ fideicomiso.beneficiario }}<br><br>
             <bold>Plazo de vigencia:</bold> {{ fideicomiso.vigencia }}
-        </text>
+        </div>
     </div>
     {% endfor %}
 </div>

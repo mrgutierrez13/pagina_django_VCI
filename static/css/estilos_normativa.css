@@ -38,7 +38,11 @@
 }
 
 .tabla td{
-    padding: 0 1em;
+    padding: 0 1em;    
+}
+
+.justificar{
+    text-align: justify;
 }
 
 .tabla tr a{

@@ -1,0 +1,28 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block estilos_propios %}
+<link rel="stylesheet" href="{% static 'css/estilos_sprocon.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<div class="contenido">
+    <h1 class="titulo-principal-contenido">Presentación</h1>
+    <text>
+        El procedimiento del Régimen de Admisión Temporal para el Perfeccionamiento Activo-RITEX, aprobado con
+        Resolución de Directorio Nº RD 01-020-18 de 19/09/2018 y puede ser consultado en la página WEB de la Aduana
+        Nacional de Bolivia
+    </text>
+    <h2>Régimen de Admisión Temporal para Perfeccionamiento Activo - RITEX</h2>
+    <div class="sprocon-anuncio">
+        <div class="sprocon-descripcion">
+            <img src="{% static 'images/logo_aduana.png' %}">
+            <text>El RITEX el Régimen Aduanero de Admisión Temporal para Perfeccionamiento Activo dentro el cual se
+                permite el de ciertas mercancías a territorio aduanero nacional, con suspensión del pago de los tributos
+                aduaneros, destinadas a ser reexportadas en un período de tiempo determinado, luego de haber sido
+                sometidas a una transformación, elaboración o reparación.
+            </text>
+        </div>
+    </div>
+</div>
+{% endblock %}

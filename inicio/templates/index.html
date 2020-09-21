@@ -17,31 +17,31 @@
                 <source media="(min-width: 720px)" srcset="{% static 'images/imagen1_quinua.jpg' %}">
                 <source media="(max-width: 719px)" srcset="{% static 'images/blank.gif' %}" sizes="100%">
                 <img src="{% static 'images/imagen1_quinua.jpg' %}" alt="slide-quinua">
-             </picture>
+            </picture>
         </div>
         <div class="slider-item">
             <picture>
                 <source media="(min-width: 720px)" srcset="{% static 'images/imagen2_castaña.jpg' %}">
                 <source media="(max-width: 719px)" srcset="{% static 'images/blank.gif' %}" sizes="100%">
                 <img src="{% static 'images/imagen2_castaña.jpg' %}" alt="slider-castana">
-             </picture>
+            </picture>
         </div>
         <div class="slider-item">
             <picture>
                 <source media="(min-width: 720px)" srcset="{% static 'images/imagen3_cafe.webp' %}">
                 <source media="(max-width: 719px)" srcset="{% static 'images/blank.gif' %}" sizes="100%">
                 <img src="{% static 'images/imagen3_cafe.webp' %}" alt="slider-cafe">
-             </picture>
+            </picture>
         </div>
         <div class="slider-item">
             <picture>
                 <source media="(min-width: 720px)" srcset="{% static 'images/imagen4_motoyoe.jpg' %}">
                 <source media="(max-width: 719px)" srcset="{% static 'images/blank.gif' %}" sizes="100%">
                 <img src="{% static 'images/imagen4_motoyoe.jpg' %}" alt="slide-motoyoe">
-             </picture>
+            </picture>
         </div>
         <div id="background"></div>
-    </div>    
+    </div>
 
     <div class="contenedor-logos">
         <img id="logo-ministerio" src="{% static 'images/ministerio_logo.png' %}" alt="logo-ministerio">
@@ -62,7 +62,7 @@
                 <source media="(min-width: 720px)" srcset="{{ MEDIA_URL }}{{ noticia.banner }}">
                 <source media="(max-width: 719px)" srcset="{% static 'images/blank.gif' %}" sizes="100%">
                 <img src="{{ MEDIA_URL }}{{ noticia.banner }}" alt="slide-quinua">
-             </picture>
+            </picture>
         </a>
     </div>
 </div>
@@ -207,6 +207,31 @@
 
 <script>
     "use strict"
+    function storageAvailable(type) {
+        var storage;
+        try {
+            storage = window[type];
+            var x = '__storage_test__';
+            storage.setItem(x, x);
+            storage.removeItem(x);
+            return true;
+        }
+        catch (e) {
+            return e instanceof DOMException && (
+                // everything except Firefox
+                e.code === 22 ||
+                // Firefox
+                e.code === 1014 ||
+                // test name field too, because code might not be present
+                // everything except Firefox
+                e.name === 'QuotaExceededError' ||
+                // Firefox
+                e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+                // acknowledge QuotaExceededError only if there's something already stored
+                (storage && storage.length !== 0);
+        }
+    }
+
     const titulo = document.querySelector(".contenedor-titulo");
     const logos = document.querySelector(".contenedor-logos");
     const modal_imagen = document.querySelector(".modal-body");
@@ -215,14 +240,33 @@
     const banner_bg = document.querySelector("#banner-pagina");
 
 
-    window.onload = function () {
-        setInterval(() => { mover(titulo); }, 1500);
-        setInterval(() => { mover(logos); }, 3000);
-        setInterval(() => { mover(banner_bg); }, 3800);
-        setInterval(() => { mover(slides); }, 4000);
-        setInterval(() => { mostrar(modal_imagen); }, 300);
-        setInterval(() => { mostrar(backdrop); }, 300);
-    };
+    const load = () => {
+        if (storageAvailable('sessionStorage')) {
+            var storage = window['sessionStorage'];
+            if (storage && storage.length > 0) {
+                modal_imagen.style.display = 'none';
+            }
+            else {
+                sessionStorage.setItem('modal-mostrado', 'true');
+                mostrar(modal_imagen);
+                mostrar(backdrop);
+            }
+
+        }
+        else {
+            console.log("no hay local storage")
+        }
+
+    }
+
+
+    setInterval(() => { mover(titulo); }, 1500);
+    setInterval(() => { mover(logos); }, 3000);
+    setInterval(() => { mover(banner_bg); }, 3800);
+    setInterval(() => { mover(slides); }, 4000);
+
+    window.onload = load;
+
 
     function mover(b) {
         b.classList.add("efecto");
@@ -247,5 +291,4 @@
     }
 
 </script>
-
 {% endblock %}

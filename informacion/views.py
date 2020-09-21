@@ -7,7 +7,6 @@ from inicio.models import Libro
 
 
 # VISTAS
-# TODO: INTENTAR SOLUCIONAR https://stackoverflow.com/questions/45135263/class-has-no-objects-member
 # CONSEJO: INNER JOIN, REVERSE LOOKUP GRANDPARENT TABLE
 # https://docs.djangoproject.com/en/2.2/ref/models/querysets/#select-related
 # CONSEJO: Para convertir un Queryset a JSON usar Django serializer
@@ -25,8 +24,8 @@ def normativa(request):
     """Vista para renderizar las normas"""
 
     context = {
-        'secciones_normas': TipoNorma.objects.all(),
-        'normas': Norma.objects.all(),
+        'secciones_normas': TipoNorma.objects.all().order_by('nombre_seccion'),
+        'normas': Norma.objects.all().order_by('titulo'),
     }
 
     return render(request, 'normativa.html', context=context)
@@ -48,13 +47,14 @@ class FideicomisosListView(generic.ListView):
     model = Fideicomiso
     context_object_name = 'fideicomisos'
     template_name = 'fideicomisos.html'
+    ordering = ["-fecha"]
 
 
-class EventosListView(generic.ListView):
+def eventos(request):
     """Vista para renderizar los eventos"""
-    model = Evento
-    context_object_name = 'eventos'
-    template_name = 'eventos.html'
+    eventos_ferias = Evento.objects.all().order_by('-fecha')
+    return render(request, 'eventos.html', {'eventos': eventos_ferias})
+
 
 
 def proveedores(request):
@@ -99,8 +99,3 @@ def brokers(request):
     """Vista para mostrar los brokers"""
     context = {}
     return render(request, 'brokers.html', context=context)
-
-def videos(request):
-    """Vista para mostrar los videos"""
-    context = {}
-    return render(request, 'videos.html', context=context)

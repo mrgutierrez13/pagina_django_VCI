@@ -17,5 +17,16 @@ class ContactoForm(forms.ModelForm):
         model = ContactoAsesora
         fields = ('nombre', 'email', 'telefono', 'mensaje')
 
+
+class ResponderForm(forms.Form):
+    """Formulario basado en clases"""
+    acerca = "RESPUESTA DE VCI TE ASESORA"
+    email_emisor = forms.EmailField(label="Se envia desde")
+    email_receptor = forms.EmailField(label="Al destinatario")
+    mensaje = forms.CharField(label='Respuesta',
+                              max_length=1000, min_length=10,
+                              widget=forms.Textarea(attrs={'placeholder': 'Ingrese la respuesta'}))
+
+
 # TODO: CREAR BOTONES Y ENVIAR EMAIL
 # https://hakibenita.com/how-to-add-custom-action-buttons-to-django-admin
