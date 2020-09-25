@@ -24,10 +24,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'h-#anv$8knwx%=pv!x4_xctog!_*ayp29lb#%qrh90(%idtm=i'
 
-#with open('/etc/secret_key.txt') as f:
-#    SECRET_KEY = f.read().strip()
+with open('/etc/secret_key.txt') as f:
+    SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -155,8 +154,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 #gmail_send/settings.py
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'moigut112358@gmail.com'
-EMAIL_HOST_PASSWORD = 'udyejfvylpanpyqn' #CONTRASEÑA GENERADA POR GMAIL
+EMAIL_HOST_USER = 'vci.te.asesora@gmail.com'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'moigut112358@gmail.com'
+DEFAULT_FROM_EMAIL = 'vci.te.asesora@gmail.com'
+
+with open('/etc/email_key.txt') as f:
+    EMAIL_HOST_PASSWORD = f.read().strip() #CONTRASEÑA GENERADA POR GMAIL
