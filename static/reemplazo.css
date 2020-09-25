@@ -22,3 +22,16 @@
 	white-space: normal;
 }
 
+.boton{
+    background-color: #0078d4;
+    padding: .3em;
+    border-radius: 2px;
+}
+
+.boton>a{
+    color: white;
+}
+
+.boton>a>bold{
+    font-weight: 600;
+}

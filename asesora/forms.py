@@ -1,6 +1,9 @@
 from django import forms
-#from django.utils.translation import gettext_lazy as _
+from django.core.mail import BadHeaderError, send_mail
+from django.http import HttpResponse
 from .models import ContactoAsesora
+
+ACERCA = 'Mensaje de respuesta del VCI'
 
 
 class ContactoForm(forms.ModelForm):
@@ -11,7 +14,11 @@ class ContactoForm(forms.ModelForm):
                                label='Teléfono/Celular')
     mensaje = forms.CharField(label='Mensaje de consulta*',
                               max_length=1000, min_length=10,
-                              widget=forms.Textarea(attrs={'placeholder': 'Ingrese su mensaje para el VCI...'}))
+                              widget=forms.Textarea(
+                                  attrs={
+                                      'placeholder': 'Ingrese su mensaje para el VCI...'}
+                              )
+                              )
 
     class Meta:
         model = ContactoAsesora
@@ -20,13 +27,30 @@ class ContactoForm(forms.ModelForm):
 
 class ResponderForm(forms.Form):
     """Formulario basado en clases"""
-    acerca = "RESPUESTA DE VCI TE ASESORA"
-    email_emisor = forms.EmailField(label="Se envia desde")
-    email_receptor = forms.EmailField(label="Al destinatario")
+
+    tema = forms.CharField(label='Tema',
+                           max_length=200,
+                           min_length=5,
+                           initial=ACERCA,
+                           widget=forms.TextInput(attrs={'size': '80'})
+                           )
+
     mensaje = forms.CharField(label='Respuesta',
                               max_length=1000, min_length=10,
-                              widget=forms.Textarea(attrs={'placeholder': 'Ingrese la respuesta'}))
+                              widget=forms.Textarea(
+                                  attrs={
+                                      'cols': '80'}
+                              )
+                              )
 
+    def enviar(self, contacto):
+        """Metodo para enviar email al contacto"""
+        tema = self.cleaned_data['tema']
+        remitente = None  # automaticamente utiliza DEFAULT_FROM_EMAIL
+        destinatario = [contacto.email]
+        mensaje = self.cleaned_data['mensaje']
+        try:
+            send_mail(tema, mensaje, remitente, destinatario)
+        except BadHeaderError:
+            return HttpResponse('Invalid header found.')
 
-# TODO: CREAR BOTONES Y ENVIAR EMAIL
-# https://hakibenita.com/how-to-add-custom-action-buttons-to-django-admin

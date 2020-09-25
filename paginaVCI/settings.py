@@ -150,3 +150,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static/") # USAR PARA NGINX
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
+#gmail_send/settings.py
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'moigut112358@gmail.com'
+EMAIL_HOST_PASSWORD = 'udyejfvylpanpyqn' #CONTRASEÑA GENERADA POR GMAIL
+EMAIL_PORT = '587'
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'moigut112358@gmail.com'

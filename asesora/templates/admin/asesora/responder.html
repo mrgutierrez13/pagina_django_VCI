@@ -1,0 +1,79 @@
+{% extends "admin/change_form.html" %}
+{% load i18n static admin_modify %}
+{% block content %}
+<div id="content-main">
+    <h3>MENSAJE ORIGINAL:</h3>
+    <p class="panel-mensaje">{{ contacto.mensaje }}</p>
+    <div class="datos-email">
+        <p class="tag-campo">REMITENTE:</p>
+        <p class="mensaje-campo">{{ remitente }}</p>
+        <p class="tag-campo">DESTINATARIO:</p>
+        <p class="mensaje-campo">{{ contacto.email }}</p>
+    </div>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {% if form.non_field_errors|length > 0 %}
+        <p class="errornote">
+            "Por favor corrija los siguientes errores"
+        </p>
+        {{ form.non_field_errors }}
+        {% endif %}
+        <fieldset class="module aligned">
+            {% for field in form %}
+            <div class="form-row">
+                {{ field.errors }}
+                {{ field.label_tag }}
+                {{ field }}
+                {% if field.field.help_text %}
+                <p class="help">
+                    {{ field.field.help_text|safe }}
+                </p>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </fieldset>
+        <div class="submit-row">
+            <input type="submit" class="default" value="ENVIAR EMAIL A {{ contacto.nombre }}">
+        </div>
+    </form>
+</div>
+<style>
+    .panel-mensaje{
+        background-color: whitesmoke;
+        font-size: 1.2rem;
+        padding: 1em;
+        padding-left: 2em;
+    }
+
+    .datos-email{
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: hsl(200, 42%, 63%);
+        width: 70%;
+        font-size: 1.1rem;
+        padding: .5em;
+        border-radius: .3em;
+        margin-bottom: 1em;
+        color: white;
+    }
+    @media screen and (min-width: 70rem) {
+        .datos-email{
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+
+    .datos-email>p{
+        border: 1px solid gray;
+        padding: .5em;
+        margin: .1em;
+    }
+    .tag-campo {
+        font-weight: 600;
+        color: hsl(51, 88%, 66%);
+    }
+    .form-row>*{
+        font-size: 1.1rem;
+    }
+
+</style>
+{% endblock %}
